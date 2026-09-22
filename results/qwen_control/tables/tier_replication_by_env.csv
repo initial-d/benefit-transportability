@@ -1,0 +1,13 @@
+campaign,label,env,n,lower_tier,upper_tier,lower_acc_pct,upper_acc_pct,benefit_pp,benefit_ci95_pp,upper_rescues,lower_rescues
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,A,200,small,large,87.0,91.5,4.5,"[0.5, 8.5]",13,4
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,B,300,small,large,97.3,99.0,1.7,"[-0.3, 4.0]",8,3
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,C,300,small,large,90.0,96.7,6.7,"[3.3, 10.3]",25,5
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,D,500,small,large,94.0,97.0,3.0,"[0.6, 5.6]",28,13
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,E_audit,100,small,large,86.0,92.0,6.0,"[0.0, 13.0]",8,2
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,E_test,500,small,large,88.6,94.8,6.2,"[3.2, 9.2]",44,13
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,A,100,luna,sol,88.0,86.0,-2.0,"[-7.0, 3.0]",2,4
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,B,100,luna,sol,96.0,93.0,-3.0,"[-9.0, 3.0]",3,6
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,C,100,luna,sol,93.0,96.0,3.0,"[-3.0, 9.0]",6,3
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,D,100,luna,sol,94.0,100.0,6.0,"[2.0, 11.0]",6,0
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,E_audit,100,luna,sol,97.0,97.0,0.0,"[-4.0, 4.0]",2,2
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,E_test,100,luna,sol,99.0,99.0,0.0,"[-3.0, 3.0]",1,1

@@ -1,0 +1,506 @@
+{
+  "metadata": {
+    "status": "exploratory_resampling_not_locked_confirmation",
+    "alpha_false_fast": 0.15,
+    "delta_familywise": 0.1,
+    "certificate": "Bonferroni one-sided Clopper-Pearson upper bound on false-fast; also bounds regret because B <= false-fast indicator",
+    "budgets": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "repeats": 50
+  },
+  "actual_e_uniform_20_per_family": {
+    "accuracy": 1,
+    "uniform_slow_accuracy": 1,
+    "uniform_fast_accuracy": 0.756,
+    "mean_tokens": 11393.898,
+    "slow_mean_tokens": 11393.898,
+    "token_saving_vs_slow": 0.0,
+    "per_query_token_saving": 0.0,
+    "false_fast": 0,
+    "false_fast_rate": 0.0,
+    "fast_families": [],
+    "fast_traffic": 0,
+    "audit_total_tokens": 1323418.0,
+    "break_even_queries": null,
+    "cert_stats": {
+      "temporal": {
+        "n": 20,
+        "false_fast": 2,
+        "ff_mean": 0.1,
+        "ff_upper": 0.3274412545044286,
+        "ff_lower": 0.010953657411644257,
+        "benefit_mean": 0.1,
+        "regret_upper": 0.3274412545044286,
+        "mean_incremental_tokens": 5469.45
+      },
+      "routing": {
+        "n": 20,
+        "false_fast": 9,
+        "ff_mean": 0.45,
+        "ff_upper": 0.6939057845327532,
+        "ff_lower": 0.22254173617719422,
+        "benefit_mean": 0.45,
+        "regret_upper": 0.6939057845327532,
+        "mean_incremental_tokens": 18017.45
+      },
+      "probability": {
+        "n": 20,
+        "false_fast": 5,
+        "ff_mean": 0.25,
+        "ff_upper": 0.5015887719740415,
+        "ff_lower": 0.08176810975833293,
+        "benefit_mean": 0.25,
+        "regret_upper": 0.5015887719740415,
+        "mean_incremental_tokens": 6169
+      },
+      "assignment": {
+        "n": 20,
+        "false_fast": 11,
+        "ff_mean": 0.55,
+        "ff_upper": 0.7774582638228057,
+        "ff_lower": 0.3060942154672468,
+        "benefit_mean": 0.55,
+        "regret_upper": 0.7774582638228057,
+        "mean_incremental_tokens": 6899.8
+      },
+      "optimization": {
+        "n": 20,
+        "false_fast": 3,
+        "ff_mean": 0.15,
+        "ff_upper": 0.3895611153366876,
+        "ff_lower": 0.02944254296504829,
+        "benefit_mean": 0.15,
+        "regret_upper": 0.3895611153366876,
+        "mean_incremental_tokens": 16242.1
+      }
+    }
+  },
+  "population_summary": {
+    "D": {
+      "temporal": {
+        "n": 100,
+        "false_fast_rate": 0.23,
+        "benefit_mean": 0.23,
+        "mean_incremental_tokens": 6783.16
+      },
+      "routing": {
+        "n": 100,
+        "false_fast_rate": 0.3,
+        "benefit_mean": 0.3,
+        "mean_incremental_tokens": 7834.28
+      },
+      "probability": {
+        "n": 100,
+        "false_fast_rate": 0.11,
+        "benefit_mean": 0.11,
+        "mean_incremental_tokens": 5586.51
+      },
+      "assignment": {
+        "n": 100,
+        "false_fast_rate": 0.45,
+        "benefit_mean": 0.45,
+        "mean_incremental_tokens": 6130.71
+      },
+      "optimization": {
+        "n": 100,
+        "false_fast_rate": 0.07,
+        "benefit_mean": 0.07,
+        "mean_incremental_tokens": 16114.68
+      }
+    },
+    "E": {
+      "temporal": {
+        "n": 120,
+        "false_fast_rate": 0.14166666666666666,
+        "benefit_mean": 0.14166666666666666,
+        "mean_incremental_tokens": 5820.825
+      },
+      "routing": {
+        "n": 120,
+        "false_fast_rate": 0.375,
+        "benefit_mean": 0.375,
+        "mean_incremental_tokens": 17245.866666666665
+      },
+      "probability": {
+        "n": 120,
+        "false_fast_rate": 0.225,
+        "benefit_mean": 0.225,
+        "mean_incremental_tokens": 4999.9
+      },
+      "assignment": {
+        "n": 120,
+        "false_fast_rate": 0.475,
+        "benefit_mean": 0.475,
+        "mean_incremental_tokens": 6908.15
+      },
+      "optimization": {
+        "n": 120,
+        "false_fast_rate": 0.05,
+        "benefit_mean": 0.05,
+        "mean_incremental_tokens": 15534.275
+      }
+    }
+  },
+  "simulation": {
+    "D": {
+      "50": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.0,
+          "fast_traffic_mean": 0.0,
+          "accuracy_mean": 0.9979555555555555,
+          "accuracy_p10_p50_p90": [
+            0.9977777777777778,
+            0.9977777777777778,
+            0.9977777777777778
+          ],
+          "token_saving_vs_slow_mean": 0.0,
+          "false_fast_rate_mean": 0.0,
+          "break_even_queries_median": null,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.0
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 0.14,
+          "fast_traffic_mean": 0.02333333333333333,
+          "accuracy_mean": 0.9955999999999999,
+          "accuracy_p10_p50_p90": [
+            0.9822222222222222,
+            0.9977777777777778,
+            0.9977777777777778
+          ],
+          "token_saving_vs_slow_mean": 0.04061466682634299,
+          "false_fast_rate_mean": 0.0021777777777777776,
+          "break_even_queries_median": 262.5444199422001,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.14
+          }
+        }
+      },
+      "100": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.0,
+          "fast_traffic_mean": 0.0,
+          "accuracy_mean": 0.9980000000000001,
+          "accuracy_p10_p50_p90": [
+            0.9975,
+            0.9975,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.0,
+          "false_fast_rate_mean": 0.0,
+          "break_even_queries_median": null,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.0
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 0.5,
+          "fast_traffic_mean": 0.0608,
+          "accuracy_mean": 0.9916500000000003,
+          "accuracy_p10_p50_p90": [
+            0.9822500000000001,
+            0.9975,
+            0.9975
+          ],
+          "token_saving_vs_slow_mean": 0.10102122802554125,
+          "false_fast_rate_mean": 0.0060999999999999995,
+          "break_even_queries_median": 691.5822396244397,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.04,
+            "assignment": 0.0,
+            "optimization": 0.46
+          }
+        }
+      },
+      "150": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.1,
+          "fast_traffic_mean": 0.02,
+          "accuracy_mean": 0.9955428571428571,
+          "accuracy_p10_p50_p90": [
+            0.9954285714285714,
+            0.9971428571428571,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.02492708249316193,
+          "false_fast_rate_mean": 0.0024571428571428574,
+          "break_even_queries_median": 496.5889498687608,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.04,
+            "assignment": 0.0,
+            "optimization": 0.06
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 0.96,
+          "fast_traffic_mean": 0.11697142857142857,
+          "accuracy_mean": 0.9865142857142857,
+          "accuracy_p10_p50_p90": [
+            0.9771428571428571,
+            0.9857142857142858,
+            0.9971428571428571
+          ],
+          "token_saving_vs_slow_mean": 0.1959617881947141,
+          "false_fast_rate_mean": 0.011200000000000002,
+          "break_even_queries_median": 1047.872434192067,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.04,
+            "assignment": 0.0,
+            "optimization": 0.92
+          }
+        }
+      },
+      "200": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.16,
+          "fast_traffic_mean": 0.032,
+          "accuracy_mean": 0.9944666666666667,
+          "accuracy_p10_p50_p90": [
+            0.98,
+            0.9966666666666667,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.0535993252344116,
+          "false_fast_rate_mean": 0.0032,
+          "break_even_queries_median": 673.3163904019058,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.16
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 1.06,
+          "fast_traffic_mean": 0.14650622756629159,
+          "accuracy_mean": 0.9832486621928858,
+          "accuracy_p10_p50_p90": [
+            0.9720000000000001,
+            0.9866666666666667,
+            0.9966666666666667
+          ],
+          "token_saving_vs_slow_mean": 0.2287070607442456,
+          "false_fast_rate_mean": 0.014732138268432931,
+          "break_even_queries_median": 1109.8428677101037,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.1,
+            "assignment": 0.0,
+            "optimization": 0.96
+          }
+        }
+      }
+    },
+    "E": {
+      "50": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.0,
+          "fast_traffic_mean": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_p10_p50_p90": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.0,
+          "false_fast_rate_mean": 0.0,
+          "break_even_queries_median": null,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.0
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 0.26,
+          "fast_traffic_mean": 0.04490909090909091,
+          "accuracy_mean": 0.9971636363636365,
+          "accuracy_p10_p50_p90": [
+            0.9890909090909091,
+            1.0,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.06189851800384957,
+          "false_fast_rate_mean": 0.002836363636363637,
+          "break_even_queries_median": 302.6092877617909,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.26
+          }
+        }
+      },
+      "100": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.0,
+          "fast_traffic_mean": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_p10_p50_p90": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.0,
+          "false_fast_rate_mean": 0.0,
+          "break_even_queries_median": null,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.0
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 0.86,
+          "fast_traffic_mean": 0.13485250000000001,
+          "accuracy_mean": 0.9918037500000001,
+          "accuracy_p10_p50_p90": [
+            0.988,
+            0.99,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.183608158645551,
+          "false_fast_rate_mean": 0.00819625,
+          "break_even_queries_median": 590.0486690774625,
+          "certified_family_probability": {
+            "temporal": 0.02,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.84
+          }
+        }
+      },
+      "150": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.22,
+          "fast_traffic_mean": 0.044000000000000004,
+          "accuracy_mean": 0.9970666666666665,
+          "accuracy_p10_p50_p90": [
+            0.9866666666666667,
+            1.0,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.059853622226529485,
+          "false_fast_rate_mean": 0.0029333333333333334,
+          "break_even_queries_median": 615.5283419667179,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.22
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 0.98,
+          "fast_traffic_mean": 0.150114236655384,
+          "accuracy_mean": 0.9906873523063575,
+          "accuracy_p10_p50_p90": [
+            0.9866666666666667,
+            0.9911111111111112,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.19490805355567006,
+          "false_fast_rate_mean": 0.009312647693642555,
+          "break_even_queries_median": 777.7875836825338,
+          "certified_family_probability": {
+            "temporal": 0.06,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.92
+          }
+        }
+      },
+      "200": {
+        "uniform": {
+          "trials": 50,
+          "certified_family_count_mean": 0.34,
+          "fast_traffic_mean": 0.068,
+          "accuracy_mean": 0.9954999999999999,
+          "accuracy_p10_p50_p90": [
+            0.9872500000000001,
+            1.0,
+            1.0
+          ],
+          "token_saving_vs_slow_mean": 0.09231687766125564,
+          "false_fast_rate_mean": 0.0045000000000000005,
+          "break_even_queries_median": 827.2990601150085,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.34
+          }
+        },
+        "adaptive": {
+          "trials": 50,
+          "certified_family_count_mean": 0.98,
+          "fast_traffic_mean": 0.16853980341325894,
+          "accuracy_mean": 0.9911417889010922,
+          "accuracy_p10_p50_p90": [
+            0.985,
+            0.99,
+            0.9975
+          ],
+          "token_saving_vs_slow_mean": 0.21878724639903954,
+          "false_fast_rate_mean": 0.008858211098907866,
+          "break_even_queries_median": 878.8090824388489,
+          "certified_family_probability": {
+            "temporal": 0.0,
+            "routing": 0.0,
+            "probability": 0.0,
+            "assignment": 0.0,
+            "optimization": 0.98
+          }
+        }
+      }
+    }
+  }
+}

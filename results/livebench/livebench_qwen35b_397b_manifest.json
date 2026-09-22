@@ -1,0 +1,52 @@
+{
+  "campaign": "qwen35b_397b_r2024_11_25_full_noamps",
+  "source": "official LiveBench HuggingFace datasets",
+  "livebench_checkout": "[local path omitted]",
+  "livebench_commit": "13de8ef0a0e769dca9dbb0757e6a4e2a242e7591",
+  "release_option": "2024-11-25",
+  "categories": [
+    "reasoning",
+    "math",
+    "data_analysis",
+    "language",
+    "instruction_following"
+  ],
+  "tasks": [
+    "cta",
+    "tablejoin",
+    "tablereformat",
+    "paraphrase",
+    "simplify",
+    "story_generation",
+    "summarize",
+    "connections",
+    "plot_unscrambling",
+    "typos",
+    "math_comp",
+    "olympiad",
+    "spatial",
+    "web_of_lies_v2",
+    "zebra_puzzle"
+  ],
+  "limit_per_task": 0,
+  "items_path": "[local path omitted]",
+  "items": 772,
+  "counts_by_category_task": {
+    "data_analysis|cta": 50,
+    "data_analysis|tablejoin": 50,
+    "data_analysis|tablereformat": 50,
+    "instruction_following|paraphrase": 50,
+    "instruction_following|simplify": 50,
+    "instruction_following|story_generation": 50,
+    "instruction_following|summarize": 50,
+    "language|connections": 50,
+    "language|plot_unscrambling": 40,
+    "language|typos": 50,
+    "math|math_comp": 96,
+    "math|olympiad": 36,
+    "reasoning|spatial": 50,
+    "reasoning|web_of_lies_v2": 50,
+    "reasoning|zebra_puzzle": 50
+  },
+  "model_outcomes_accessed_before_manifest": false
+}

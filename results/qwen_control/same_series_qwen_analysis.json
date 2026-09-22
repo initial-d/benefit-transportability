@@ -1,0 +1,1188 @@
+{
+  "raw": "raw_qwen35b_122b_397b_thinking_on8192_verify_all_full.jsonl",
+  "rows": 5700,
+  "successful_rows": 5700,
+  "complete_item_count": 1900,
+  "tier_order": [
+    "small",
+    "mid",
+    "large"
+  ],
+  "by_tier": {
+    "small": {
+      "n": 1900,
+      "accuracy": 0.9136842105263158,
+      "correct": 1736,
+      "parse_fail": 49,
+      "errors": 0,
+      "mean_total_tokens": 12114.111052631579,
+      "mean_reasoning_tokens": 7789.313684210526,
+      "mean_latency_s": 141.44591806242164
+    },
+    "mid": {
+      "n": 1900,
+      "accuracy": 0.8810526315789474,
+      "correct": 1674,
+      "parse_fail": 79,
+      "errors": 0,
+      "mean_total_tokens": 11041.618421052632,
+      "mean_reasoning_tokens": 7822.8026315789475,
+      "mean_latency_s": 131.41566953400002
+    },
+    "large": {
+      "n": 1900,
+      "accuracy": 0.9568421052631579,
+      "correct": 1818,
+      "parse_fail": 35,
+      "errors": 0,
+      "mean_total_tokens": 10074.564736842105,
+      "mean_reasoning_tokens": 7028.277894736842,
+      "mean_latency_s": 163.93992336489447
+    }
+  },
+  "by_env_tier": {
+    "A|large": {
+      "n": 200,
+      "accuracy": 0.9,
+      "correct": 180,
+      "parse_fail": 2,
+      "errors": 0,
+      "mean_total_tokens": 10202.12,
+      "mean_reasoning_tokens": 7105.935,
+      "mean_latency_s": 178.76238894950163
+    },
+    "A|mid": {
+      "n": 200,
+      "accuracy": 0.855,
+      "correct": 171,
+      "parse_fail": 6,
+      "errors": 0,
+      "mean_total_tokens": 10697.33,
+      "mean_reasoning_tokens": 7728.25,
+      "mean_latency_s": 149.92248527199962
+    },
+    "A|small": {
+      "n": 200,
+      "accuracy": 0.875,
+      "correct": 175,
+      "parse_fail": 5,
+      "errors": 0,
+      "mean_total_tokens": 11583.295,
+      "mean_reasoning_tokens": 7707.7,
+      "mean_latency_s": 143.34578919099994
+    },
+    "B|large": {
+      "n": 300,
+      "accuracy": 0.99,
+      "correct": 297,
+      "parse_fail": 2,
+      "errors": 0,
+      "mean_total_tokens": 9698.95,
+      "mean_reasoning_tokens": 6758.8133333333335,
+      "mean_latency_s": 160.79971078766684
+    },
+    "B|mid": {
+      "n": 300,
+      "accuracy": 0.8333333333333334,
+      "correct": 250,
+      "parse_fail": 19,
+      "errors": 0,
+      "mean_total_tokens": 10739.713333333333,
+      "mean_reasoning_tokens": 7483.13,
+      "mean_latency_s": 159.96631233800088
+    },
+    "B|small": {
+      "n": 300,
+      "accuracy": 0.9733333333333334,
+      "correct": 292,
+      "parse_fail": 3,
+      "errors": 0,
+      "mean_total_tokens": 11193.493333333334,
+      "mean_reasoning_tokens": 7376.636666666666,
+      "mean_latency_s": 143.48088739133226
+    },
+    "C|large": {
+      "n": 300,
+      "accuracy": 0.9666666666666667,
+      "correct": 290,
+      "parse_fail": 4,
+      "errors": 0,
+      "mean_total_tokens": 10169.756666666666,
+      "mean_reasoning_tokens": 7266.463333333333,
+      "mean_latency_s": 170.02289816266529
+    },
+    "C|mid": {
+      "n": 300,
+      "accuracy": 0.8666666666666667,
+      "correct": 260,
+      "parse_fail": 6,
+      "errors": 0,
+      "mean_total_tokens": 11280.713333333333,
+      "mean_reasoning_tokens": 7839.333333333333,
+      "mean_latency_s": 137.34263167033515
+    },
+    "C|small": {
+      "n": 300,
+      "accuracy": 0.9,
+      "correct": 270,
+      "parse_fail": 3,
+      "errors": 0,
+      "mean_total_tokens": 12242.483333333334,
+      "mean_reasoning_tokens": 7863.006666666667,
+      "mean_latency_s": 141.1637378336691
+    },
+    "D|large": {
+      "n": 500,
+      "accuracy": 0.97,
+      "correct": 485,
+      "parse_fail": 6,
+      "errors": 0,
+      "mean_total_tokens": 9362.57,
+      "mean_reasoning_tokens": 6941.456,
+      "mean_latency_s": 155.27776778760017
+    },
+    "D|mid": {
+      "n": 500,
+      "accuracy": 0.96,
+      "correct": 480,
+      "parse_fail": 2,
+      "errors": 0,
+      "mean_total_tokens": 10343.662,
+      "mean_reasoning_tokens": 7920.684,
+      "mean_latency_s": 120.33447574199946
+    },
+    "D|small": {
+      "n": 500,
+      "accuracy": 0.94,
+      "correct": 470,
+      "parse_fail": 5,
+      "errors": 0,
+      "mean_total_tokens": 11945.508,
+      "mean_reasoning_tokens": 7867.688,
+      "mean_latency_s": 139.03991475080048
+    },
+    "E_audit|large": {
+      "n": 100,
+      "accuracy": 0.92,
+      "correct": 92,
+      "parse_fail": 5,
+      "errors": 0,
+      "mean_total_tokens": 10789.07,
+      "mean_reasoning_tokens": 7045.65,
+      "mean_latency_s": 169.50569976099942
+    },
+    "E_audit|mid": {
+      "n": 100,
+      "accuracy": 0.85,
+      "correct": 85,
+      "parse_fail": 6,
+      "errors": 0,
+      "mean_total_tokens": 11805.03,
+      "mean_reasoning_tokens": 7870.58,
+      "mean_latency_s": 128.8449017879978
+    },
+    "E_audit|small": {
+      "n": 100,
+      "accuracy": 0.86,
+      "correct": 86,
+      "parse_fail": 5,
+      "errors": 0,
+      "mean_total_tokens": 12848.51,
+      "mean_reasoning_tokens": 7885.86,
+      "mean_latency_s": 139.2343507530028
+    },
+    "E_test|large": {
+      "n": 500,
+      "accuracy": 0.948,
+      "correct": 474,
+      "parse_fail": 16,
+      "errors": 0,
+      "mean_total_tokens": 10760.89,
+      "mean_reasoning_tokens": 7099.33,
+      "mean_latency_s": 163.794280096799
+    },
+    "E_test|mid": {
+      "n": 500,
+      "accuracy": 0.856,
+      "correct": 428,
+      "parse_fail": 40,
+      "errors": 0,
+      "mean_total_tokens": 11762.294,
+      "mean_reasoning_tokens": 7947.072,
+      "mean_latency_s": 114.92172761579964
+    },
+    "E_test|small": {
+      "n": 500,
+      "accuracy": 0.886,
+      "correct": 443,
+      "parse_fail": 28,
+      "errors": 0,
+      "mean_total_tokens": 12823.508,
+      "mean_reasoning_tokens": 7927.666,
+      "mean_latency_s": 142.48261292440037
+    }
+  },
+  "marginal_benefit_overall": {
+    "small->mid": {
+      "paired_n": 1900,
+      "lower_accuracy": 0.9136842105263158,
+      "upper_accuracy": 0.8810526315789474,
+      "mean_benefit_upper_minus_lower": -0.03263157894736842,
+      "upper_rescues_lower": 96,
+      "lower_rescues_upper": 158,
+      "mean_incremental_total_tokens": -1072.4926315789473,
+      "mean_incremental_reasoning_tokens": 33.48894736842105
+    },
+    "small->large": {
+      "paired_n": 1900,
+      "lower_accuracy": 0.9136842105263158,
+      "upper_accuracy": 0.9568421052631579,
+      "mean_benefit_upper_minus_lower": 0.0431578947368421,
+      "upper_rescues_lower": 125,
+      "lower_rescues_upper": 43,
+      "mean_incremental_total_tokens": -2039.5463157894737,
+      "mean_incremental_reasoning_tokens": -761.0357894736842
+    },
+    "mid->large": {
+      "paired_n": 1900,
+      "lower_accuracy": 0.8810526315789474,
+      "upper_accuracy": 0.9568421052631579,
+      "mean_benefit_upper_minus_lower": 0.07578947368421053,
+      "upper_rescues_lower": 184,
+      "lower_rescues_upper": 40,
+      "mean_incremental_total_tokens": -967.0536842105263,
+      "mean_incremental_reasoning_tokens": -794.5247368421053
+    }
+  },
+  "marginal_benefit_by_env_family": {
+    "A|assignment|small->mid": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1197.525,
+      "mean_incremental_reasoning_tokens": -351.075
+    },
+    "A|optimization|small->mid": {
+      "paired_n": 40,
+      "lower_accuracy": 0.8,
+      "upper_accuracy": 0.725,
+      "mean_benefit_upper_minus_lower": -0.075,
+      "upper_rescues_lower": 4,
+      "lower_rescues_upper": 7,
+      "mean_incremental_total_tokens": -2170.6,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "A|probability|small->mid": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": 378.85,
+      "mean_incremental_reasoning_tokens": 723.225
+    },
+    "A|routing|small->mid": {
+      "paired_n": 40,
+      "lower_accuracy": 0.575,
+      "upper_accuracy": 0.55,
+      "mean_benefit_upper_minus_lower": -0.025,
+      "upper_rescues_lower": 5,
+      "lower_rescues_upper": 6,
+      "mean_incremental_total_tokens": -1009.05,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "A|temporal|small->mid": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -431.5,
+      "mean_incremental_reasoning_tokens": -269.4
+    },
+    "B|assignment|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 0.9666666666666667,
+      "mean_benefit_upper_minus_lower": -0.03333333333333333,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 2,
+      "mean_incremental_total_tokens": -956.7,
+      "mean_incremental_reasoning_tokens": 7.316666666666666
+    },
+    "B|optimization|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.7666666666666667,
+      "mean_benefit_upper_minus_lower": -0.16666666666666666,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 12,
+      "mean_incremental_total_tokens": -1949.9333333333334,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "B|probability|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": 303.53333333333336,
+      "mean_incremental_reasoning_tokens": 359.6666666666667
+    },
+    "B|routing|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 0.5333333333333333,
+      "mean_benefit_upper_minus_lower": -0.43333333333333335,
+      "upper_rescues_lower": 1,
+      "lower_rescues_upper": 27,
+      "mean_incremental_total_tokens": 471.05,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "B|temporal|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 0.9,
+      "mean_benefit_upper_minus_lower": -0.06666666666666667,
+      "upper_rescues_lower": 1,
+      "lower_rescues_upper": 5,
+      "mean_incremental_total_tokens": -136.85,
+      "mean_incremental_reasoning_tokens": 165.48333333333332
+    },
+    "C|assignment|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.9333333333333333,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 2,
+      "mean_incremental_total_tokens": -794.9666666666667,
+      "mean_incremental_reasoning_tokens": 126.28333333333333
+    },
+    "C|optimization|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 0.8833333333333333,
+      "mean_benefit_upper_minus_lower": -0.016666666666666666,
+      "upper_rescues_lower": 4,
+      "lower_rescues_upper": 5,
+      "mean_incremental_total_tokens": -2298.9166666666665,
+      "mean_incremental_reasoning_tokens": -99.88333333333334
+    },
+    "C|probability|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -340.1166666666667,
+      "mean_incremental_reasoning_tokens": -203.35
+    },
+    "C|routing|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 0.85,
+      "upper_accuracy": 0.6166666666666667,
+      "mean_benefit_upper_minus_lower": -0.23333333333333334,
+      "upper_rescues_lower": 3,
+      "lower_rescues_upper": 17,
+      "mean_incremental_total_tokens": -290.18333333333334,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "C|temporal|small->mid": {
+      "paired_n": 60,
+      "lower_accuracy": 0.8166666666666667,
+      "upper_accuracy": 0.9,
+      "mean_benefit_upper_minus_lower": 0.08333333333333333,
+      "upper_rescues_lower": 9,
+      "lower_rescues_upper": 4,
+      "mean_incremental_total_tokens": -1084.6666666666667,
+      "mean_incremental_reasoning_tokens": 58.583333333333336
+    },
+    "D|assignment|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -74.54,
+      "mean_incremental_reasoning_tokens": 396.09
+    },
+    "D|optimization|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 0.86,
+      "upper_accuracy": 0.81,
+      "mean_benefit_upper_minus_lower": -0.05,
+      "upper_rescues_lower": 9,
+      "lower_rescues_upper": 14,
+      "mean_incremental_total_tokens": -1889.78,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "D|probability|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -831.43,
+      "mean_incremental_reasoning_tokens": -101.61
+    },
+    "D|routing|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 0.97,
+      "upper_accuracy": 0.99,
+      "mean_benefit_upper_minus_lower": 0.02,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1596.06,
+      "mean_incremental_reasoning_tokens": -12.56
+    },
+    "D|temporal|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 0.87,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.13,
+      "upper_rescues_lower": 13,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -3617.42,
+      "mean_incremental_reasoning_tokens": -16.94
+    },
+    "E_audit|assignment|small->mid": {
+      "paired_n": 20,
+      "lower_accuracy": 0.95,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.05,
+      "upper_rescues_lower": 1,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2029.2,
+      "mean_incremental_reasoning_tokens": -60.75
+    },
+    "E_audit|optimization|small->mid": {
+      "paired_n": 20,
+      "lower_accuracy": 0.8,
+      "upper_accuracy": 0.7,
+      "mean_benefit_upper_minus_lower": -0.1,
+      "upper_rescues_lower": 3,
+      "lower_rescues_upper": 5,
+      "mean_incremental_total_tokens": -941.35,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_audit|probability|small->mid": {
+      "paired_n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -558.95,
+      "mean_incremental_reasoning_tokens": -229.25
+    },
+    "E_audit|routing|small->mid": {
+      "paired_n": 20,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.55,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 5,
+      "lower_rescues_upper": 5,
+      "mean_incremental_total_tokens": -1273.35,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_audit|temporal|small->mid": {
+      "paired_n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -414.55,
+      "mean_incremental_reasoning_tokens": 213.6
+    },
+    "E_test|assignment|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 0.97,
+      "mean_benefit_upper_minus_lower": -0.03,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 3,
+      "mean_incremental_total_tokens": -1845.85,
+      "mean_incremental_reasoning_tokens": -12.09
+    },
+    "E_test|optimization|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 0.73,
+      "upper_accuracy": 0.76,
+      "mean_benefit_upper_minus_lower": 0.03,
+      "upper_rescues_lower": 20,
+      "lower_rescues_upper": 17,
+      "mean_incremental_total_tokens": -1489.83,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_test|probability|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -210.2,
+      "mean_incremental_reasoning_tokens": 53.46
+    },
+    "E_test|routing|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 0.7,
+      "upper_accuracy": 0.55,
+      "mean_benefit_upper_minus_lower": -0.15,
+      "upper_rescues_lower": 12,
+      "lower_rescues_upper": 27,
+      "mean_incremental_total_tokens": -896.45,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_test|temporal|small->mid": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -863.74,
+      "mean_incremental_reasoning_tokens": 55.66
+    },
+    "A|assignment|small->large": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2860.15,
+      "mean_incremental_reasoning_tokens": -1618.5
+    },
+    "A|optimization|small->large": {
+      "paired_n": 40,
+      "lower_accuracy": 0.8,
+      "upper_accuracy": 0.8,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 5,
+      "lower_rescues_upper": 5,
+      "mean_incremental_total_tokens": -390.625,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "A|probability|small->large": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -185.25,
+      "mean_incremental_reasoning_tokens": 262.475
+    },
+    "A|routing|small->large": {
+      "paired_n": 40,
+      "lower_accuracy": 0.575,
+      "upper_accuracy": 0.7,
+      "mean_benefit_upper_minus_lower": 0.125,
+      "upper_rescues_lower": 6,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": -1430.025,
+      "mean_incremental_reasoning_tokens": -6.725
+    },
+    "A|temporal|small->large": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2039.825,
+      "mean_incremental_reasoning_tokens": -1646.075
+    },
+    "B|assignment|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -3584.4,
+      "mean_incremental_reasoning_tokens": -1914.7333333333333
+    },
+    "B|optimization|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.06666666666666667,
+      "upper_rescues_lower": 4,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -742.5166666666667,
+      "mean_incremental_reasoning_tokens": -36.71666666666667
+    },
+    "B|probability|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -111.08333333333333,
+      "mean_incremental_reasoning_tokens": 284.28333333333336
+    },
+    "B|routing|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 0.95,
+      "mean_benefit_upper_minus_lower": -0.016666666666666666,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 3,
+      "mean_incremental_total_tokens": -662.9833333333333,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "B|temporal|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.03333333333333333,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2371.733333333333,
+      "mean_incremental_reasoning_tokens": -1421.95
+    },
+    "C|assignment|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.9833333333333333,
+      "mean_benefit_upper_minus_lower": 0.05,
+      "upper_rescues_lower": 4,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": -2989.6,
+      "mean_incremental_reasoning_tokens": -1493.05
+    },
+    "C|optimization|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 0.9833333333333333,
+      "mean_benefit_upper_minus_lower": 0.08333333333333333,
+      "upper_rescues_lower": 6,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": -1989.3166666666666,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "C|probability|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1073.6833333333334,
+      "mean_incremental_reasoning_tokens": -673.5166666666667
+    },
+    "C|routing|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.85,
+      "upper_accuracy": 0.8666666666666667,
+      "mean_benefit_upper_minus_lower": 0.016666666666666666,
+      "upper_rescues_lower": 5,
+      "lower_rescues_upper": 4,
+      "mean_incremental_total_tokens": -1403.9166666666667,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "C|temporal|small->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.8166666666666667,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.18333333333333332,
+      "upper_rescues_lower": 11,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2907.116666666667,
+      "mean_incremental_reasoning_tokens": -816.15
+    },
+    "D|assignment|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2954.36,
+      "mean_incremental_reasoning_tokens": -1583.27
+    },
+    "D|optimization|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.86,
+      "upper_accuracy": 0.89,
+      "mean_benefit_upper_minus_lower": 0.03,
+      "upper_rescues_lower": 12,
+      "lower_rescues_upper": 9,
+      "mean_incremental_total_tokens": -351.57,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "D|probability|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2235.76,
+      "mean_incremental_reasoning_tokens": -1131.19
+    },
+    "D|routing|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.97,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.03,
+      "upper_rescues_lower": 3,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2935.09,
+      "mean_incremental_reasoning_tokens": -865.04
+    },
+    "D|temporal|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.87,
+      "upper_accuracy": 0.96,
+      "mean_benefit_upper_minus_lower": 0.09,
+      "upper_rescues_lower": 13,
+      "lower_rescues_upper": 4,
+      "mean_incremental_total_tokens": -4437.91,
+      "mean_incremental_reasoning_tokens": -1051.66
+    },
+    "E_audit|assignment|small->large": {
+      "paired_n": 20,
+      "lower_accuracy": 0.95,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.05,
+      "upper_rescues_lower": 1,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -3881.8,
+      "mean_incremental_reasoning_tokens": -1317.3
+    },
+    "E_audit|optimization|small->large": {
+      "paired_n": 20,
+      "lower_accuracy": 0.8,
+      "upper_accuracy": 0.85,
+      "mean_benefit_upper_minus_lower": 0.05,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": -1333.0,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_audit|probability|small->large": {
+      "paired_n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1401.05,
+      "mean_incremental_reasoning_tokens": -707.6
+    },
+    "E_audit|routing|small->large": {
+      "paired_n": 20,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.75,
+      "mean_benefit_upper_minus_lower": 0.2,
+      "upper_rescues_lower": 5,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": -454.35,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_audit|temporal|small->large": {
+      "paired_n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -3227.0,
+      "mean_incremental_reasoning_tokens": -2176.15
+    },
+    "E_test|assignment|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 0.97,
+      "mean_benefit_upper_minus_lower": -0.03,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 3,
+      "mean_incremental_total_tokens": -3238.19,
+      "mean_incremental_reasoning_tokens": -992.21
+    },
+    "E_test|optimization|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.73,
+      "upper_accuracy": 0.95,
+      "mean_benefit_upper_minus_lower": 0.22,
+      "upper_rescues_lower": 23,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": -1371.28,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_test|probability|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1658.76,
+      "mean_incremental_reasoning_tokens": -990.43
+    },
+    "E_test|routing|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.7,
+      "upper_accuracy": 0.82,
+      "mean_benefit_upper_minus_lower": 0.12,
+      "upper_rescues_lower": 21,
+      "lower_rescues_upper": 9,
+      "mean_incremental_total_tokens": -540.37,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_test|temporal|small->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -3504.49,
+      "mean_incremental_reasoning_tokens": -2159.04
+    },
+    "A|assignment|mid->large": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1662.625,
+      "mean_incremental_reasoning_tokens": -1267.425
+    },
+    "A|optimization|mid->large": {
+      "paired_n": 40,
+      "lower_accuracy": 0.725,
+      "upper_accuracy": 0.8,
+      "mean_benefit_upper_minus_lower": 0.075,
+      "upper_rescues_lower": 7,
+      "lower_rescues_upper": 4,
+      "mean_incremental_total_tokens": 1779.975,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "A|probability|mid->large": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -564.1,
+      "mean_incremental_reasoning_tokens": -460.75
+    },
+    "A|routing|mid->large": {
+      "paired_n": 40,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.7,
+      "mean_benefit_upper_minus_lower": 0.15,
+      "upper_rescues_lower": 9,
+      "lower_rescues_upper": 3,
+      "mean_incremental_total_tokens": -420.975,
+      "mean_incremental_reasoning_tokens": -6.725
+    },
+    "A|temporal|mid->large": {
+      "paired_n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1608.325,
+      "mean_incremental_reasoning_tokens": -1376.675
+    },
+    "B|assignment|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.03333333333333333,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2627.7,
+      "mean_incremental_reasoning_tokens": -1922.05
+    },
+    "B|optimization|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.7666666666666667,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.23333333333333334,
+      "upper_rescues_lower": 14,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": 1207.4166666666667,
+      "mean_incremental_reasoning_tokens": -36.71666666666667
+    },
+    "B|probability|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -414.6166666666667,
+      "mean_incremental_reasoning_tokens": -75.38333333333334
+    },
+    "B|routing|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.5333333333333333,
+      "upper_accuracy": 0.95,
+      "mean_benefit_upper_minus_lower": 0.4166666666666667,
+      "upper_rescues_lower": 26,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": -1134.0333333333333,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "B|temporal|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.1,
+      "upper_rescues_lower": 6,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2234.883333333333,
+      "mean_incremental_reasoning_tokens": -1587.4333333333334
+    },
+    "C|assignment|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.9833333333333333,
+      "mean_benefit_upper_minus_lower": 0.05,
+      "upper_rescues_lower": 3,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2194.633333333333,
+      "mean_incremental_reasoning_tokens": -1619.3333333333333
+    },
+    "C|optimization|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.8833333333333333,
+      "upper_accuracy": 0.9833333333333333,
+      "mean_benefit_upper_minus_lower": 0.1,
+      "upper_rescues_lower": 7,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": 309.6,
+      "mean_incremental_reasoning_tokens": 99.88333333333334
+    },
+    "C|probability|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -733.5666666666667,
+      "mean_incremental_reasoning_tokens": -470.1666666666667
+    },
+    "C|routing|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.6166666666666667,
+      "upper_accuracy": 0.8666666666666667,
+      "mean_benefit_upper_minus_lower": 0.25,
+      "upper_rescues_lower": 18,
+      "lower_rescues_upper": 3,
+      "mean_incremental_total_tokens": -1113.7333333333333,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "C|temporal|mid->large": {
+      "paired_n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.1,
+      "upper_rescues_lower": 6,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1822.45,
+      "mean_incremental_reasoning_tokens": -874.7333333333333
+    },
+    "D|assignment|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2879.82,
+      "mean_incremental_reasoning_tokens": -1979.36
+    },
+    "D|optimization|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.81,
+      "upper_accuracy": 0.89,
+      "mean_benefit_upper_minus_lower": 0.08,
+      "upper_rescues_lower": 14,
+      "lower_rescues_upper": 6,
+      "mean_incremental_total_tokens": 1538.21,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "D|probability|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1404.33,
+      "mean_incremental_reasoning_tokens": -1029.58
+    },
+    "D|routing|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.99,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.01,
+      "upper_rescues_lower": 1,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1339.03,
+      "mean_incremental_reasoning_tokens": -852.48
+    },
+    "D|temporal|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 0.96,
+      "mean_benefit_upper_minus_lower": -0.04,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 4,
+      "mean_incremental_total_tokens": -820.49,
+      "mean_incremental_reasoning_tokens": -1034.72
+    },
+    "E_audit|assignment|mid->large": {
+      "paired_n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1852.6,
+      "mean_incremental_reasoning_tokens": -1256.55
+    },
+    "E_audit|optimization|mid->large": {
+      "paired_n": 20,
+      "lower_accuracy": 0.7,
+      "upper_accuracy": 0.85,
+      "mean_benefit_upper_minus_lower": 0.15,
+      "upper_rescues_lower": 5,
+      "lower_rescues_upper": 2,
+      "mean_incremental_total_tokens": -391.65,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_audit|probability|mid->large": {
+      "paired_n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -842.1,
+      "mean_incremental_reasoning_tokens": -478.35
+    },
+    "E_audit|routing|mid->large": {
+      "paired_n": 20,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.75,
+      "mean_benefit_upper_minus_lower": 0.2,
+      "upper_rescues_lower": 5,
+      "lower_rescues_upper": 1,
+      "mean_incremental_total_tokens": 819.0,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_audit|temporal|mid->large": {
+      "paired_n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2812.45,
+      "mean_incremental_reasoning_tokens": -2389.75
+    },
+    "E_test|assignment|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.97,
+      "upper_accuracy": 0.97,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 2,
+      "lower_rescues_upper": 2,
+      "mean_incremental_total_tokens": -1392.34,
+      "mean_incremental_reasoning_tokens": -980.12
+    },
+    "E_test|optimization|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.76,
+      "upper_accuracy": 0.95,
+      "mean_benefit_upper_minus_lower": 0.19,
+      "upper_rescues_lower": 22,
+      "lower_rescues_upper": 3,
+      "mean_incremental_total_tokens": 118.55,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_test|probability|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -1448.56,
+      "mean_incremental_reasoning_tokens": -1043.89
+    },
+    "E_test|routing|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.82,
+      "mean_benefit_upper_minus_lower": 0.27,
+      "upper_rescues_lower": 37,
+      "lower_rescues_upper": 10,
+      "mean_incremental_total_tokens": 356.08,
+      "mean_incremental_reasoning_tokens": 0.0
+    },
+    "E_test|temporal|mid->large": {
+      "paired_n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "mean_benefit_upper_minus_lower": 0.0,
+      "upper_rescues_lower": 0,
+      "lower_rescues_upper": 0,
+      "mean_incremental_total_tokens": -2640.75,
+      "mean_incremental_reasoning_tokens": -2214.7
+    }
+  },
+  "transport_gaps": {
+    "A->E_test|small->mid": {
+      "assignment": -0.03,
+      "optimization": 0.105,
+      "probability": 0.0,
+      "routing": -0.125,
+      "temporal": 0.0
+    },
+    "A->E_test|small->large": {
+      "assignment": -0.03,
+      "optimization": 0.22,
+      "probability": 0.0,
+      "routing": -0.0050000000000000044,
+      "temporal": 0.0
+    },
+    "A->E_test|mid->large": {
+      "assignment": 0.0,
+      "optimization": 0.115,
+      "probability": 0.0,
+      "routing": 0.12000000000000002,
+      "temporal": 0.0
+    }
+  },
+  "go_no_go": {
+    "complete_enough": true,
+    "non_saturated": true,
+    "any_positive_marginal_gain": true,
+    "any_family_transport_gap_ge_10pp": true
+  }
+}

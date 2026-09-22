@@ -1,0 +1,35 @@
+{
+  "benchmark_sha256": "b29548d229f12982e74c1864b40cd6764d385e2e22e0de9c5291351525c646eb",
+  "calibration_n": 200,
+  "validation_n": 300,
+  "precalibrated_policy": {
+    "name": "v2_precalibrated_structural",
+    "score": "0.24*entities + 0.24*constraints + 0.20*branching + 0.20*depth + 0.12*precision",
+    "normalizers": {
+      "entities": 14,
+      "constraints": 24,
+      "branching": 14,
+      "depth": 28,
+      "precision": 3
+    },
+    "threshold": 0.5,
+    "decision": "slow iff score >= threshold"
+  },
+  "calibrated_policy_selection": "fit calibration-only slow-benefit logistic model; select probability threshold minimizing mean tokens subject to >=97% calibration accuracy",
+  "validation_access": "No validation model outcomes analyzed before calibrated policy is serialized.",
+  "primary_metrics": [
+    "accuracy",
+    "total_tokens",
+    "reasoning_tokens",
+    "latency_s",
+    "slow_rate"
+  ],
+  "mandatory_baselines": [
+    "uniform_fast",
+    "uniform_slow",
+    "precalibrated_v2",
+    "calibrated_v2",
+    "random_slow_rate_matched"
+  ],
+  "protocol_sha256": "5b56638460930d7fc8b2be715690ff88f0acb0c95e2c1fb05976baa540d67646"
+}

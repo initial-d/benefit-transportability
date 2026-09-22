@@ -1,0 +1,11 @@
+campaign,label,family,historical_ABC_benefit_pp,E_test_benefit_pp,gap_E_minus_hist_pp,all_env_benefit_pp
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,assignment,1.9,-3.0,-4.9,0.3
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,optimization,8.1,22.0,13.9,10.3
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,probability,0.0,0.0,0.0,0.0
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,routing,3.1,12.0,8.9,6.3
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,temporal,8.1,0.0,-8.1,5.8
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,assignment,-1.7,0.0,1.7,0.8
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,optimization,6.7,0.0,-6.7,5.0
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,probability,-5.0,0.0,5.0,-2.5
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,routing,-1.7,0.0,1.7,0.8
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,temporal,-1.7,0.0,1.7,-0.8

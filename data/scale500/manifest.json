@@ -1,0 +1,9 @@
+{
+  "n": 500,
+  "calibration": 200,
+  "test": 300,
+  "simple": 250,
+  "constraint": 250,
+  "sha256": "733664a379dcfe09f4f7de6567fe4c7fcd04449a2823e6c1797d70294fce229d",
+  "solver": "exact permutation enumeration for CSP; inherited exact Hard-500 v2 solvers for simple items"
+}

@@ -1,0 +1,80 @@
+{
+  "method": "Target-audited router",
+  "version": 1,
+  "target_environment": "E",
+  "calibration_n": 100,
+  "calibration_n_per_family": 20,
+  "locked_test_n": 500,
+  "slow_fraction": 0.8,
+  "calibration_sha256": "cd347f4e34eabdac3163aa788b4fbd6ff693b507451a6d631fa7cfc84b16a6a0",
+  "locked_test_sha256": "9e71390c2873580f1572baf403c3c5f1adc6295adaa039cd23c02ec17daf0697",
+  "risk_estimator": "paired calibration regret P(Slow correct, Fast wrong)-P(Fast correct, Slow wrong), with one-sided Wilson diagnostics",
+  "calibration_regret_tolerance": 0.15,
+  "selection_rule": "among families with paired calibration regret <= epsilon, leave Fast the family with greatest observed incremental token cost; lexical tie break",
+  "ranked_fast_candidates": [
+    "optimization",
+    "temporal"
+  ],
+  "selected_fast_family": "optimization",
+  "selected_slow_families": [
+    "temporal",
+    "routing",
+    "probability",
+    "assignment"
+  ],
+  "family_statistics": {
+    "temporal": {
+      "n": 20,
+      "fast_correct": 18,
+      "slow_correct": 20,
+      "slow_rescues_fast": 2,
+      "fast_rescues_slow": 0,
+      "paired_net_gain": 0.1,
+      "rescue_probability_wilson_upper_95": 0.2616630463268668,
+      "mean_incremental_tokens": 5469.45
+    },
+    "routing": {
+      "n": 20,
+      "fast_correct": 11,
+      "slow_correct": 20,
+      "slow_rescues_fast": 9,
+      "fast_rescues_slow": 0,
+      "paired_net_gain": 0.45,
+      "rescue_probability_wilson_upper_95": 0.6277922924470652,
+      "mean_incremental_tokens": 18017.45
+    },
+    "probability": {
+      "n": 20,
+      "fast_correct": 15,
+      "slow_correct": 20,
+      "slow_rescues_fast": 5,
+      "fast_rescues_slow": 0,
+      "paired_net_gain": 0.25,
+      "rescue_probability_wilson_upper_95": 0.4322017501601245,
+      "mean_incremental_tokens": 6169
+    },
+    "assignment": {
+      "n": 20,
+      "fast_correct": 9,
+      "slow_correct": 20,
+      "slow_rescues_fast": 11,
+      "fast_rescues_slow": 0,
+      "paired_net_gain": 0.55,
+      "rescue_probability_wilson_upper_95": 0.7158765087109688,
+      "mean_incremental_tokens": 6899.8
+    },
+    "optimization": {
+      "n": 20,
+      "fast_correct": 17,
+      "slow_correct": 20,
+      "slow_rescues_fast": 3,
+      "fast_rescues_slow": 0,
+      "paired_net_gain": 0.15,
+      "rescue_probability_wilson_upper_95": 0.32182807567530686,
+      "mean_incremental_tokens": 16242.1
+    }
+  },
+  "unknown_family_fallback": "slow",
+  "test_outcomes_accessed": false,
+  "policy_sha256": "83e051652547a4fabc013f3b0e0fe1ffcb6f9401eaac933fb6607b36bda415d3"
+}

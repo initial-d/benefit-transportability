@@ -1,0 +1,42 @@
+{
+  "name": "Forge-Audit-600",
+  "version": 1,
+  "role": "target-environment audit plus locked independent test",
+  "n": 600,
+  "n_calibration": 100,
+  "n_test": 500,
+  "families": {
+    "temporal": {
+      "calibration": 20,
+      "test": 100
+    },
+    "routing": {
+      "calibration": 20,
+      "test": 100
+    },
+    "probability": {
+      "calibration": 20,
+      "test": 100
+    },
+    "assignment": {
+      "calibration": 20,
+      "test": 100
+    },
+    "optimization": {
+      "calibration": 20,
+      "test": 100
+    }
+  },
+  "generator_partition": "E",
+  "surface_audit_against_A_B_C_D": {
+    "exact_duplicates": 0,
+    "max_shared_contiguous_8grams": 0,
+    "named_entity_overlap_count": 0
+  },
+  "calibration_test_exact_duplicates": 0,
+  "calibration_sha256": "cd347f4e34eabdac3163aa788b4fbd6ff693b507451a6d631fa7cfc84b16a6a0",
+  "test_sha256": "9e71390c2873580f1572baf403c3c5f1adc6295adaa039cd23c02ec17daf0697",
+  "all_items_sha256": "6d701dea97a4441133885ec32ea05a9cae774101022c2fc252083ea7804ee9e8",
+  "verification": "Every item passed two exact solvers implemented by distinct algorithms.",
+  "model_outcomes_accessed_during_generation": false
+}

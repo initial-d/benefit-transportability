@@ -1,0 +1,113 @@
+{
+  "benchmark_sha256": "b29548d229f12982e74c1864b40cd6764d385e2e22e0de9c5291351525c646eb",
+  "protocol_sha256": "5b56638460930d7fc8b2be715690ff88f0acb0c95e2c1fb05976baa540d67646",
+  "feature_names": [
+    "intercept",
+    "entities",
+    "constraints",
+    "branching",
+    "depth",
+    "precision",
+    "tier",
+    "family_temporal",
+    "family_routing",
+    "family_probability",
+    "family_assignment",
+    "family_optimization",
+    "tier_1",
+    "tier_2",
+    "tier_3"
+  ],
+  "means": [
+    0.7257142857142858,
+    0.5691666666666667,
+    0.5710714285714286,
+    0.47625,
+    0.13333333333333333,
+    0.6583333333333333,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.35,
+    0.325,
+    0.325
+  ],
+  "stds": [
+    0.1944956848584858,
+    0.3393836324868953,
+    0.31811767011723247,
+    0.45356126957126974,
+    0.26666666666666666,
+    0.2737344617609474,
+    0.4,
+    0.4,
+    0.4,
+    0.4,
+    0.4,
+    0.47696960070847283,
+    0.4683748498798799,
+    0.4683748498798799
+  ],
+  "weights": [
+    -1.9140516738228317,
+    -0.018983802638433182,
+    -0.07593573565732051,
+    -0.032448134254291904,
+    0.8226382268754104,
+    -0.1032770896381649,
+    0.08455918322496392,
+    -0.057315597729606406,
+    0.28885807542505537,
+    -0.1032770896381649,
+    0.7643060329198686,
+    -0.8925714209771552,
+    -0.08049678934569404,
+    0.015689901850732695,
+    0.06628401601094641
+  ],
+  "probability_threshold": 0.03841910343728911,
+  "requested_calibration_floor": 0.97,
+  "effective_calibration_floor": 0.94,
+  "calibration_metrics": {
+    "accuracy": 0.94,
+    "mean_tokens": 11714.555,
+    "mean_reasoning_tokens": 10690.48,
+    "mean_latency_s": 122.05209331949975,
+    "slow_rate": 0.935
+  },
+  "precalibrated_calibration_metrics": {
+    "accuracy": 0.865,
+    "mean_tokens": 8239.555,
+    "mean_reasoning_tokens": 7179.47,
+    "mean_latency_s": 92.36439447899984,
+    "slow_rate": 0.51
+  },
+  "slow_benefit_prevalence": 0.165,
+  "uniform_fast_calibration_metrics": {
+    "accuracy": 0.795,
+    "mean_tokens": 1277.58,
+    "mean_reasoning_tokens": 0,
+    "mean_latency_s": 35.60067488550001,
+    "slow_rate": 0
+  },
+  "uniform_slow_calibration_metrics": {
+    "accuracy": 0.94,
+    "mean_tokens": 12510.22,
+    "mean_reasoning_tokens": 11525.725,
+    "mean_latency_s": 127.64066978849975,
+    "slow_rate": 1
+  },
+  "feasibility_amendment": {
+    "type": "pre-validation feasibility fallback",
+    "trigger": "Uniform Slow calibration accuracy is below the frozen absolute floor.",
+    "requested_floor": 0.97,
+    "uniform_slow_calibration_accuracy": 0.94,
+    "effective_floor": 0.94,
+    "rule": "Use Uniform Slow calibration accuracy as the attainable reference, then minimize tokens subject to matching or exceeding it.",
+    "validation_outcomes_accessed": false,
+    "confirmatory_status": "Protocol deviation; report separately from the originally frozen 97% target."
+  },
+  "validation_outcomes_accessed": false
+}

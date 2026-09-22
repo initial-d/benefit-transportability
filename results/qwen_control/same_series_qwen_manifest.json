@@ -1,0 +1,26 @@
+{
+  "campaign": "qwen35b_122b_397b_thinking_on8192_verify_all_full",
+  "sources": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E_audit",
+    "E_test"
+  ],
+  "per_family": 0,
+  "families": null,
+  "selection": "spread",
+  "tiers": {
+    "small": "alibaba/qwen3.5-35b-a3b",
+    "mid": "alibaba/qwen3.5-122b-a10b",
+    "large": "alibaba/qwen3.5-397b-a17b"
+  },
+  "reasoning_effort": "high",
+  "thinking_control": "on",
+  "prompt_style": "verify",
+  "max_tokens": 8192,
+  "items": 1900,
+  "policy_training": "none; pilot estimates marginal benefit only",
+  "model_outcomes_accessed_before_manifest": false
+}

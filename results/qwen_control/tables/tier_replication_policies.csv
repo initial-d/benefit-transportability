@@ -1,0 +1,9 @@
+campaign,label,policy,n,accuracy_pct,mean_total_tokens,mean_reasoning_tokens,oracle_accuracy_pct,tier_counts
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,uniform_lowest,500,88.6,12823.5,7927.7,98.8,"{""small"": 500}"
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,uniform_highest,500,94.8,10760.9,7099.3,98.8,"{""large"": 500, ""small"": 0}"
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,historical_ABC,500,94.8,11092.6,7297.4,98.8,"{""large"": 400, ""small"": 100}"
+qwen35b_122b_397b_thinking_on8192_verify_all_full,Qwen3.5 35B -> 397B,target_audit,500,94.8,11793.5,7729.2,98.8,"{""large"": 300, ""small"": 200}"
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,uniform_lowest,100,99.0,1086.7,537.6,100.0,"{""luna"": 100}"
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,uniform_highest,100,99.0,836.7,290.7,100.0,"{""luna"": 0, ""sol"": 100}"
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,historical_ABC,100,99.0,998.5,450.6,100.0,"{""luna"": 60, ""sol"": 20, ""terra"": 20}"
+gpt56_luna_terra_sol_medium_answeronly_hard20_full,GPT-5.6 Luna -> Sol,target_audit,100,96.0,897.3,350.4,100.0,"{""luna"": 40, ""sol"": 20, ""terra"": 40}"

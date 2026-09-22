@@ -1,0 +1,22 @@
+{
+  "name": "Forge-Confirm-500",
+  "version": 1,
+  "role": "locked fourth-environment confirmation",
+  "n": 500,
+  "families": {
+    "temporal": 100,
+    "routing": 100,
+    "probability": 100,
+    "assignment": 100,
+    "optimization": 100
+  },
+  "generator_partition": "D",
+  "surface_audit_against_A_B_C": {
+    "exact_duplicates": 0,
+    "max_shared_contiguous_8grams": 0,
+    "named_entity_overlap_count": 0
+  },
+  "sha256": "350e23e462f12a09692a01c38af7919afb1b3880c73dbf439f4a7f49aad21c37",
+  "verification": "Every item passed two exact solvers implemented by distinct algorithms.",
+  "model_outcomes_accessed_during_generation": false
+}

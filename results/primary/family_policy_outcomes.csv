@@ -1,0 +1,6 @@
+family,n,audit_gain,audit_incremental_tokens,test_accuracy,test_mean_tokens,test_mean_reasoning_tokens,test_mean_latency_s,test_slow_rate,test_false_fast,test_correct
+assignment,20,0.55,6899.8,0.908,10011.934,8832.852,124.49774292179956,0.8,46,454
+optimization,20,0.15,16242.1,0.994,8315.356,6760.534,103.587431603,0.8,3,497
+probability,20,0.25,6169.0,0.956,10440.682,9187.22,132.41262399059934,0.8,22,478
+routing,20,0.45,18017.45,0.928,7975.588,6610.65,113.46536503839981,0.8,36,464
+temporal,20,0.1,5469.45,0.97,10215.678,8989.224,137.84739403000054,0.8,15,485

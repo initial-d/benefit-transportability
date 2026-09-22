@@ -1,0 +1,23 @@
+{
+  "name": "Forge-500",
+  "version": 1,
+  "n": 500,
+  "calibration": 200,
+  "validation": 300,
+  "families": {
+    "temporal": 100,
+    "routing": 100,
+    "probability": 100,
+    "assignment": 100,
+    "optimization": 100
+  },
+  "generator_disjoint": true,
+  "surface_audit": {
+    "exact_duplicates": 0,
+    "max_validation_8gram_overlap_fraction": 0.0,
+    "mean_validation_8gram_overlap_fraction": 0.0,
+    "named_entity_overlap_count": 0
+  },
+  "sha256": "b29548d229f12982e74c1864b40cd6764d385e2e22e0de9c5291351525c646eb",
+  "verification": "Every item passed two algorithmically distinct exact solvers."
+}

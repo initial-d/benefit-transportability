@@ -1,0 +1,2202 @@
+[
+  {
+    "id": "audit.temporal.E.calibration.000",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Aquila-E4100 takes 6 beats, stage 2 of Aquila-E4100 takes 6 beats, stage 3 of Aquila-E4100 takes 3 beats, stage 4 of Aquila-E4100 takes 8 beats, stage 5 of Aquila-E4100 takes 6 beats, stage 6 of Aquila-E4100 takes 4 beats, stage 7 of Aquila-E4100 takes 6 beats, stage 8 of Aquila-E4100 takes 8 beats, stage 9 of Aquila-E4100 takes 7 beats. The precedence ledger says: stage 2 of Aquila-E4100 waits for stage 1 of Aquila-E4100; stage 7 of Aquila-E4100 waits for stage 1 of Aquila-E4100; stage 3 of Aquila-E4100 waits for stage 2 of Aquila-E4100; stage 4 of Aquila-E4100 waits for stage 3 of Aquila-E4100; stage 5 of Aquila-E4100 waits for stage 4 of Aquila-E4100; stage 6 of Aquila-E4100 waits for stage 5 of Aquila-E4100; stage 7 of Aquila-E4100 waits for stage 5 of Aquila-E4100; stage 7 of Aquila-E4100 waits for stage 6 of Aquila-E4100; stage 8 of Aquila-E4100 waits for stage 7 of Aquila-E4100; stage 9 of Aquila-E4100 waits for stage 8 of Aquila-E4100. Starting available stages at beat zero, when does stage 9 of Aquila-E4100 finish?",
+    "options": [
+      "A. beat 54",
+      "B. beat 47",
+      "C. beat 61",
+      "D. beat 56"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 9,
+      "constraints": 10,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.001",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Bellatrix-E4101 takes 4 beats, stage 2 of Bellatrix-E4101 takes 2 beats, stage 3 of Bellatrix-E4101 takes 8 beats, stage 4 of Bellatrix-E4101 takes 4 beats, stage 5 of Bellatrix-E4101 takes 2 beats, stage 6 of Bellatrix-E4101 takes 9 beats, stage 7 of Bellatrix-E4101 takes 7 beats, stage 8 of Bellatrix-E4101 takes 5 beats, stage 9 of Bellatrix-E4101 takes 2 beats, stage 10 of Bellatrix-E4101 takes 5 beats, stage 11 of Bellatrix-E4101 takes 4 beats. The precedence ledger says: stage 2 of Bellatrix-E4101 waits for stage 1 of Bellatrix-E4101; stage 5 of Bellatrix-E4101 waits for stage 1 of Bellatrix-E4101; stage 7 of Bellatrix-E4101 waits for stage 1 of Bellatrix-E4101; stage 3 of Bellatrix-E4101 waits for stage 2 of Bellatrix-E4101; stage 4 of Bellatrix-E4101 waits for stage 3 of Bellatrix-E4101; stage 5 of Bellatrix-E4101 waits for stage 4 of Bellatrix-E4101; stage 6 of Bellatrix-E4101 waits for stage 4 of Bellatrix-E4101; stage 6 of Bellatrix-E4101 waits for stage 5 of Bellatrix-E4101; stage 10 of Bellatrix-E4101 waits for stage 5 of Bellatrix-E4101; stage 7 of Bellatrix-E4101 waits for stage 6 of Bellatrix-E4101; stage 8 of Bellatrix-E4101 waits for stage 7 of Bellatrix-E4101; stage 9 of Bellatrix-E4101 waits for stage 8 of Bellatrix-E4101; stage 10 of Bellatrix-E4101 waits for stage 9 of Bellatrix-E4101; stage 11 of Bellatrix-E4101 waits for stage 10 of Bellatrix-E4101. Starting available stages at beat zero, when does stage 11 of Bellatrix-E4101 finish?",
+    "options": [
+      "A. beat 56",
+      "B. beat 48",
+      "C. beat 52",
+      "D. beat 54"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 11,
+      "constraints": 14,
+      "branching": 2,
+      "depth": 11,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.002",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Caelum-E4102 takes 8 beats, stage 2 of Caelum-E4102 takes 6 beats, stage 3 of Caelum-E4102 takes 8 beats, stage 4 of Caelum-E4102 takes 7 beats, stage 5 of Caelum-E4102 takes 5 beats, stage 6 of Caelum-E4102 takes 9 beats, stage 7 of Caelum-E4102 takes 6 beats, stage 8 of Caelum-E4102 takes 7 beats, stage 9 of Caelum-E4102 takes 3 beats, stage 10 of Caelum-E4102 takes 2 beats, stage 11 of Caelum-E4102 takes 4 beats. The precedence ledger says: stage 2 of Caelum-E4102 waits for stage 1 of Caelum-E4102; stage 3 of Caelum-E4102 waits for stage 2 of Caelum-E4102; stage 5 of Caelum-E4102 waits for stage 2 of Caelum-E4102; stage 11 of Caelum-E4102 waits for stage 2 of Caelum-E4102; stage 4 of Caelum-E4102 waits for stage 3 of Caelum-E4102; stage 7 of Caelum-E4102 waits for stage 3 of Caelum-E4102; stage 5 of Caelum-E4102 waits for stage 4 of Caelum-E4102; stage 7 of Caelum-E4102 waits for stage 4 of Caelum-E4102; stage 6 of Caelum-E4102 waits for stage 5 of Caelum-E4102; stage 7 of Caelum-E4102 waits for stage 6 of Caelum-E4102; stage 11 of Caelum-E4102 waits for stage 6 of Caelum-E4102; stage 8 of Caelum-E4102 waits for stage 7 of Caelum-E4102; stage 9 of Caelum-E4102 waits for stage 8 of Caelum-E4102; stage 10 of Caelum-E4102 waits for stage 9 of Caelum-E4102; stage 11 of Caelum-E4102 waits for stage 10 of Caelum-E4102. Starting available stages at beat zero, when does stage 11 of Caelum-E4102 finish?",
+    "options": [
+      "A. beat 65",
+      "B. beat 69",
+      "C. beat 61",
+      "D. beat 67"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 11,
+      "constraints": 15,
+      "branching": 3,
+      "depth": 11,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.003",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Delphinus-E4103 takes 4 beats, stage 2 of Delphinus-E4103 takes 3 beats, stage 3 of Delphinus-E4103 takes 2 beats, stage 4 of Delphinus-E4103 takes 4 beats, stage 5 of Delphinus-E4103 takes 3 beats, stage 6 of Delphinus-E4103 takes 3 beats, stage 7 of Delphinus-E4103 takes 3 beats, stage 8 of Delphinus-E4103 takes 9 beats, stage 9 of Delphinus-E4103 takes 6 beats, stage 10 of Delphinus-E4103 takes 7 beats. The precedence ledger says: stage 2 of Delphinus-E4103 waits for stage 1 of Delphinus-E4103; stage 5 of Delphinus-E4103 waits for stage 1 of Delphinus-E4103; stage 3 of Delphinus-E4103 waits for stage 2 of Delphinus-E4103; stage 7 of Delphinus-E4103 waits for stage 2 of Delphinus-E4103; stage 10 of Delphinus-E4103 waits for stage 2 of Delphinus-E4103; stage 4 of Delphinus-E4103 waits for stage 3 of Delphinus-E4103; stage 5 of Delphinus-E4103 waits for stage 4 of Delphinus-E4103; stage 6 of Delphinus-E4103 waits for stage 5 of Delphinus-E4103; stage 7 of Delphinus-E4103 waits for stage 6 of Delphinus-E4103; stage 8 of Delphinus-E4103 waits for stage 7 of Delphinus-E4103; stage 9 of Delphinus-E4103 waits for stage 8 of Delphinus-E4103; stage 10 of Delphinus-E4103 waits for stage 8 of Delphinus-E4103; stage 10 of Delphinus-E4103 waits for stage 9 of Delphinus-E4103. Starting available stages at beat zero, when does stage 10 of Delphinus-E4103 finish?",
+    "options": [
+      "A. beat 37",
+      "B. beat 44",
+      "C. beat 51",
+      "D. beat 46"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 10,
+      "constraints": 13,
+      "branching": 3,
+      "depth": 10,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.004",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Equuleus-E4104 takes 2 beats, stage 2 of Equuleus-E4104 takes 9 beats, stage 3 of Equuleus-E4104 takes 2 beats, stage 4 of Equuleus-E4104 takes 7 beats, stage 5 of Equuleus-E4104 takes 5 beats, stage 6 of Equuleus-E4104 takes 6 beats, stage 7 of Equuleus-E4104 takes 6 beats, stage 8 of Equuleus-E4104 takes 4 beats, stage 9 of Equuleus-E4104 takes 8 beats, stage 10 of Equuleus-E4104 takes 5 beats. The precedence ledger says: stage 2 of Equuleus-E4104 waits for stage 1 of Equuleus-E4104; stage 6 of Equuleus-E4104 waits for stage 1 of Equuleus-E4104; stage 10 of Equuleus-E4104 waits for stage 1 of Equuleus-E4104; stage 3 of Equuleus-E4104 waits for stage 2 of Equuleus-E4104; stage 8 of Equuleus-E4104 waits for stage 2 of Equuleus-E4104; stage 10 of Equuleus-E4104 waits for stage 2 of Equuleus-E4104; stage 4 of Equuleus-E4104 waits for stage 3 of Equuleus-E4104; stage 5 of Equuleus-E4104 waits for stage 4 of Equuleus-E4104; stage 6 of Equuleus-E4104 waits for stage 5 of Equuleus-E4104; stage 8 of Equuleus-E4104 waits for stage 5 of Equuleus-E4104; stage 10 of Equuleus-E4104 waits for stage 5 of Equuleus-E4104; stage 7 of Equuleus-E4104 waits for stage 6 of Equuleus-E4104; stage 8 of Equuleus-E4104 waits for stage 7 of Equuleus-E4104; stage 10 of Equuleus-E4104 waits for stage 7 of Equuleus-E4104; stage 9 of Equuleus-E4104 waits for stage 8 of Equuleus-E4104; stage 10 of Equuleus-E4104 waits for stage 9 of Equuleus-E4104. Starting available stages at beat zero, when does stage 10 of Equuleus-E4104 finish?",
+    "options": [
+      "A. beat 54",
+      "B. beat 49",
+      "C. beat 56",
+      "D. beat 59"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 10,
+      "constraints": 16,
+      "branching": 5,
+      "depth": 10,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.005",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Fornax-E4105 takes 4 beats, stage 2 of Fornax-E4105 takes 2 beats, stage 3 of Fornax-E4105 takes 4 beats, stage 4 of Fornax-E4105 takes 2 beats, stage 5 of Fornax-E4105 takes 8 beats, stage 6 of Fornax-E4105 takes 9 beats, stage 7 of Fornax-E4105 takes 4 beats, stage 8 of Fornax-E4105 takes 9 beats, stage 9 of Fornax-E4105 takes 6 beats, stage 10 of Fornax-E4105 takes 6 beats, stage 11 of Fornax-E4105 takes 5 beats, stage 12 of Fornax-E4105 takes 2 beats. The precedence ledger says: stage 2 of Fornax-E4105 waits for stage 1 of Fornax-E4105; stage 3 of Fornax-E4105 waits for stage 1 of Fornax-E4105; stage 5 of Fornax-E4105 waits for stage 1 of Fornax-E4105; stage 8 of Fornax-E4105 waits for stage 1 of Fornax-E4105; stage 10 of Fornax-E4105 waits for stage 1 of Fornax-E4105; stage 12 of Fornax-E4105 waits for stage 1 of Fornax-E4105; stage 3 of Fornax-E4105 waits for stage 2 of Fornax-E4105; stage 4 of Fornax-E4105 waits for stage 3 of Fornax-E4105; stage 5 of Fornax-E4105 waits for stage 4 of Fornax-E4105; stage 6 of Fornax-E4105 waits for stage 5 of Fornax-E4105; stage 9 of Fornax-E4105 waits for stage 5 of Fornax-E4105; stage 7 of Fornax-E4105 waits for stage 6 of Fornax-E4105; stage 11 of Fornax-E4105 waits for stage 6 of Fornax-E4105; stage 8 of Fornax-E4105 waits for stage 7 of Fornax-E4105; stage 9 of Fornax-E4105 waits for stage 7 of Fornax-E4105; stage 9 of Fornax-E4105 waits for stage 8 of Fornax-E4105; stage 10 of Fornax-E4105 waits for stage 9 of Fornax-E4105; stage 11 of Fornax-E4105 waits for stage 10 of Fornax-E4105; stage 12 of Fornax-E4105 waits for stage 11 of Fornax-E4105. Starting available stages at beat zero, when does stage 12 of Fornax-E4105 finish?",
+    "options": [
+      "A. beat 63",
+      "B. beat 59",
+      "C. beat 64",
+      "D. beat 61"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 12,
+      "constraints": 19,
+      "branching": 3,
+      "depth": 12,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.006",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Gemini-E4106 takes 6 beats, stage 2 of Gemini-E4106 takes 9 beats, stage 3 of Gemini-E4106 takes 3 beats, stage 4 of Gemini-E4106 takes 4 beats, stage 5 of Gemini-E4106 takes 8 beats, stage 6 of Gemini-E4106 takes 6 beats, stage 7 of Gemini-E4106 takes 8 beats, stage 8 of Gemini-E4106 takes 9 beats, stage 9 of Gemini-E4106 takes 5 beats. The precedence ledger says: stage 2 of Gemini-E4106 waits for stage 1 of Gemini-E4106; stage 3 of Gemini-E4106 waits for stage 2 of Gemini-E4106; stage 7 of Gemini-E4106 waits for stage 2 of Gemini-E4106; stage 9 of Gemini-E4106 waits for stage 2 of Gemini-E4106; stage 4 of Gemini-E4106 waits for stage 3 of Gemini-E4106; stage 6 of Gemini-E4106 waits for stage 3 of Gemini-E4106; stage 5 of Gemini-E4106 waits for stage 4 of Gemini-E4106; stage 6 of Gemini-E4106 waits for stage 4 of Gemini-E4106; stage 6 of Gemini-E4106 waits for stage 5 of Gemini-E4106; stage 7 of Gemini-E4106 waits for stage 6 of Gemini-E4106; stage 8 of Gemini-E4106 waits for stage 7 of Gemini-E4106; stage 9 of Gemini-E4106 waits for stage 7 of Gemini-E4106; stage 9 of Gemini-E4106 waits for stage 8 of Gemini-E4106. Starting available stages at beat zero, when does stage 9 of Gemini-E4106 finish?",
+    "options": [
+      "A. beat 60",
+      "B. beat 58",
+      "C. beat 53",
+      "D. beat 63"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 9,
+      "constraints": 13,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.007",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Horologium-E4107 takes 6 beats, stage 2 of Horologium-E4107 takes 2 beats, stage 3 of Horologium-E4107 takes 7 beats, stage 4 of Horologium-E4107 takes 9 beats, stage 5 of Horologium-E4107 takes 7 beats, stage 6 of Horologium-E4107 takes 4 beats, stage 7 of Horologium-E4107 takes 2 beats, stage 8 of Horologium-E4107 takes 3 beats, stage 9 of Horologium-E4107 takes 9 beats, stage 10 of Horologium-E4107 takes 9 beats, stage 11 of Horologium-E4107 takes 5 beats. The precedence ledger says: stage 2 of Horologium-E4107 waits for stage 1 of Horologium-E4107; stage 3 of Horologium-E4107 waits for stage 2 of Horologium-E4107; stage 4 of Horologium-E4107 waits for stage 3 of Horologium-E4107; stage 6 of Horologium-E4107 waits for stage 3 of Horologium-E4107; stage 7 of Horologium-E4107 waits for stage 3 of Horologium-E4107; stage 5 of Horologium-E4107 waits for stage 4 of Horologium-E4107; stage 11 of Horologium-E4107 waits for stage 4 of Horologium-E4107; stage 6 of Horologium-E4107 waits for stage 5 of Horologium-E4107; stage 11 of Horologium-E4107 waits for stage 5 of Horologium-E4107; stage 7 of Horologium-E4107 waits for stage 6 of Horologium-E4107; stage 8 of Horologium-E4107 waits for stage 7 of Horologium-E4107; stage 9 of Horologium-E4107 waits for stage 8 of Horologium-E4107; stage 10 of Horologium-E4107 waits for stage 9 of Horologium-E4107; stage 11 of Horologium-E4107 waits for stage 10 of Horologium-E4107. Starting available stages at beat zero, when does stage 11 of Horologium-E4107 finish?",
+    "options": [
+      "A. beat 68",
+      "B. beat 65",
+      "C. beat 58",
+      "D. beat 63"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 11,
+      "constraints": 14,
+      "branching": 3,
+      "depth": 11,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.008",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Lacerta-E4108 takes 7 beats, stage 2 of Lacerta-E4108 takes 3 beats, stage 3 of Lacerta-E4108 takes 7 beats, stage 4 of Lacerta-E4108 takes 6 beats, stage 5 of Lacerta-E4108 takes 2 beats, stage 6 of Lacerta-E4108 takes 8 beats, stage 7 of Lacerta-E4108 takes 7 beats, stage 8 of Lacerta-E4108 takes 4 beats, stage 9 of Lacerta-E4108 takes 5 beats, stage 10 of Lacerta-E4108 takes 3 beats, stage 11 of Lacerta-E4108 takes 7 beats. The precedence ledger says: stage 2 of Lacerta-E4108 waits for stage 1 of Lacerta-E4108; stage 3 of Lacerta-E4108 waits for stage 1 of Lacerta-E4108; stage 6 of Lacerta-E4108 waits for stage 1 of Lacerta-E4108; stage 10 of Lacerta-E4108 waits for stage 1 of Lacerta-E4108; stage 3 of Lacerta-E4108 waits for stage 2 of Lacerta-E4108; stage 4 of Lacerta-E4108 waits for stage 3 of Lacerta-E4108; stage 5 of Lacerta-E4108 waits for stage 3 of Lacerta-E4108; stage 5 of Lacerta-E4108 waits for stage 4 of Lacerta-E4108; stage 7 of Lacerta-E4108 waits for stage 4 of Lacerta-E4108; stage 6 of Lacerta-E4108 waits for stage 5 of Lacerta-E4108; stage 8 of Lacerta-E4108 waits for stage 5 of Lacerta-E4108; stage 7 of Lacerta-E4108 waits for stage 6 of Lacerta-E4108; stage 8 of Lacerta-E4108 waits for stage 7 of Lacerta-E4108; stage 9 of Lacerta-E4108 waits for stage 8 of Lacerta-E4108; stage 11 of Lacerta-E4108 waits for stage 8 of Lacerta-E4108; stage 10 of Lacerta-E4108 waits for stage 9 of Lacerta-E4108; stage 11 of Lacerta-E4108 waits for stage 10 of Lacerta-E4108. Starting available stages at beat zero, when does stage 11 of Lacerta-E4108 finish?",
+    "options": [
+      "A. beat 52",
+      "B. beat 66",
+      "C. beat 59",
+      "D. beat 61"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 11,
+      "constraints": 17,
+      "branching": 2,
+      "depth": 11,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.009",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Monoceros-E4109 takes 7 beats, stage 2 of Monoceros-E4109 takes 8 beats, stage 3 of Monoceros-E4109 takes 5 beats, stage 4 of Monoceros-E4109 takes 3 beats, stage 5 of Monoceros-E4109 takes 4 beats, stage 6 of Monoceros-E4109 takes 4 beats, stage 7 of Monoceros-E4109 takes 3 beats, stage 8 of Monoceros-E4109 takes 6 beats, stage 9 of Monoceros-E4109 takes 6 beats, stage 10 of Monoceros-E4109 takes 2 beats. The precedence ledger says: stage 2 of Monoceros-E4109 waits for stage 1 of Monoceros-E4109; stage 8 of Monoceros-E4109 waits for stage 1 of Monoceros-E4109; stage 3 of Monoceros-E4109 waits for stage 2 of Monoceros-E4109; stage 9 of Monoceros-E4109 waits for stage 2 of Monoceros-E4109; stage 4 of Monoceros-E4109 waits for stage 3 of Monoceros-E4109; stage 5 of Monoceros-E4109 waits for stage 4 of Monoceros-E4109; stage 6 of Monoceros-E4109 waits for stage 5 of Monoceros-E4109; stage 7 of Monoceros-E4109 waits for stage 6 of Monoceros-E4109; stage 8 of Monoceros-E4109 waits for stage 7 of Monoceros-E4109; stage 9 of Monoceros-E4109 waits for stage 7 of Monoceros-E4109; stage 9 of Monoceros-E4109 waits for stage 8 of Monoceros-E4109; stage 10 of Monoceros-E4109 waits for stage 9 of Monoceros-E4109. Starting available stages at beat zero, when does stage 10 of Monoceros-E4109 finish?",
+    "options": [
+      "A. beat 46",
+      "B. beat 50",
+      "C. beat 51",
+      "D. beat 48"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 10,
+      "constraints": 12,
+      "branching": 3,
+      "depth": 10,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.010",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Norma-E4110 takes 5 beats, stage 2 of Norma-E4110 takes 9 beats, stage 3 of Norma-E4110 takes 3 beats, stage 4 of Norma-E4110 takes 7 beats, stage 5 of Norma-E4110 takes 4 beats, stage 6 of Norma-E4110 takes 3 beats, stage 7 of Norma-E4110 takes 5 beats, stage 8 of Norma-E4110 takes 6 beats, stage 9 of Norma-E4110 takes 6 beats, stage 10 of Norma-E4110 takes 5 beats. The precedence ledger says: stage 2 of Norma-E4110 waits for stage 1 of Norma-E4110; stage 3 of Norma-E4110 waits for stage 2 of Norma-E4110; stage 6 of Norma-E4110 waits for stage 2 of Norma-E4110; stage 8 of Norma-E4110 waits for stage 2 of Norma-E4110; stage 4 of Norma-E4110 waits for stage 3 of Norma-E4110; stage 9 of Norma-E4110 waits for stage 3 of Norma-E4110; stage 5 of Norma-E4110 waits for stage 4 of Norma-E4110; stage 9 of Norma-E4110 waits for stage 4 of Norma-E4110; stage 6 of Norma-E4110 waits for stage 5 of Norma-E4110; stage 7 of Norma-E4110 waits for stage 6 of Norma-E4110; stage 9 of Norma-E4110 waits for stage 6 of Norma-E4110; stage 8 of Norma-E4110 waits for stage 7 of Norma-E4110; stage 10 of Norma-E4110 waits for stage 7 of Norma-E4110; stage 9 of Norma-E4110 waits for stage 8 of Norma-E4110; stage 10 of Norma-E4110 waits for stage 9 of Norma-E4110. Starting available stages at beat zero, when does stage 10 of Norma-E4110 finish?",
+    "options": [
+      "A. beat 48",
+      "B. beat 55",
+      "C. beat 58",
+      "D. beat 53"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 10,
+      "constraints": 15,
+      "branching": 4,
+      "depth": 10,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.011",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Octans-E4111 takes 8 beats, stage 2 of Octans-E4111 takes 7 beats, stage 3 of Octans-E4111 takes 6 beats, stage 4 of Octans-E4111 takes 4 beats, stage 5 of Octans-E4111 takes 5 beats, stage 6 of Octans-E4111 takes 6 beats, stage 7 of Octans-E4111 takes 3 beats, stage 8 of Octans-E4111 takes 7 beats, stage 9 of Octans-E4111 takes 7 beats, stage 10 of Octans-E4111 takes 5 beats, stage 11 of Octans-E4111 takes 5 beats, stage 12 of Octans-E4111 takes 5 beats. The precedence ledger says: stage 2 of Octans-E4111 waits for stage 1 of Octans-E4111; stage 9 of Octans-E4111 waits for stage 1 of Octans-E4111; stage 10 of Octans-E4111 waits for stage 1 of Octans-E4111; stage 3 of Octans-E4111 waits for stage 2 of Octans-E4111; stage 8 of Octans-E4111 waits for stage 2 of Octans-E4111; stage 4 of Octans-E4111 waits for stage 3 of Octans-E4111; stage 5 of Octans-E4111 waits for stage 4 of Octans-E4111; stage 11 of Octans-E4111 waits for stage 4 of Octans-E4111; stage 6 of Octans-E4111 waits for stage 5 of Octans-E4111; stage 7 of Octans-E4111 waits for stage 6 of Octans-E4111; stage 11 of Octans-E4111 waits for stage 6 of Octans-E4111; stage 8 of Octans-E4111 waits for stage 7 of Octans-E4111; stage 11 of Octans-E4111 waits for stage 7 of Octans-E4111; stage 12 of Octans-E4111 waits for stage 7 of Octans-E4111; stage 9 of Octans-E4111 waits for stage 8 of Octans-E4111; stage 10 of Octans-E4111 waits for stage 9 of Octans-E4111; stage 11 of Octans-E4111 waits for stage 10 of Octans-E4111; stage 12 of Octans-E4111 waits for stage 11 of Octans-E4111. Starting available stages at beat zero, when does stage 12 of Octans-E4111 finish?",
+    "options": [
+      "A. beat 68",
+      "B. beat 63",
+      "C. beat 73",
+      "D. beat 70"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 12,
+      "constraints": 18,
+      "branching": 4,
+      "depth": 12,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.012",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Perseus-E4112 takes 8 beats, stage 2 of Perseus-E4112 takes 7 beats, stage 3 of Perseus-E4112 takes 2 beats, stage 4 of Perseus-E4112 takes 9 beats, stage 5 of Perseus-E4112 takes 9 beats, stage 6 of Perseus-E4112 takes 5 beats, stage 7 of Perseus-E4112 takes 6 beats, stage 8 of Perseus-E4112 takes 6 beats, stage 9 of Perseus-E4112 takes 6 beats. The precedence ledger says: stage 2 of Perseus-E4112 waits for stage 1 of Perseus-E4112; stage 3 of Perseus-E4112 waits for stage 1 of Perseus-E4112; stage 6 of Perseus-E4112 waits for stage 1 of Perseus-E4112; stage 3 of Perseus-E4112 waits for stage 2 of Perseus-E4112; stage 4 of Perseus-E4112 waits for stage 3 of Perseus-E4112; stage 9 of Perseus-E4112 waits for stage 3 of Perseus-E4112; stage 5 of Perseus-E4112 waits for stage 4 of Perseus-E4112; stage 8 of Perseus-E4112 waits for stage 4 of Perseus-E4112; stage 9 of Perseus-E4112 waits for stage 4 of Perseus-E4112; stage 6 of Perseus-E4112 waits for stage 5 of Perseus-E4112; stage 7 of Perseus-E4112 waits for stage 6 of Perseus-E4112; stage 8 of Perseus-E4112 waits for stage 7 of Perseus-E4112; stage 9 of Perseus-E4112 waits for stage 8 of Perseus-E4112. Starting available stages at beat zero, when does stage 9 of Perseus-E4112 finish?",
+    "options": [
+      "A. beat 52",
+      "B. beat 58",
+      "C. beat 64",
+      "D. beat 60"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 9,
+      "constraints": 13,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.013",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Reticulum-E4113 takes 4 beats, stage 2 of Reticulum-E4113 takes 7 beats, stage 3 of Reticulum-E4113 takes 2 beats, stage 4 of Reticulum-E4113 takes 3 beats, stage 5 of Reticulum-E4113 takes 2 beats, stage 6 of Reticulum-E4113 takes 4 beats, stage 7 of Reticulum-E4113 takes 9 beats, stage 8 of Reticulum-E4113 takes 4 beats, stage 9 of Reticulum-E4113 takes 9 beats, stage 10 of Reticulum-E4113 takes 9 beats, stage 11 of Reticulum-E4113 takes 5 beats. The precedence ledger says: stage 2 of Reticulum-E4113 waits for stage 1 of Reticulum-E4113; stage 8 of Reticulum-E4113 waits for stage 1 of Reticulum-E4113; stage 3 of Reticulum-E4113 waits for stage 2 of Reticulum-E4113; stage 7 of Reticulum-E4113 waits for stage 2 of Reticulum-E4113; stage 9 of Reticulum-E4113 waits for stage 2 of Reticulum-E4113; stage 4 of Reticulum-E4113 waits for stage 3 of Reticulum-E4113; stage 5 of Reticulum-E4113 waits for stage 4 of Reticulum-E4113; stage 6 of Reticulum-E4113 waits for stage 5 of Reticulum-E4113; stage 9 of Reticulum-E4113 waits for stage 5 of Reticulum-E4113; stage 11 of Reticulum-E4113 waits for stage 5 of Reticulum-E4113; stage 7 of Reticulum-E4113 waits for stage 6 of Reticulum-E4113; stage 8 of Reticulum-E4113 waits for stage 7 of Reticulum-E4113; stage 9 of Reticulum-E4113 waits for stage 8 of Reticulum-E4113; stage 10 of Reticulum-E4113 waits for stage 8 of Reticulum-E4113; stage 10 of Reticulum-E4113 waits for stage 9 of Reticulum-E4113; stage 11 of Reticulum-E4113 waits for stage 10 of Reticulum-E4113. Starting available stages at beat zero, when does stage 11 of Reticulum-E4113 finish?",
+    "options": [
+      "A. beat 53",
+      "B. beat 60",
+      "C. beat 63",
+      "D. beat 58"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 11,
+      "constraints": 16,
+      "branching": 3,
+      "depth": 11,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.014",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Scutum-E4114 takes 7 beats, stage 2 of Scutum-E4114 takes 9 beats, stage 3 of Scutum-E4114 takes 7 beats, stage 4 of Scutum-E4114 takes 4 beats, stage 5 of Scutum-E4114 takes 2 beats, stage 6 of Scutum-E4114 takes 9 beats, stage 7 of Scutum-E4114 takes 2 beats, stage 8 of Scutum-E4114 takes 9 beats, stage 9 of Scutum-E4114 takes 4 beats, stage 10 of Scutum-E4114 takes 2 beats, stage 11 of Scutum-E4114 takes 8 beats. The precedence ledger says: stage 2 of Scutum-E4114 waits for stage 1 of Scutum-E4114; stage 4 of Scutum-E4114 waits for stage 1 of Scutum-E4114; stage 5 of Scutum-E4114 waits for stage 1 of Scutum-E4114; stage 10 of Scutum-E4114 waits for stage 1 of Scutum-E4114; stage 11 of Scutum-E4114 waits for stage 1 of Scutum-E4114; stage 3 of Scutum-E4114 waits for stage 2 of Scutum-E4114; stage 4 of Scutum-E4114 waits for stage 3 of Scutum-E4114; stage 5 of Scutum-E4114 waits for stage 4 of Scutum-E4114; stage 11 of Scutum-E4114 waits for stage 4 of Scutum-E4114; stage 6 of Scutum-E4114 waits for stage 5 of Scutum-E4114; stage 7 of Scutum-E4114 waits for stage 6 of Scutum-E4114; stage 10 of Scutum-E4114 waits for stage 6 of Scutum-E4114; stage 8 of Scutum-E4114 waits for stage 7 of Scutum-E4114; stage 9 of Scutum-E4114 waits for stage 8 of Scutum-E4114; stage 10 of Scutum-E4114 waits for stage 9 of Scutum-E4114; stage 11 of Scutum-E4114 waits for stage 10 of Scutum-E4114. Starting available stages at beat zero, when does stage 11 of Scutum-E4114 finish?",
+    "options": [
+      "A. beat 65",
+      "B. beat 55",
+      "C. beat 63",
+      "D. beat 71"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 11,
+      "constraints": 16,
+      "branching": 3,
+      "depth": 11,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.015",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Triangulum-E4115 takes 9 beats, stage 2 of Triangulum-E4115 takes 6 beats, stage 3 of Triangulum-E4115 takes 7 beats, stage 4 of Triangulum-E4115 takes 7 beats, stage 5 of Triangulum-E4115 takes 4 beats, stage 6 of Triangulum-E4115 takes 2 beats, stage 7 of Triangulum-E4115 takes 6 beats, stage 8 of Triangulum-E4115 takes 7 beats, stage 9 of Triangulum-E4115 takes 4 beats, stage 10 of Triangulum-E4115 takes 5 beats. The precedence ledger says: stage 2 of Triangulum-E4115 waits for stage 1 of Triangulum-E4115; stage 3 of Triangulum-E4115 waits for stage 2 of Triangulum-E4115; stage 4 of Triangulum-E4115 waits for stage 2 of Triangulum-E4115; stage 9 of Triangulum-E4115 waits for stage 2 of Triangulum-E4115; stage 4 of Triangulum-E4115 waits for stage 3 of Triangulum-E4115; stage 5 of Triangulum-E4115 waits for stage 4 of Triangulum-E4115; stage 6 of Triangulum-E4115 waits for stage 5 of Triangulum-E4115; stage 10 of Triangulum-E4115 waits for stage 5 of Triangulum-E4115; stage 7 of Triangulum-E4115 waits for stage 6 of Triangulum-E4115; stage 8 of Triangulum-E4115 waits for stage 7 of Triangulum-E4115; stage 9 of Triangulum-E4115 waits for stage 8 of Triangulum-E4115; stage 10 of Triangulum-E4115 waits for stage 9 of Triangulum-E4115. Starting available stages at beat zero, when does stage 10 of Triangulum-E4115 finish?",
+    "options": [
+      "A. beat 57",
+      "B. beat 59",
+      "C. beat 62",
+      "D. beat 52"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 10,
+      "constraints": 12,
+      "branching": 2,
+      "depth": 10,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.016",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Ursa-E4116 takes 6 beats, stage 2 of Ursa-E4116 takes 6 beats, stage 3 of Ursa-E4116 takes 7 beats, stage 4 of Ursa-E4116 takes 6 beats, stage 5 of Ursa-E4116 takes 4 beats, stage 6 of Ursa-E4116 takes 7 beats, stage 7 of Ursa-E4116 takes 6 beats, stage 8 of Ursa-E4116 takes 2 beats, stage 9 of Ursa-E4116 takes 5 beats, stage 10 of Ursa-E4116 takes 8 beats. The precedence ledger says: stage 2 of Ursa-E4116 waits for stage 1 of Ursa-E4116; stage 8 of Ursa-E4116 waits for stage 1 of Ursa-E4116; stage 9 of Ursa-E4116 waits for stage 1 of Ursa-E4116; stage 3 of Ursa-E4116 waits for stage 2 of Ursa-E4116; stage 4 of Ursa-E4116 waits for stage 3 of Ursa-E4116; stage 8 of Ursa-E4116 waits for stage 3 of Ursa-E4116; stage 5 of Ursa-E4116 waits for stage 4 of Ursa-E4116; stage 6 of Ursa-E4116 waits for stage 5 of Ursa-E4116; stage 9 of Ursa-E4116 waits for stage 5 of Ursa-E4116; stage 7 of Ursa-E4116 waits for stage 6 of Ursa-E4116; stage 8 of Ursa-E4116 waits for stage 6 of Ursa-E4116; stage 8 of Ursa-E4116 waits for stage 7 of Ursa-E4116; stage 9 of Ursa-E4116 waits for stage 8 of Ursa-E4116; stage 10 of Ursa-E4116 waits for stage 9 of Ursa-E4116. Starting available stages at beat zero, when does stage 10 of Ursa-E4116 finish?",
+    "options": [
+      "A. beat 49",
+      "B. beat 57",
+      "C. beat 65",
+      "D. beat 59"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 10,
+      "constraints": 14,
+      "branching": 4,
+      "depth": 10,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.017",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Virgo-E4117 takes 6 beats, stage 2 of Virgo-E4117 takes 5 beats, stage 3 of Virgo-E4117 takes 5 beats, stage 4 of Virgo-E4117 takes 3 beats, stage 5 of Virgo-E4117 takes 5 beats, stage 6 of Virgo-E4117 takes 5 beats, stage 7 of Virgo-E4117 takes 4 beats, stage 8 of Virgo-E4117 takes 3 beats, stage 9 of Virgo-E4117 takes 7 beats, stage 10 of Virgo-E4117 takes 5 beats, stage 11 of Virgo-E4117 takes 5 beats, stage 12 of Virgo-E4117 takes 2 beats. The precedence ledger says: stage 2 of Virgo-E4117 waits for stage 1 of Virgo-E4117; stage 11 of Virgo-E4117 waits for stage 1 of Virgo-E4117; stage 3 of Virgo-E4117 waits for stage 2 of Virgo-E4117; stage 8 of Virgo-E4117 waits for stage 2 of Virgo-E4117; stage 10 of Virgo-E4117 waits for stage 2 of Virgo-E4117; stage 4 of Virgo-E4117 waits for stage 3 of Virgo-E4117; stage 5 of Virgo-E4117 waits for stage 3 of Virgo-E4117; stage 5 of Virgo-E4117 waits for stage 4 of Virgo-E4117; stage 6 of Virgo-E4117 waits for stage 5 of Virgo-E4117; stage 10 of Virgo-E4117 waits for stage 5 of Virgo-E4117; stage 7 of Virgo-E4117 waits for stage 6 of Virgo-E4117; stage 8 of Virgo-E4117 waits for stage 6 of Virgo-E4117; stage 8 of Virgo-E4117 waits for stage 7 of Virgo-E4117; stage 12 of Virgo-E4117 waits for stage 7 of Virgo-E4117; stage 9 of Virgo-E4117 waits for stage 8 of Virgo-E4117; stage 10 of Virgo-E4117 waits for stage 9 of Virgo-E4117; stage 11 of Virgo-E4117 waits for stage 10 of Virgo-E4117; stage 12 of Virgo-E4117 waits for stage 11 of Virgo-E4117. Starting available stages at beat zero, when does stage 12 of Virgo-E4117 finish?",
+    "options": [
+      "A. beat 55",
+      "B. beat 57",
+      "C. beat 53",
+      "D. beat 58"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 12,
+      "constraints": 18,
+      "branching": 3,
+      "depth": 12,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.018",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Carina-E4118 takes 4 beats, stage 2 of Carina-E4118 takes 2 beats, stage 3 of Carina-E4118 takes 9 beats, stage 4 of Carina-E4118 takes 6 beats, stage 5 of Carina-E4118 takes 4 beats, stage 6 of Carina-E4118 takes 7 beats, stage 7 of Carina-E4118 takes 6 beats, stage 8 of Carina-E4118 takes 7 beats, stage 9 of Carina-E4118 takes 8 beats. The precedence ledger says: stage 2 of Carina-E4118 waits for stage 1 of Carina-E4118; stage 4 of Carina-E4118 waits for stage 1 of Carina-E4118; stage 3 of Carina-E4118 waits for stage 2 of Carina-E4118; stage 4 of Carina-E4118 waits for stage 2 of Carina-E4118; stage 6 of Carina-E4118 waits for stage 2 of Carina-E4118; stage 4 of Carina-E4118 waits for stage 3 of Carina-E4118; stage 5 of Carina-E4118 waits for stage 4 of Carina-E4118; stage 8 of Carina-E4118 waits for stage 4 of Carina-E4118; stage 6 of Carina-E4118 waits for stage 5 of Carina-E4118; stage 7 of Carina-E4118 waits for stage 6 of Carina-E4118; stage 8 of Carina-E4118 waits for stage 7 of Carina-E4118; stage 9 of Carina-E4118 waits for stage 8 of Carina-E4118. Starting available stages at beat zero, when does stage 9 of Carina-E4118 finish?",
+    "options": [
+      "A. beat 55",
+      "B. beat 53",
+      "C. beat 45",
+      "D. beat 61"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 9,
+      "constraints": 12,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.temporal.E.calibration.019",
+    "split": "calibration",
+    "family": "temporal",
+    "question": "A stage starts only after all of its listed predecessors finish; otherwise independent stages run concurrently. stage 1 of Columba-E4119 takes 2 beats, stage 2 of Columba-E4119 takes 3 beats, stage 3 of Columba-E4119 takes 5 beats, stage 4 of Columba-E4119 takes 9 beats, stage 5 of Columba-E4119 takes 3 beats, stage 6 of Columba-E4119 takes 2 beats, stage 7 of Columba-E4119 takes 3 beats, stage 8 of Columba-E4119 takes 2 beats, stage 9 of Columba-E4119 takes 8 beats, stage 10 of Columba-E4119 takes 9 beats, stage 11 of Columba-E4119 takes 4 beats. The precedence ledger says: stage 2 of Columba-E4119 waits for stage 1 of Columba-E4119; stage 3 of Columba-E4119 waits for stage 2 of Columba-E4119; stage 8 of Columba-E4119 waits for stage 2 of Columba-E4119; stage 4 of Columba-E4119 waits for stage 3 of Columba-E4119; stage 6 of Columba-E4119 waits for stage 3 of Columba-E4119; stage 5 of Columba-E4119 waits for stage 4 of Columba-E4119; stage 6 of Columba-E4119 waits for stage 4 of Columba-E4119; stage 8 of Columba-E4119 waits for stage 4 of Columba-E4119; stage 6 of Columba-E4119 waits for stage 5 of Columba-E4119; stage 10 of Columba-E4119 waits for stage 5 of Columba-E4119; stage 7 of Columba-E4119 waits for stage 6 of Columba-E4119; stage 8 of Columba-E4119 waits for stage 7 of Columba-E4119; stage 9 of Columba-E4119 waits for stage 8 of Columba-E4119; stage 10 of Columba-E4119 waits for stage 9 of Columba-E4119; stage 11 of Columba-E4119 waits for stage 10 of Columba-E4119. Starting available stages at beat zero, when does stage 11 of Columba-E4119 finish?",
+    "options": [
+      "A. beat 54",
+      "B. beat 50",
+      "C. beat 46",
+      "D. beat 52"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 11,
+      "constraints": 15,
+      "branching": 3,
+      "depth": 11,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.000",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Fornax-E4300 has these forward links: gate 0 to gate 1 charges 20; gate 0 to gate 2 charges 10; gate 0 to gate 3 charges 12; gate 1 to gate 4 charges 4; gate 1 to gate 5 charges 18; gate 2 to gate 4 charges 6; gate 2 to gate 5 charges 4; gate 3 to gate 4 charges 4; gate 3 to gate 5 charges 8; gate 4 to gate 6 charges 8; gate 4 to gate 7 charges 6; gate 4 to gate 8 charges 4; gate 5 to gate 6 charges 12; gate 5 to gate 8 charges 4; gate 6 to gate 9 charges 10; gate 7 to gate 9 charges 20; gate 7 to gate 10 charges 4; gate 8 to gate 9 charges 6; gate 8 to gate 10 charges 8; gate 9 to gate 11 charges 10; gate 9 to gate 12 charges 18; gate 10 to gate 11 charges 14; gate 10 to gate 12 charges 6; gate 10 to gate 13 charges 20; gate 11 to gate 14 charges 8; gate 12 to gate 14 charges 18; gate 13 to gate 14 charges 16. Travel begins at gate 0 and ends at gate 14. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 39",
+      "B. charge 37",
+      "C. charge 43",
+      "D. charge 35"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 15,
+      "constraints": 27,
+      "branching": 3,
+      "depth": 7,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.001",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Gemini-E4301 has these forward links: gate 0 to gate 1 charges 6; gate 0 to gate 2 charges 4; gate 1 to gate 3 charges 20; gate 1 to gate 4 charges 12; gate 1 to gate 5 charges 4; gate 2 to gate 3 charges 20; gate 2 to gate 4 charges 8; gate 2 to gate 5 charges 14; gate 4 to gate 6 charges 8; gate 4 to gate 7 charges 20; gate 5 to gate 6 charges 4; gate 3 to gate 7 charges 14; gate 6 to gate 8 charges 20; gate 6 to gate 9 charges 12; gate 6 to gate 10 charges 4; gate 7 to gate 8 charges 16; gate 8 to gate 11 charges 12; gate 8 to gate 12 charges 8; gate 9 to gate 11 charges 12; gate 9 to gate 12 charges 12; gate 10 to gate 11 charges 10; gate 10 to gate 12 charges 6; gate 11 to gate 14 charges 18; gate 12 to gate 13 charges 4; gate 12 to gate 14 charges 12; gate 12 to gate 15 charges 16; gate 13 to gate 16 charges 14; gate 14 to gate 16 charges 4; gate 15 to gate 16 charges 16. Travel begins at gate 0 and ends at gate 16. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 36",
+      "B. charge 32",
+      "C. charge 40",
+      "D. charge 34"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 17,
+      "constraints": 29,
+      "branching": 3,
+      "depth": 8,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.002",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Horologium-E4302 has these forward links: gate 0 to gate 1 charges 20; gate 0 to gate 2 charges 6; gate 0 to gate 3 charges 14; gate 1 to gate 4 charges 16; gate 1 to gate 5 charges 16; gate 2 to gate 4 charges 6; gate 2 to gate 5 charges 4; gate 3 to gate 5 charges 8; gate 4 to gate 7 charges 18; gate 4 to gate 8 charges 18; gate 5 to gate 6 charges 12; gate 5 to gate 8 charges 8; gate 6 to gate 9 charges 14; gate 6 to gate 10 charges 18; gate 7 to gate 9 charges 10; gate 7 to gate 10 charges 6; gate 8 to gate 10 charges 16; gate 9 to gate 11 charges 14; gate 9 to gate 12 charges 4; gate 9 to gate 13 charges 14; gate 10 to gate 11 charges 4; gate 11 to gate 14 charges 6; gate 11 to gate 15 charges 16; gate 12 to gate 15 charges 16; gate 13 to gate 14 charges 12; gate 13 to gate 15 charges 6; gate 14 to gate 16 charges 12; gate 14 to gate 18 charges 18; gate 15 to gate 17 charges 8; gate 15 to gate 18 charges 6; gate 16 to gate 19 charges 8; gate 17 to gate 19 charges 12; gate 18 to gate 19 charges 4. Travel begins at gate 0 and ends at gate 19. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 62",
+      "B. charge 58",
+      "C. charge 56",
+      "D. charge 54"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 20,
+      "constraints": 33,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.003",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Lacerta-E4303 has these forward links: gate 0 to gate 1 charges 16; gate 0 to gate 2 charges 4; gate 1 to gate 3 charges 14; gate 1 to gate 4 charges 8; gate 1 to gate 5 charges 12; gate 2 to gate 3 charges 16; gate 2 to gate 4 charges 4; gate 2 to gate 5 charges 8; gate 3 to gate 7 charges 12; gate 4 to gate 6 charges 4; gate 4 to gate 7 charges 10; gate 5 to gate 6 charges 12; gate 5 to gate 7 charges 4; gate 6 to gate 9 charges 14; gate 6 to gate 10 charges 6; gate 7 to gate 8 charges 10; gate 7 to gate 9 charges 12; gate 7 to gate 10 charges 14; gate 9 to gate 11 charges 4; gate 10 to gate 11 charges 14; gate 10 to gate 12 charges 14; gate 8 to gate 11 charges 18; gate 11 to gate 13 charges 20; gate 12 to gate 13 charges 14. Travel begins at gate 0 and ends at gate 13. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 45",
+      "B. charge 37",
+      "C. charge 41",
+      "D. charge 39"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 14,
+      "constraints": 24,
+      "branching": 3,
+      "depth": 7,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.004",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Monoceros-E4304 has these forward links: gate 0 to gate 1 charges 12; gate 0 to gate 2 charges 18; gate 0 to gate 3 charges 12; gate 1 to gate 4 charges 10; gate 1 to gate 5 charges 12; gate 2 to gate 4 charges 6; gate 2 to gate 5 charges 10; gate 3 to gate 4 charges 8; gate 3 to gate 5 charges 4; gate 4 to gate 7 charges 4; gate 4 to gate 8 charges 6; gate 5 to gate 6 charges 8; gate 5 to gate 8 charges 16; gate 6 to gate 9 charges 14; gate 6 to gate 10 charges 4; gate 7 to gate 9 charges 14; gate 7 to gate 10 charges 6; gate 8 to gate 9 charges 4; gate 9 to gate 12 charges 14; gate 9 to gate 13 charges 12; gate 10 to gate 11 charges 4; gate 10 to gate 12 charges 16; gate 10 to gate 13 charges 4; gate 11 to gate 14 charges 10; gate 11 to gate 15 charges 10; gate 12 to gate 14 charges 20; gate 12 to gate 15 charges 6; gate 13 to gate 14 charges 6; gate 13 to gate 15 charges 18; gate 14 to gate 16 charges 12; gate 15 to gate 16 charges 16. Travel begins at gate 0 and ends at gate 16. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 42",
+      "B. charge 46",
+      "C. charge 44",
+      "D. charge 50"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 17,
+      "constraints": 31,
+      "branching": 3,
+      "depth": 8,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.005",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Norma-E4305 has these forward links: gate 0 to gate 1 charges 8; gate 0 to gate 2 charges 8; gate 1 to gate 3 charges 6; gate 1 to gate 4 charges 18; gate 2 to gate 3 charges 8; gate 2 to gate 4 charges 8; gate 2 to gate 5 charges 10; gate 3 to gate 6 charges 12; gate 3 to gate 7 charges 10; gate 4 to gate 6 charges 16; gate 5 to gate 6 charges 14; gate 5 to gate 7 charges 12; gate 6 to gate 8 charges 16; gate 6 to gate 9 charges 14; gate 7 to gate 8 charges 16; gate 7 to gate 9 charges 14; gate 7 to gate 10 charges 8; gate 8 to gate 11 charges 6; gate 8 to gate 12 charges 18; gate 9 to gate 11 charges 20; gate 10 to gate 11 charges 16; gate 10 to gate 12 charges 8; gate 11 to gate 13 charges 14; gate 11 to gate 14 charges 16; gate 11 to gate 15 charges 4; gate 12 to gate 13 charges 18; gate 12 to gate 14 charges 10; gate 12 to gate 15 charges 12; gate 13 to gate 16 charges 20; gate 13 to gate 17 charges 12; gate 14 to gate 16 charges 20; gate 14 to gate 17 charges 12; gate 15 to gate 17 charges 18; gate 16 to gate 18 charges 8; gate 17 to gate 18 charges 18. Travel begins at gate 0 and ends at gate 18. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 70",
+      "B. charge 74",
+      "C. charge 66",
+      "D. charge 68"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 19,
+      "constraints": 35,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.006",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Octans-E4306 has these forward links: gate 0 to gate 1 charges 16; gate 0 to gate 2 charges 4; gate 0 to gate 3 charges 20; gate 1 to gate 4 charges 6; gate 1 to gate 5 charges 14; gate 2 to gate 4 charges 12; gate 3 to gate 4 charges 4; gate 3 to gate 5 charges 20; gate 4 to gate 6 charges 4; gate 4 to gate 8 charges 12; gate 5 to gate 7 charges 18; gate 5 to gate 8 charges 10; gate 6 to gate 9 charges 12; gate 7 to gate 10 charges 8; gate 8 to gate 9 charges 4; gate 8 to gate 10 charges 12; gate 9 to gate 11 charges 16; gate 9 to gate 12 charges 8; gate 9 to gate 13 charges 18; gate 10 to gate 12 charges 4; gate 11 to gate 14 charges 8; gate 12 to gate 14 charges 14; gate 13 to gate 14 charges 18. Travel begins at gate 0 and ends at gate 14. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 45",
+      "B. charge 47",
+      "C. charge 49",
+      "D. charge 53"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 15,
+      "constraints": 23,
+      "branching": 3,
+      "depth": 7,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.007",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Perseus-E4307 has these forward links: gate 0 to gate 1 charges 8; gate 0 to gate 2 charges 4; gate 1 to gate 3 charges 6; gate 1 to gate 4 charges 16; gate 1 to gate 5 charges 20; gate 2 to gate 3 charges 4; gate 2 to gate 4 charges 20; gate 2 to gate 5 charges 16; gate 3 to gate 6 charges 8; gate 3 to gate 7 charges 18; gate 4 to gate 7 charges 10; gate 5 to gate 6 charges 10; gate 5 to gate 7 charges 14; gate 6 to gate 9 charges 12; gate 6 to gate 10 charges 10; gate 7 to gate 9 charges 6; gate 7 to gate 10 charges 8; gate 7 to gate 8 charges 6; gate 8 to gate 11 charges 14; gate 8 to gate 12 charges 14; gate 9 to gate 12 charges 14; gate 10 to gate 11 charges 4; gate 10 to gate 12 charges 6; gate 11 to gate 13 charges 12; gate 11 to gate 15 charges 6; gate 12 to gate 14 charges 12; gate 12 to gate 15 charges 20; gate 13 to gate 16 charges 18; gate 14 to gate 16 charges 6; gate 15 to gate 16 charges 12. Travel begins at gate 0 and ends at gate 16. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 44",
+      "B. charge 48",
+      "C. charge 40",
+      "D. charge 42"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 17,
+      "constraints": 30,
+      "branching": 3,
+      "depth": 8,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.008",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Reticulum-E4308 has these forward links: gate 0 to gate 1 charges 8; gate 0 to gate 2 charges 8; gate 0 to gate 3 charges 6; gate 1 to gate 4 charges 20; gate 1 to gate 5 charges 18; gate 2 to gate 4 charges 14; gate 2 to gate 5 charges 18; gate 3 to gate 4 charges 18; gate 3 to gate 5 charges 12; gate 4 to gate 6 charges 12; gate 4 to gate 7 charges 14; gate 4 to gate 8 charges 12; gate 5 to gate 6 charges 6; gate 5 to gate 8 charges 4; gate 6 to gate 9 charges 14; gate 6 to gate 10 charges 14; gate 7 to gate 9 charges 10; gate 7 to gate 10 charges 10; gate 8 to gate 9 charges 8; gate 8 to gate 10 charges 16; gate 9 to gate 11 charges 8; gate 9 to gate 12 charges 8; gate 9 to gate 13 charges 4; gate 10 to gate 11 charges 10; gate 11 to gate 14 charges 14; gate 11 to gate 15 charges 12; gate 12 to gate 14 charges 12; gate 12 to gate 15 charges 14; gate 13 to gate 14 charges 10; gate 13 to gate 15 charges 6; gate 14 to gate 16 charges 12; gate 14 to gate 17 charges 4; gate 14 to gate 18 charges 10; gate 15 to gate 16 charges 18; gate 15 to gate 18 charges 16; gate 16 to gate 19 charges 12; gate 17 to gate 19 charges 18; gate 18 to gate 19 charges 14. Travel begins at gate 0 and ends at gate 19. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 57",
+      "B. charge 59",
+      "C. charge 55",
+      "D. charge 63"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 20,
+      "constraints": 38,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.009",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Scutum-E4309 has these forward links: gate 0 to gate 1 charges 4; gate 0 to gate 2 charges 20; gate 1 to gate 3 charges 20; gate 1 to gate 4 charges 4; gate 1 to gate 5 charges 10; gate 2 to gate 3 charges 14; gate 2 to gate 4 charges 18; gate 3 to gate 6 charges 8; gate 4 to gate 7 charges 4; gate 5 to gate 6 charges 10; gate 6 to gate 8 charges 16; gate 6 to gate 9 charges 4; gate 7 to gate 8 charges 6; gate 7 to gate 9 charges 12; gate 7 to gate 10 charges 14; gate 8 to gate 11 charges 16; gate 8 to gate 12 charges 20; gate 9 to gate 12 charges 10; gate 10 to gate 11 charges 20; gate 10 to gate 12 charges 8; gate 11 to gate 13 charges 8; gate 12 to gate 13 charges 6. Travel begins at gate 0 and ends at gate 13. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 35",
+      "B. charge 31",
+      "C. charge 33",
+      "D. charge 39"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 14,
+      "constraints": 22,
+      "branching": 3,
+      "depth": 7,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.010",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Triangulum-E4310 has these forward links: gate 0 to gate 1 charges 10; gate 0 to gate 2 charges 20; gate 0 to gate 3 charges 14; gate 1 to gate 4 charges 12; gate 1 to gate 5 charges 6; gate 2 to gate 5 charges 4; gate 3 to gate 4 charges 4; gate 4 to gate 6 charges 16; gate 4 to gate 7 charges 8; gate 4 to gate 8 charges 16; gate 5 to gate 7 charges 6; gate 6 to gate 9 charges 14; gate 6 to gate 10 charges 16; gate 7 to gate 9 charges 6; gate 8 to gate 9 charges 20; gate 8 to gate 10 charges 18; gate 9 to gate 11 charges 14; gate 9 to gate 12 charges 10; gate 9 to gate 13 charges 10; gate 10 to gate 11 charges 16; gate 10 to gate 12 charges 20; gate 10 to gate 13 charges 6; gate 11 to gate 14 charges 6; gate 11 to gate 15 charges 14; gate 12 to gate 14 charges 12; gate 12 to gate 15 charges 8; gate 13 to gate 14 charges 8; gate 13 to gate 15 charges 18; gate 14 to gate 16 charges 4; gate 15 to gate 16 charges 12. Travel begins at gate 0 and ends at gate 16. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 47",
+      "B. charge 51",
+      "C. charge 43",
+      "D. charge 45"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 17,
+      "constraints": 30,
+      "branching": 3,
+      "depth": 8,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.011",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Ursa-E4311 has these forward links: gate 0 to gate 1 charges 16; gate 0 to gate 2 charges 14; gate 1 to gate 3 charges 8; gate 1 to gate 4 charges 4; gate 1 to gate 5 charges 14; gate 2 to gate 3 charges 16; gate 2 to gate 4 charges 8; gate 2 to gate 5 charges 4; gate 3 to gate 6 charges 4; gate 3 to gate 7 charges 8; gate 4 to gate 7 charges 10; gate 5 to gate 7 charges 18; gate 6 to gate 8 charges 10; gate 6 to gate 9 charges 10; gate 6 to gate 10 charges 18; gate 7 to gate 8 charges 4; gate 7 to gate 9 charges 4; gate 7 to gate 10 charges 10; gate 8 to gate 11 charges 4; gate 8 to gate 12 charges 6; gate 10 to gate 11 charges 8; gate 10 to gate 12 charges 8; gate 9 to gate 11 charges 14; gate 11 to gate 13 charges 14; gate 11 to gate 14 charges 4; gate 12 to gate 13 charges 16; gate 12 to gate 14 charges 16; gate 12 to gate 15 charges 12; gate 13 to gate 16 charges 6; gate 13 to gate 17 charges 6; gate 14 to gate 16 charges 6; gate 14 to gate 17 charges 16; gate 15 to gate 17 charges 18; gate 16 to gate 18 charges 8; gate 17 to gate 18 charges 8. Travel begins at gate 0 and ends at gate 18. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 48",
+      "B. charge 54",
+      "C. charge 50",
+      "D. charge 46"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 19,
+      "constraints": 35,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.012",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Virgo-E4312 has these forward links: gate 0 to gate 1 charges 20; gate 0 to gate 2 charges 8; gate 0 to gate 3 charges 4; gate 1 to gate 4 charges 8; gate 2 to gate 4 charges 16; gate 2 to gate 5 charges 8; gate 3 to gate 4 charges 14; gate 4 to gate 6 charges 20; gate 4 to gate 8 charges 18; gate 5 to gate 6 charges 6; gate 5 to gate 8 charges 8; gate 5 to gate 7 charges 14; gate 6 to gate 9 charges 4; gate 7 to gate 10 charges 18; gate 8 to gate 9 charges 4; gate 8 to gate 10 charges 8; gate 9 to gate 11 charges 8; gate 9 to gate 12 charges 4; gate 9 to gate 13 charges 8; gate 10 to gate 11 charges 12; gate 10 to gate 12 charges 6; gate 10 to gate 13 charges 16; gate 11 to gate 14 charges 4; gate 12 to gate 14 charges 6; gate 13 to gate 14 charges 20. Travel begins at gate 0 and ends at gate 14. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 34",
+      "B. charge 32",
+      "C. charge 38",
+      "D. charge 30"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 15,
+      "constraints": 25,
+      "branching": 3,
+      "depth": 7,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.013",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Carina-E4313 has these forward links: gate 0 to gate 1 charges 16; gate 0 to gate 2 charges 12; gate 1 to gate 3 charges 8; gate 1 to gate 4 charges 6; gate 1 to gate 5 charges 16; gate 2 to gate 3 charges 14; gate 2 to gate 4 charges 12; gate 2 to gate 5 charges 12; gate 3 to gate 6 charges 18; gate 3 to gate 7 charges 4; gate 4 to gate 6 charges 6; gate 4 to gate 7 charges 8; gate 5 to gate 6 charges 10; gate 5 to gate 7 charges 12; gate 6 to gate 8 charges 8; gate 6 to gate 10 charges 8; gate 7 to gate 8 charges 18; gate 7 to gate 9 charges 6; gate 8 to gate 11 charges 20; gate 8 to gate 12 charges 12; gate 9 to gate 11 charges 8; gate 10 to gate 12 charges 4; gate 11 to gate 13 charges 8; gate 11 to gate 15 charges 4; gate 12 to gate 13 charges 16; gate 12 to gate 15 charges 6; gate 12 to gate 14 charges 20; gate 13 to gate 16 charges 4; gate 14 to gate 16 charges 4; gate 15 to gate 16 charges 18. Travel begins at gate 0 and ends at gate 16. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 46",
+      "B. charge 44",
+      "C. charge 48",
+      "D. charge 52"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 17,
+      "constraints": 30,
+      "branching": 3,
+      "depth": 8,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.014",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Columba-E4314 has these forward links: gate 0 to gate 1 charges 10; gate 0 to gate 2 charges 10; gate 0 to gate 3 charges 12; gate 1 to gate 4 charges 12; gate 2 to gate 4 charges 18; gate 3 to gate 5 charges 6; gate 4 to gate 6 charges 20; gate 4 to gate 7 charges 10; gate 4 to gate 8 charges 16; gate 5 to gate 6 charges 12; gate 5 to gate 8 charges 12; gate 6 to gate 9 charges 10; gate 6 to gate 10 charges 10; gate 7 to gate 9 charges 6; gate 7 to gate 10 charges 18; gate 8 to gate 9 charges 12; gate 8 to gate 10 charges 20; gate 9 to gate 11 charges 18; gate 10 to gate 11 charges 20; gate 10 to gate 13 charges 10; gate 9 to gate 12 charges 18; gate 11 to gate 15 charges 20; gate 13 to gate 14 charges 6; gate 12 to gate 15 charges 10; gate 14 to gate 16 charges 20; gate 14 to gate 17 charges 20; gate 14 to gate 18 charges 6; gate 15 to gate 16 charges 8; gate 15 to gate 17 charges 10; gate 15 to gate 18 charges 18; gate 16 to gate 19 charges 4; gate 17 to gate 19 charges 14; gate 18 to gate 19 charges 4. Travel begins at gate 0 and ends at gate 19. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 60",
+      "B. charge 58",
+      "C. charge 66",
+      "D. charge 62"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 20,
+      "constraints": 33,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.015",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Crux-E4315 has these forward links: gate 0 to gate 1 charges 20; gate 0 to gate 2 charges 16; gate 1 to gate 3 charges 12; gate 1 to gate 4 charges 8; gate 1 to gate 5 charges 12; gate 2 to gate 3 charges 12; gate 2 to gate 4 charges 6; gate 2 to gate 5 charges 18; gate 4 to gate 6 charges 6; gate 4 to gate 7 charges 14; gate 5 to gate 6 charges 4; gate 5 to gate 7 charges 20; gate 3 to gate 6 charges 20; gate 6 to gate 8 charges 12; gate 6 to gate 9 charges 8; gate 6 to gate 10 charges 16; gate 7 to gate 9 charges 16; gate 7 to gate 10 charges 12; gate 8 to gate 11 charges 16; gate 9 to gate 11 charges 8; gate 9 to gate 12 charges 8; gate 10 to gate 11 charges 10; gate 11 to gate 13 charges 8; gate 12 to gate 13 charges 6. Travel begins at gate 0 and ends at gate 13. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 42",
+      "B. charge 40",
+      "C. charge 44",
+      "D. charge 48"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 14,
+      "constraints": 24,
+      "branching": 3,
+      "depth": 7,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.016",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Lepus-E4316 has these forward links: gate 0 to gate 1 charges 14; gate 0 to gate 2 charges 10; gate 0 to gate 3 charges 10; gate 1 to gate 4 charges 18; gate 1 to gate 5 charges 12; gate 2 to gate 4 charges 18; gate 2 to gate 5 charges 6; gate 3 to gate 5 charges 10; gate 4 to gate 6 charges 8; gate 4 to gate 7 charges 8; gate 4 to gate 8 charges 6; gate 5 to gate 6 charges 10; gate 5 to gate 7 charges 18; gate 5 to gate 8 charges 8; gate 6 to gate 9 charges 12; gate 6 to gate 10 charges 20; gate 7 to gate 10 charges 16; gate 8 to gate 9 charges 8; gate 9 to gate 11 charges 8; gate 9 to gate 13 charges 14; gate 10 to gate 11 charges 16; gate 10 to gate 12 charges 16; gate 10 to gate 13 charges 12; gate 11 to gate 14 charges 14; gate 11 to gate 15 charges 12; gate 12 to gate 14 charges 20; gate 12 to gate 15 charges 16; gate 13 to gate 14 charges 8; gate 13 to gate 15 charges 16; gate 14 to gate 16 charges 8; gate 15 to gate 16 charges 4. Travel begins at gate 0 and ends at gate 16. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 50",
+      "B. charge 48",
+      "C. charge 56",
+      "D. charge 52"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 17,
+      "constraints": 31,
+      "branching": 3,
+      "depth": 8,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.017",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Lupus-E4317 has these forward links: gate 0 to gate 1 charges 18; gate 0 to gate 2 charges 14; gate 1 to gate 3 charges 6; gate 2 to gate 4 charges 16; gate 1 to gate 5 charges 16; gate 3 to gate 6 charges 18; gate 4 to gate 6 charges 6; gate 4 to gate 7 charges 20; gate 5 to gate 6 charges 10; gate 5 to gate 7 charges 6; gate 6 to gate 8 charges 18; gate 6 to gate 9 charges 18; gate 6 to gate 10 charges 14; gate 7 to gate 9 charges 14; gate 7 to gate 10 charges 18; gate 8 to gate 11 charges 4; gate 8 to gate 12 charges 18; gate 9 to gate 11 charges 4; gate 10 to gate 11 charges 12; gate 11 to gate 13 charges 20; gate 11 to gate 14 charges 12; gate 11 to gate 15 charges 6; gate 12 to gate 13 charges 16; gate 12 to gate 14 charges 20; gate 12 to gate 15 charges 12; gate 13 to gate 16 charges 14; gate 13 to gate 17 charges 10; gate 15 to gate 16 charges 14; gate 14 to gate 17 charges 8; gate 16 to gate 18 charges 8; gate 17 to gate 18 charges 14. Travel begins at gate 0 and ends at gate 18. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 77",
+      "B. charge 79",
+      "C. charge 83",
+      "D. charge 75"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 19,
+      "constraints": 31,
+      "branching": 3,
+      "depth": 9,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.018",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Musca-E4318 has these forward links: gate 0 to gate 1 charges 16; gate 0 to gate 2 charges 10; gate 0 to gate 3 charges 20; gate 1 to gate 4 charges 14; gate 1 to gate 5 charges 10; gate 2 to gate 4 charges 12; gate 3 to gate 4 charges 8; gate 3 to gate 5 charges 8; gate 4 to gate 6 charges 14; gate 4 to gate 7 charges 12; gate 4 to gate 8 charges 6; gate 5 to gate 6 charges 14; gate 5 to gate 7 charges 18; gate 6 to gate 9 charges 20; gate 6 to gate 10 charges 12; gate 7 to gate 9 charges 4; gate 8 to gate 9 charges 20; gate 8 to gate 10 charges 4; gate 9 to gate 11 charges 14; gate 9 to gate 12 charges 14; gate 9 to gate 13 charges 10; gate 10 to gate 11 charges 16; gate 10 to gate 12 charges 16; gate 10 to gate 13 charges 10; gate 11 to gate 14 charges 18; gate 12 to gate 14 charges 8; gate 13 to gate 14 charges 6. Travel begins at gate 0 and ends at gate 14. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 42",
+      "B. charge 48",
+      "C. charge 44",
+      "D. charge 40"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 15,
+      "constraints": 27,
+      "branching": 3,
+      "depth": 7,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.routing.E.calibration.019",
+    "split": "calibration",
+    "family": "routing",
+    "question": "The directed gate network Pictor-E4319 has these forward links: gate 0 to gate 1 charges 6; gate 0 to gate 2 charges 20; gate 1 to gate 4 charges 10; gate 2 to gate 3 charges 18; gate 2 to gate 4 charges 6; gate 2 to gate 5 charges 20; gate 3 to gate 6 charges 4; gate 3 to gate 7 charges 14; gate 4 to gate 6 charges 18; gate 4 to gate 7 charges 6; gate 5 to gate 6 charges 16; gate 5 to gate 7 charges 12; gate 6 to gate 8 charges 8; gate 6 to gate 9 charges 8; gate 7 to gate 9 charges 6; gate 6 to gate 10 charges 8; gate 8 to gate 11 charges 10; gate 8 to gate 12 charges 8; gate 9 to gate 11 charges 4; gate 9 to gate 12 charges 6; gate 10 to gate 12 charges 18; gate 11 to gate 13 charges 14; gate 11 to gate 14 charges 6; gate 11 to gate 15 charges 16; gate 12 to gate 14 charges 4; gate 12 to gate 15 charges 12; gate 13 to gate 16 charges 18; gate 14 to gate 16 charges 20; gate 15 to gate 16 charges 14. Travel begins at gate 0 and ends at gate 16. One coupon must be applied to exactly one traversed link and halves that even-numbered charge. What is the minimum total charge?",
+    "options": [
+      "A. charge 54",
+      "B. charge 48",
+      "C. charge 50",
+      "D. charge 46"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 17,
+      "constraints": 29,
+      "branching": 3,
+      "depth": 8,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.000",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Norma-E4500 selects urn A with prior probability 1/5, otherwise urn B. Urn A contains 6 red and 4 blue seals; urn B contains 3 red and 7 blue seals. The selected urn yields 4 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 5/19",
+      "B. posterior 6/19",
+      "C. posterior 3/7",
+      "D. posterior 1/5"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 8,
+      "constraints": 5,
+      "branching": 16,
+      "depth": 4,
+      "precision": 3,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.001",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Octans-E4501 selects urn A with prior probability 3/10, otherwise urn B. Urn A contains 8 red and 5 blue seals; urn B contains 4 red and 9 blue seals. The selected urn yields 5 draws without replacement, with exactly 4 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 350/1287",
+      "B. posterior 51/53",
+      "C. posterior 50/53",
+      "D. posterior 3/10"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 9,
+      "constraints": 5,
+      "branching": 32,
+      "depth": 5,
+      "precision": 3,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.002",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Perseus-E4502 selects urn A with prior probability 2/5, otherwise urn B. Urn A contains 10 red and 4 blue seals; urn B contains 3 red and 11 blue seals. The selected urn yields 6 draws without replacement, with exactly 1 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 3/2",
+      "B. posterior 1",
+      "C. posterior 2/5",
+      "D. posterior 0"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 10,
+      "constraints": 5,
+      "branching": 64,
+      "depth": 6,
+      "precision": 3,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.003",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Reticulum-E4503 selects urn A with prior probability 1/2, otherwise urn B. Urn A contains 6 red and 5 blue seals; urn B contains 4 red and 7 blue seals. The selected urn yields 4 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 13/23",
+      "B. posterior 25/46",
+      "C. posterior 5/11",
+      "D. posterior 1/2"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 8,
+      "constraints": 5,
+      "branching": 16,
+      "depth": 4,
+      "precision": 3,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.004",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Scutum-E4504 selects urn A with prior probability 3/5, otherwise urn B. Urn A contains 8 red and 4 blue seals; urn B contains 3 red and 9 blue seals. The selected urn yields 5 draws without replacement, with exactly 3 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 14/15",
+      "B. posterior 3/5",
+      "C. posterior 14/33",
+      "D. posterior 1"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 9,
+      "constraints": 5,
+      "branching": 32,
+      "depth": 5,
+      "precision": 3,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.005",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Triangulum-E4505 selects urn A with prior probability 7/10, otherwise urn B. Urn A contains 10 red and 5 blue seals; urn B contains 4 red and 11 blue seals. The selected urn yields 6 draws without replacement, with exactly 4 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 7/10",
+      "B. posterior 60/143",
+      "C. posterior 980/991",
+      "D. posterior 981/991"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 10,
+      "constraints": 5,
+      "branching": 64,
+      "depth": 6,
+      "precision": 3,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.006",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Ursa-E4506 selects urn A with prior probability 1/5, otherwise urn B. Urn A contains 6 red and 4 blue seals; urn B contains 3 red and 7 blue seals. The selected urn yields 4 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 1/5",
+      "B. posterior 3/7",
+      "C. posterior 5/19",
+      "D. posterior 6/19"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 8,
+      "constraints": 5,
+      "branching": 16,
+      "depth": 4,
+      "precision": 3,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.007",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Virgo-E4507 selects urn A with prior probability 3/10, otherwise urn B. Urn A contains 8 red and 5 blue seals; urn B contains 4 red and 9 blue seals. The selected urn yields 5 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 5/26",
+      "B. posterior 3/10",
+      "C. posterior 3/13",
+      "D. posterior 280/1287"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 9,
+      "constraints": 5,
+      "branching": 32,
+      "depth": 5,
+      "precision": 3,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.008",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Carina-E4508 selects urn A with prior probability 2/5, otherwise urn B. Urn A contains 10 red and 4 blue seals; urn B contains 3 red and 11 blue seals. The selected urn yields 6 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 15/1001",
+      "B. posterior 2/5",
+      "C. posterior 1/17",
+      "D. posterior 1/34"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 10,
+      "constraints": 5,
+      "branching": 64,
+      "depth": 6,
+      "precision": 3,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.009",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Columba-E4509 selects urn A with prior probability 1/2, otherwise urn B. Urn A contains 6 red and 5 blue seals; urn B contains 4 red and 7 blue seals. The selected urn yields 4 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 5/11",
+      "B. posterior 25/46",
+      "C. posterior 13/23",
+      "D. posterior 1/2"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 8,
+      "constraints": 5,
+      "branching": 16,
+      "depth": 4,
+      "precision": 3,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.010",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Crux-E4510 selects urn A with prior probability 3/5, otherwise urn B. Urn A contains 8 red and 4 blue seals; urn B contains 3 red and 9 blue seals. The selected urn yields 5 draws without replacement, with exactly 1 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 3/5",
+      "B. posterior 1/99",
+      "C. posterior 2/65",
+      "D. posterior 3/65"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 9,
+      "constraints": 5,
+      "branching": 32,
+      "depth": 5,
+      "precision": 3,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.011",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Lepus-E4511 selects urn A with prior probability 7/10, otherwise urn B. Urn A contains 10 red and 5 blue seals; urn B contains 4 red and 11 blue seals. The selected urn yields 6 draws without replacement, with exactly 5 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 2",
+      "B. posterior 1",
+      "C. posterior 7/10",
+      "D. posterior 36/143"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 10,
+      "constraints": 5,
+      "branching": 64,
+      "depth": 6,
+      "precision": 3,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.012",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Lupus-E4512 selects urn A with prior probability 1/5, otherwise urn B. Urn A contains 6 red and 4 blue seals; urn B contains 3 red and 7 blue seals. The selected urn yields 4 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 3/7",
+      "B. posterior 5/19",
+      "C. posterior 1/5",
+      "D. posterior 6/19"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 8,
+      "constraints": 5,
+      "branching": 16,
+      "depth": 4,
+      "precision": 3,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.013",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Musca-E4513 selects urn A with prior probability 3/10, otherwise urn B. Urn A contains 8 red and 5 blue seals; urn B contains 4 red and 9 blue seals. The selected urn yields 5 draws without replacement, with exactly 4 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 50/53",
+      "B. posterior 51/53",
+      "C. posterior 350/1287",
+      "D. posterior 3/10"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 9,
+      "constraints": 5,
+      "branching": 32,
+      "depth": 5,
+      "precision": 3,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.014",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Pictor-E4514 selects urn A with prior probability 2/5, otherwise urn B. Urn A contains 10 red and 4 blue seals; urn B contains 3 red and 11 blue seals. The selected urn yields 6 draws without replacement, with exactly 3 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 160/1001",
+      "B. posterior 2/5",
+      "C. posterior 65/97",
+      "D. posterior 64/97"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 10,
+      "constraints": 5,
+      "branching": 64,
+      "depth": 6,
+      "precision": 3,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.015",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Aquila-E4515 selects urn A with prior probability 1/2, otherwise urn B. Urn A contains 6 red and 5 blue seals; urn B contains 4 red and 7 blue seals. The selected urn yields 4 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 13/23",
+      "B. posterior 1/2",
+      "C. posterior 5/11",
+      "D. posterior 25/46"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 8,
+      "constraints": 5,
+      "branching": 16,
+      "depth": 4,
+      "precision": 3,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.016",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Bellatrix-E4516 selects urn A with prior probability 3/5, otherwise urn B. Urn A contains 8 red and 4 blue seals; urn B contains 3 red and 9 blue seals. The selected urn yields 5 draws without replacement, with exactly 3 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 14/33",
+      "B. posterior 3/5",
+      "C. posterior 14/15",
+      "D. posterior 1"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 9,
+      "constraints": 5,
+      "branching": 32,
+      "depth": 5,
+      "precision": 3,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.017",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Caelum-E4517 selects urn A with prior probability 7/10, otherwise urn B. Urn A contains 10 red and 5 blue seals; urn B contains 4 red and 11 blue seals. The selected urn yields 6 draws without replacement, with exactly 1 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 2/1001",
+      "B. posterior 5/401",
+      "C. posterior 7/10",
+      "D. posterior 6/401"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 10,
+      "constraints": 5,
+      "branching": 64,
+      "depth": 6,
+      "precision": 3,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.018",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Delphinus-E4518 selects urn A with prior probability 1/5, otherwise urn B. Urn A contains 6 red and 4 blue seals; urn B contains 3 red and 7 blue seals. The selected urn yields 4 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 3/7",
+      "B. posterior 6/19",
+      "C. posterior 5/19",
+      "D. posterior 1/5"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 8,
+      "constraints": 5,
+      "branching": 16,
+      "depth": 4,
+      "precision": 3,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.probability.E.calibration.019",
+    "split": "calibration",
+    "family": "probability",
+    "question": "Archive Equuleus-E4519 selects urn A with prior probability 3/10, otherwise urn B. Urn A contains 8 red and 5 blue seals; urn B contains 4 red and 9 blue seals. The selected urn yields 5 draws without replacement, with exactly 2 red seals observed. Conditioned on that count, what is the posterior probability that urn A was selected?",
+    "options": [
+      "A. posterior 5/26",
+      "B. posterior 3/10",
+      "C. posterior 3/13",
+      "D. posterior 280/1287"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 9,
+      "constraints": 5,
+      "branching": 32,
+      "depth": 5,
+      "precision": 3,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.000",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 6 agents form positions 1 through 6, with one agent per position. agent Horologium in Triangulum-E4700 cannot stand at 5; agent Norma in Triangulum-E4700 cannot stand at 2; agent Reticulum in Triangulum-E4700 cannot stand at 3; agent Ursa in Triangulum-E4700 cannot stand at 1; agent Columba in Triangulum-E4700 cannot stand at 1; agent Lupus in Triangulum-E4700 cannot stand at 3; agent Columba in Triangulum-E4700 stands somewhere before agent Lupus in Triangulum-E4700; agent Columba in Triangulum-E4700 stands next to agent Ursa in Triangulum-E4700; agent Reticulum in Triangulum-E4700 stands somewhere before agent Horologium in Triangulum-E4700; agent Columba in Triangulum-E4700 stands somewhere before agent Horologium in Triangulum-E4700; agent Norma in Triangulum-E4700 stands somewhere before agent Columba in Triangulum-E4700; agent Ursa in Triangulum-E4700 stands somewhere before agent Horologium in Triangulum-E4700; agent Norma in Triangulum-E4700 stands somewhere before agent Reticulum in Triangulum-E4700; agent Norma in Triangulum-E4700 stands somewhere before agent Lupus in Triangulum-E4700; agent Norma in Triangulum-E4700 stands somewhere before agent Ursa in Triangulum-E4700; agent Lupus in Triangulum-E4700 stands somewhere before agent Horologium in Triangulum-E4700; agent Norma in Triangulum-E4700 stands somewhere before agent Horologium in Triangulum-E4700; agent Ursa in Triangulum-E4700 stands somewhere before agent Lupus in Triangulum-E4700; agent Reticulum in Triangulum-E4700 stands somewhere before agent Lupus in Triangulum-E4700; agent Columba in Triangulum-E4700 stands somewhere before agent Reticulum in Triangulum-E4700; agent Ursa in Triangulum-E4700 stands somewhere before agent Reticulum in Triangulum-E4700; agent Horologium in Triangulum-E4700 cannot stand at 1; agent Horologium in Triangulum-E4700 cannot stand at 2; agent Horologium in Triangulum-E4700 cannot stand at 3; agent Horologium in Triangulum-E4700 cannot stand at 4; agent Norma in Triangulum-E4700 cannot stand at 3; agent Norma in Triangulum-E4700 cannot stand at 4; agent Norma in Triangulum-E4700 cannot stand at 5; agent Norma in Triangulum-E4700 cannot stand at 6; agent Reticulum in Triangulum-E4700 cannot stand at 1; agent Reticulum in Triangulum-E4700 cannot stand at 2; agent Reticulum in Triangulum-E4700 cannot stand at 5; agent Reticulum in Triangulum-E4700 cannot stand at 6; agent Ursa in Triangulum-E4700 cannot stand at 2. Which agent is forced into position 3?",
+    "options": [
+      "A. agent Horologium in Triangulum-E4700",
+      "B. agent Reticulum in Triangulum-E4700",
+      "C. agent Norma in Triangulum-E4700",
+      "D. agent Ursa in Triangulum-E4700"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 6,
+      "constraints": 34,
+      "branching": 6,
+      "depth": 6,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.001",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 7 agents form positions 1 through 7, with one agent per position. agent Lacerta in Ursa-E4701 cannot stand at 2 or 3; agent Octans in Ursa-E4701 cannot stand at 6 or 7; agent Scutum in Ursa-E4701 cannot stand at 2 or 7; agent Virgo in Ursa-E4701 cannot stand at 1 or 4; agent Crux in Ursa-E4701 cannot stand at 2 or 4; agent Musca in Ursa-E4701 cannot stand at 2 or 3; agent Bellatrix in Ursa-E4701 cannot stand at 3 or 7; agent Scutum in Ursa-E4701 stands next to agent Virgo in Ursa-E4701; agent Octans in Ursa-E4701 stands somewhere before agent Virgo in Ursa-E4701; agent Musca in Ursa-E4701 stands next to agent Crux in Ursa-E4701; agent Virgo in Ursa-E4701 stands somewhere before agent Crux in Ursa-E4701; agent Bellatrix in Ursa-E4701 stands somewhere before agent Virgo in Ursa-E4701; agent Lacerta in Ursa-E4701 stands somewhere before agent Crux in Ursa-E4701; agent Lacerta in Ursa-E4701 stands somewhere before agent Bellatrix in Ursa-E4701; agent Scutum in Ursa-E4701 stands somewhere before agent Musca in Ursa-E4701; agent Virgo in Ursa-E4701 stands somewhere before agent Musca in Ursa-E4701; agent Bellatrix in Ursa-E4701 stands somewhere before agent Musca in Ursa-E4701; agent Bellatrix in Ursa-E4701 stands somewhere before agent Octans in Ursa-E4701; agent Bellatrix in Ursa-E4701 stands somewhere before agent Scutum in Ursa-E4701; agent Octans in Ursa-E4701 stands somewhere before agent Musca in Ursa-E4701; agent Lacerta in Ursa-E4701 stands somewhere before agent Virgo in Ursa-E4701; agent Scutum in Ursa-E4701 stands somewhere before agent Crux in Ursa-E4701; agent Lacerta in Ursa-E4701 stands somewhere before agent Musca in Ursa-E4701; agent Octans in Ursa-E4701 stands somewhere before agent Crux in Ursa-E4701; agent Octans in Ursa-E4701 stands somewhere before agent Scutum in Ursa-E4701; agent Bellatrix in Ursa-E4701 stands somewhere before agent Crux in Ursa-E4701; agent Lacerta in Ursa-E4701 stands somewhere before agent Octans in Ursa-E4701; agent Lacerta in Ursa-E4701 stands somewhere before agent Scutum in Ursa-E4701; agent Lacerta in Ursa-E4701 cannot stand at 4; agent Lacerta in Ursa-E4701 cannot stand at 5; agent Lacerta in Ursa-E4701 cannot stand at 6; agent Lacerta in Ursa-E4701 cannot stand at 7; agent Octans in Ursa-E4701 cannot stand at 1; agent Octans in Ursa-E4701 cannot stand at 2; agent Octans in Ursa-E4701 cannot stand at 4; agent Octans in Ursa-E4701 cannot stand at 5; agent Scutum in Ursa-E4701 cannot stand at 1; agent Scutum in Ursa-E4701 cannot stand at 3; agent Scutum in Ursa-E4701 cannot stand at 5; agent Scutum in Ursa-E4701 cannot stand at 6; agent Virgo in Ursa-E4701 cannot stand at 2; agent Virgo in Ursa-E4701 cannot stand at 3; agent Virgo in Ursa-E4701 cannot stand at 6; agent Virgo in Ursa-E4701 cannot stand at 7; agent Crux in Ursa-E4701 cannot stand at 1; agent Crux in Ursa-E4701 cannot stand at 3; agent Crux in Ursa-E4701 cannot stand at 5; agent Crux in Ursa-E4701 cannot stand at 6. Which agent is forced into position 6?",
+    "options": [
+      "A. agent Scutum in Ursa-E4701",
+      "B. agent Octans in Ursa-E4701",
+      "C. agent Musca in Ursa-E4701",
+      "D. agent Lacerta in Ursa-E4701"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 7,
+      "constraints": 48,
+      "branching": 7,
+      "depth": 7,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.002",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 8 agents form positions 1 through 8, with one agent per position. agent Monoceros in Virgo-E4702 cannot stand at 2 or 8; agent Perseus in Virgo-E4702 cannot stand at 5 or 8; agent Triangulum in Virgo-E4702 cannot stand at 1 or 4; agent Carina in Virgo-E4702 cannot stand at 3 or 4; agent Lepus in Virgo-E4702 cannot stand at 5 or 6; agent Pictor in Virgo-E4702 cannot stand at 1 or 5; agent Caelum in Virgo-E4702 cannot stand at 1 or 8; agent Fornax in Virgo-E4702 cannot stand at 2 or 7; agent Carina in Virgo-E4702 stands somewhere before agent Pictor in Virgo-E4702; agent Triangulum in Virgo-E4702 stands somewhere before agent Lepus in Virgo-E4702; agent Monoceros in Virgo-E4702 stands somewhere before agent Fornax in Virgo-E4702; agent Pictor in Virgo-E4702 stands somewhere before agent Caelum in Virgo-E4702; agent Pictor in Virgo-E4702 stands somewhere before agent Fornax in Virgo-E4702; agent Carina in Virgo-E4702 stands somewhere before agent Triangulum in Virgo-E4702; agent Carina in Virgo-E4702 stands somewhere before agent Fornax in Virgo-E4702; agent Perseus in Virgo-E4702 stands next to agent Pictor in Virgo-E4702; agent Monoceros in Virgo-E4702 stands somewhere before agent Perseus in Virgo-E4702; agent Fornax in Virgo-E4702 stands somewhere before agent Lepus in Virgo-E4702; agent Monoceros in Virgo-E4702 stands somewhere before agent Pictor in Virgo-E4702; agent Carina in Virgo-E4702 stands next to agent Perseus in Virgo-E4702; agent Monoceros in Virgo-E4702 stands somewhere before agent Lepus in Virgo-E4702; agent Fornax in Virgo-E4702 stands next to agent Caelum in Virgo-E4702; agent Caelum in Virgo-E4702 stands somewhere before agent Lepus in Virgo-E4702; agent Monoceros in Virgo-E4702 stands somewhere before agent Carina in Virgo-E4702; agent Perseus in Virgo-E4702 stands somewhere before agent Lepus in Virgo-E4702; agent Pictor in Virgo-E4702 stands somewhere before agent Lepus in Virgo-E4702; agent Triangulum in Virgo-E4702 stands somewhere before agent Caelum in Virgo-E4702. Which agent is forced into position 1?",
+    "options": [
+      "A. agent Perseus in Virgo-E4702",
+      "B. agent Carina in Virgo-E4702",
+      "C. agent Monoceros in Virgo-E4702",
+      "D. agent Triangulum in Virgo-E4702"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 8,
+      "constraints": 27,
+      "branching": 8,
+      "depth": 8,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.003",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 6 agents form positions 1 through 6, with one agent per position. agent Norma in Carina-E4703 cannot stand at 5; agent Reticulum in Carina-E4703 cannot stand at 3; agent Ursa in Carina-E4703 cannot stand at 6; agent Columba in Carina-E4703 cannot stand at 2; agent Lupus in Carina-E4703 cannot stand at 4; agent Aquila in Carina-E4703 cannot stand at 5; agent Reticulum in Carina-E4703 stands next to agent Norma in Carina-E4703; agent Aquila in Carina-E4703 stands somewhere before agent Reticulum in Carina-E4703; agent Lupus in Carina-E4703 stands somewhere before agent Reticulum in Carina-E4703; agent Aquila in Carina-E4703 stands somewhere before agent Columba in Carina-E4703; agent Ursa in Carina-E4703 stands somewhere before agent Aquila in Carina-E4703; agent Ursa in Carina-E4703 stands somewhere before agent Lupus in Carina-E4703; agent Columba in Carina-E4703 stands somewhere before agent Norma in Carina-E4703; agent Lupus in Carina-E4703 stands somewhere before agent Columba in Carina-E4703; agent Lupus in Carina-E4703 stands somewhere before agent Norma in Carina-E4703; agent Ursa in Carina-E4703 stands somewhere before agent Norma in Carina-E4703; agent Ursa in Carina-E4703 stands somewhere before agent Reticulum in Carina-E4703; agent Columba in Carina-E4703 stands somewhere before agent Reticulum in Carina-E4703; agent Aquila in Carina-E4703 stands somewhere before agent Lupus in Carina-E4703. Which agent is forced into position 6?",
+    "options": [
+      "A. agent Columba in Carina-E4703",
+      "B. agent Norma in Carina-E4703",
+      "C. agent Reticulum in Carina-E4703",
+      "D. agent Ursa in Carina-E4703"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 6,
+      "constraints": 19,
+      "branching": 6,
+      "depth": 6,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.004",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 7 agents form positions 1 through 7, with one agent per position. agent Octans in Columba-E4704 cannot stand at 6 or 7; agent Scutum in Columba-E4704 cannot stand at 2 or 6; agent Virgo in Columba-E4704 cannot stand at 3 or 5; agent Crux in Columba-E4704 cannot stand at 3 or 5; agent Musca in Columba-E4704 cannot stand at 2 or 7; agent Bellatrix in Columba-E4704 cannot stand at 3 or 4; agent Equuleus in Columba-E4704 cannot stand at 4 or 5; agent Octans in Columba-E4704 stands somewhere before agent Equuleus in Columba-E4704; agent Bellatrix in Columba-E4704 stands somewhere before agent Equuleus in Columba-E4704; agent Crux in Columba-E4704 stands next to agent Equuleus in Columba-E4704; agent Musca in Columba-E4704 stands next to agent Crux in Columba-E4704; agent Octans in Columba-E4704 stands somewhere before agent Scutum in Columba-E4704; agent Virgo in Columba-E4704 stands somewhere before agent Crux in Columba-E4704; agent Virgo in Columba-E4704 stands somewhere before agent Equuleus in Columba-E4704; agent Scutum in Columba-E4704 stands somewhere before agent Equuleus in Columba-E4704; agent Scutum in Columba-E4704 stands somewhere before agent Virgo in Columba-E4704; agent Octans in Columba-E4704 stands somewhere before agent Virgo in Columba-E4704; agent Bellatrix in Columba-E4704 stands somewhere before agent Crux in Columba-E4704; agent Virgo in Columba-E4704 stands somewhere before agent Musca in Columba-E4704; agent Bellatrix in Columba-E4704 stands somewhere before agent Musca in Columba-E4704; agent Octans in Columba-E4704 stands somewhere before agent Crux in Columba-E4704; agent Scutum in Columba-E4704 stands somewhere before agent Crux in Columba-E4704; agent Bellatrix in Columba-E4704 stands somewhere before agent Scutum in Columba-E4704; agent Bellatrix in Columba-E4704 stands somewhere before agent Virgo in Columba-E4704; agent Octans in Columba-E4704 stands somewhere before agent Musca in Columba-E4704; agent Scutum in Columba-E4704 stands somewhere before agent Musca in Columba-E4704; agent Bellatrix in Columba-E4704 stands somewhere before agent Octans in Columba-E4704. Which agent is forced into position 2?",
+    "options": [
+      "A. agent Scutum in Columba-E4704",
+      "B. agent Crux in Columba-E4704",
+      "C. agent Virgo in Columba-E4704",
+      "D. agent Octans in Columba-E4704"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 7,
+      "constraints": 27,
+      "branching": 7,
+      "depth": 7,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.005",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 8 agents form positions 1 through 8, with one agent per position. agent Perseus in Crux-E4705 cannot stand at 1 or 6; agent Triangulum in Crux-E4705 cannot stand at 1 or 7; agent Carina in Crux-E4705 cannot stand at 3 or 8; agent Lepus in Crux-E4705 cannot stand at 4 or 8; agent Pictor in Crux-E4705 cannot stand at 3 or 4; agent Caelum in Crux-E4705 cannot stand at 2 or 8; agent Fornax in Crux-E4705 cannot stand at 1 or 2; agent Lacerta in Crux-E4705 cannot stand at 4 or 7; agent Caelum in Crux-E4705 stands somewhere before agent Lepus in Crux-E4705; agent Caelum in Crux-E4705 stands somewhere before agent Triangulum in Crux-E4705; agent Triangulum in Crux-E4705 stands next to agent Fornax in Crux-E4705; agent Caelum in Crux-E4705 stands somewhere before agent Lacerta in Crux-E4705; agent Lepus in Crux-E4705 stands next to agent Triangulum in Crux-E4705; agent Perseus in Crux-E4705 stands somewhere before agent Triangulum in Crux-E4705; agent Caelum in Crux-E4705 stands somewhere before agent Fornax in Crux-E4705; agent Perseus in Crux-E4705 stands somewhere before agent Carina in Crux-E4705; agent Carina in Crux-E4705 stands next to agent Lacerta in Crux-E4705; agent Caelum in Crux-E4705 stands somewhere before agent Pictor in Crux-E4705; agent Lepus in Crux-E4705 stands somewhere before agent Carina in Crux-E4705; agent Perseus in Crux-E4705 stands somewhere before agent Lacerta in Crux-E4705; agent Lepus in Crux-E4705 stands somewhere before agent Fornax in Crux-E4705; agent Fornax in Crux-E4705 stands somewhere before agent Lacerta in Crux-E4705; agent Perseus in Crux-E4705 stands somewhere before agent Pictor in Crux-E4705; agent Fornax in Crux-E4705 stands somewhere before agent Carina in Crux-E4705; agent Caelum in Crux-E4705 stands somewhere before agent Carina in Crux-E4705; agent Triangulum in Crux-E4705 stands somewhere before agent Lacerta in Crux-E4705; agent Fornax in Crux-E4705 stands somewhere before agent Pictor in Crux-E4705; agent Lepus in Crux-E4705 stands somewhere before agent Lacerta in Crux-E4705; agent Lepus in Crux-E4705 stands somewhere before agent Pictor in Crux-E4705; agent Perseus in Crux-E4705 stands somewhere before agent Fornax in Crux-E4705; agent Caelum in Crux-E4705 stands somewhere before agent Perseus in Crux-E4705; agent Pictor in Crux-E4705 stands somewhere before agent Carina in Crux-E4705. Which agent is forced into position 4?",
+    "options": [
+      "A. agent Carina in Crux-E4705",
+      "B. agent Triangulum in Crux-E4705",
+      "C. agent Lepus in Crux-E4705",
+      "D. agent Perseus in Crux-E4705"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 8,
+      "constraints": 32,
+      "branching": 8,
+      "depth": 8,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.006",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 6 agents form positions 1 through 6, with one agent per position. agent Reticulum in Lepus-E4706 cannot stand at 1; agent Ursa in Lepus-E4706 cannot stand at 4; agent Columba in Lepus-E4706 cannot stand at 3; agent Lupus in Lepus-E4706 cannot stand at 5; agent Aquila in Lepus-E4706 cannot stand at 6; agent Delphinus in Lepus-E4706 cannot stand at 6; agent Lupus in Lepus-E4706 stands next to agent Aquila in Lepus-E4706; agent Delphinus in Lepus-E4706 stands somewhere before agent Reticulum in Lepus-E4706; agent Delphinus in Lepus-E4706 stands somewhere before agent Aquila in Lepus-E4706; agent Delphinus in Lepus-E4706 stands somewhere before agent Columba in Lepus-E4706; agent Delphinus in Lepus-E4706 stands somewhere before agent Lupus in Lepus-E4706; agent Ursa in Lepus-E4706 stands somewhere before agent Aquila in Lepus-E4706; agent Delphinus in Lepus-E4706 stands somewhere before agent Ursa in Lepus-E4706; agent Aquila in Lepus-E4706 stands somewhere before agent Reticulum in Lepus-E4706; agent Ursa in Lepus-E4706 stands somewhere before agent Columba in Lepus-E4706; agent Columba in Lepus-E4706 stands somewhere before agent Reticulum in Lepus-E4706; agent Ursa in Lepus-E4706 stands somewhere before agent Lupus in Lepus-E4706; agent Ursa in Lepus-E4706 stands somewhere before agent Reticulum in Lepus-E4706; agent Lupus in Lepus-E4706 stands somewhere before agent Columba in Lepus-E4706; agent Aquila in Lepus-E4706 stands somewhere before agent Columba in Lepus-E4706; agent Lupus in Lepus-E4706 stands somewhere before agent Reticulum in Lepus-E4706; agent Reticulum in Lepus-E4706 cannot stand at 2; agent Reticulum in Lepus-E4706 cannot stand at 3; agent Reticulum in Lepus-E4706 cannot stand at 4; agent Reticulum in Lepus-E4706 cannot stand at 5; agent Ursa in Lepus-E4706 cannot stand at 1; agent Ursa in Lepus-E4706 cannot stand at 3; agent Ursa in Lepus-E4706 cannot stand at 5; agent Ursa in Lepus-E4706 cannot stand at 6; agent Columba in Lepus-E4706 cannot stand at 1; agent Columba in Lepus-E4706 cannot stand at 2; agent Columba in Lepus-E4706 cannot stand at 4; agent Columba in Lepus-E4706 cannot stand at 6; agent Lupus in Lepus-E4706 cannot stand at 1; agent Lupus in Lepus-E4706 cannot stand at 2; agent Lupus in Lepus-E4706 cannot stand at 4. Which agent is forced into position 3?",
+    "options": [
+      "A. agent Lupus in Lepus-E4706",
+      "B. agent Ursa in Lepus-E4706",
+      "C. agent Columba in Lepus-E4706",
+      "D. agent Reticulum in Lepus-E4706"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 6,
+      "constraints": 36,
+      "branching": 6,
+      "depth": 6,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.007",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 7 agents form positions 1 through 7, with one agent per position. agent Scutum in Lupus-E4707 cannot stand at 2 or 4; agent Virgo in Lupus-E4707 cannot stand at 3 or 5; agent Crux in Lupus-E4707 cannot stand at 1 or 3; agent Musca in Lupus-E4707 cannot stand at 3 or 7; agent Bellatrix in Lupus-E4707 cannot stand at 1 or 6; agent Equuleus in Lupus-E4707 cannot stand at 3 or 5; agent Horologium in Lupus-E4707 cannot stand at 2 or 5; agent Bellatrix in Lupus-E4707 stands somewhere before agent Horologium in Lupus-E4707; agent Musca in Lupus-E4707 stands somewhere before agent Horologium in Lupus-E4707; agent Bellatrix in Lupus-E4707 stands somewhere before agent Virgo in Lupus-E4707; agent Musca in Lupus-E4707 stands somewhere before agent Bellatrix in Lupus-E4707; agent Equuleus in Lupus-E4707 stands somewhere before agent Horologium in Lupus-E4707; agent Scutum in Lupus-E4707 stands somewhere before agent Horologium in Lupus-E4707; agent Bellatrix in Lupus-E4707 stands next to agent Crux in Lupus-E4707; agent Crux in Lupus-E4707 stands somewhere before agent Horologium in Lupus-E4707; agent Scutum in Lupus-E4707 stands somewhere before agent Virgo in Lupus-E4707; agent Scutum in Lupus-E4707 stands somewhere before agent Crux in Lupus-E4707; agent Equuleus in Lupus-E4707 stands next to agent Musca in Lupus-E4707; agent Equuleus in Lupus-E4707 stands somewhere before agent Crux in Lupus-E4707; agent Scutum in Lupus-E4707 stands somewhere before agent Bellatrix in Lupus-E4707; agent Musca in Lupus-E4707 stands somewhere before agent Virgo in Lupus-E4707; agent Equuleus in Lupus-E4707 stands somewhere before agent Bellatrix in Lupus-E4707; agent Crux in Lupus-E4707 stands somewhere before agent Virgo in Lupus-E4707; agent Equuleus in Lupus-E4707 stands somewhere before agent Scutum in Lupus-E4707; agent Virgo in Lupus-E4707 stands somewhere before agent Horologium in Lupus-E4707; agent Equuleus in Lupus-E4707 stands somewhere before agent Virgo in Lupus-E4707; agent Musca in Lupus-E4707 stands somewhere before agent Crux in Lupus-E4707; agent Musca in Lupus-E4707 stands somewhere before agent Scutum in Lupus-E4707; agent Scutum in Lupus-E4707 cannot stand at 1; agent Scutum in Lupus-E4707 cannot stand at 5; agent Scutum in Lupus-E4707 cannot stand at 6; agent Scutum in Lupus-E4707 cannot stand at 7; agent Virgo in Lupus-E4707 cannot stand at 1; agent Virgo in Lupus-E4707 cannot stand at 2; agent Virgo in Lupus-E4707 cannot stand at 4; agent Virgo in Lupus-E4707 cannot stand at 7; agent Crux in Lupus-E4707 cannot stand at 2; agent Crux in Lupus-E4707 cannot stand at 4; agent Crux in Lupus-E4707 cannot stand at 6; agent Crux in Lupus-E4707 cannot stand at 7; agent Musca in Lupus-E4707 cannot stand at 1. Which agent is forced into position 5?",
+    "options": [
+      "A. agent Virgo in Lupus-E4707",
+      "B. agent Crux in Lupus-E4707",
+      "C. agent Scutum in Lupus-E4707",
+      "D. agent Musca in Lupus-E4707"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 7,
+      "constraints": 41,
+      "branching": 7,
+      "depth": 7,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.008",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 8 agents form positions 1 through 8, with one agent per position. agent Triangulum in Musca-E4708 cannot stand at 1 or 4; agent Carina in Musca-E4708 cannot stand at 5 or 8; agent Lepus in Musca-E4708 cannot stand at 2 or 5; agent Pictor in Musca-E4708 cannot stand at 6 or 8; agent Caelum in Musca-E4708 cannot stand at 3 or 6; agent Fornax in Musca-E4708 cannot stand at 2 or 4; agent Lacerta in Musca-E4708 cannot stand at 4 or 6; agent Octans in Musca-E4708 cannot stand at 3 or 5; agent Carina in Musca-E4708 stands somewhere before agent Triangulum in Musca-E4708; agent Triangulum in Musca-E4708 stands next to agent Octans in Musca-E4708; agent Carina in Musca-E4708 stands next to agent Pictor in Musca-E4708; agent Pictor in Musca-E4708 stands somewhere before agent Fornax in Musca-E4708; agent Lacerta in Musca-E4708 stands somewhere before agent Pictor in Musca-E4708; agent Pictor in Musca-E4708 stands next to agent Lepus in Musca-E4708; agent Lacerta in Musca-E4708 stands somewhere before agent Fornax in Musca-E4708; agent Pictor in Musca-E4708 stands somewhere before agent Caelum in Musca-E4708; agent Pictor in Musca-E4708 stands somewhere before agent Triangulum in Musca-E4708; agent Carina in Musca-E4708 stands somewhere before agent Caelum in Musca-E4708; agent Lacerta in Musca-E4708 stands somewhere before agent Octans in Musca-E4708; agent Carina in Musca-E4708 stands somewhere before agent Lepus in Musca-E4708; agent Octans in Musca-E4708 stands somewhere before agent Fornax in Musca-E4708; agent Triangulum in Musca-E4708 stands somewhere before agent Fornax in Musca-E4708; agent Lepus in Musca-E4708 stands somewhere before agent Fornax in Musca-E4708; agent Lacerta in Musca-E4708 stands somewhere before agent Caelum in Musca-E4708; agent Lacerta in Musca-E4708 stands somewhere before agent Carina in Musca-E4708; agent Carina in Musca-E4708 stands somewhere before agent Octans in Musca-E4708; agent Lepus in Musca-E4708 stands somewhere before agent Caelum in Musca-E4708; agent Pictor in Musca-E4708 stands somewhere before agent Octans in Musca-E4708; agent Caelum in Musca-E4708 stands somewhere before agent Fornax in Musca-E4708; agent Lacerta in Musca-E4708 stands somewhere before agent Triangulum in Musca-E4708; agent Lepus in Musca-E4708 stands somewhere before agent Triangulum in Musca-E4708; agent Lacerta in Musca-E4708 stands somewhere before agent Lepus in Musca-E4708; agent Triangulum in Musca-E4708 stands somewhere before agent Caelum in Musca-E4708. Which agent is forced into position 7?",
+    "options": [
+      "A. agent Lepus in Musca-E4708",
+      "B. agent Caelum in Musca-E4708",
+      "C. agent Carina in Musca-E4708",
+      "D. agent Triangulum in Musca-E4708"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 8,
+      "constraints": 33,
+      "branching": 8,
+      "depth": 8,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.009",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 6 agents form positions 1 through 6, with one agent per position. agent Ursa in Pictor-E4709 cannot stand at 3; agent Columba in Pictor-E4709 cannot stand at 6; agent Lupus in Pictor-E4709 cannot stand at 5; agent Aquila in Pictor-E4709 cannot stand at 2; agent Delphinus in Pictor-E4709 cannot stand at 5; agent Gemini in Pictor-E4709 cannot stand at 5; agent Lupus in Pictor-E4709 stands somewhere before agent Ursa in Pictor-E4709; agent Ursa in Pictor-E4709 stands next to agent Aquila in Pictor-E4709; agent Delphinus in Pictor-E4709 stands somewhere before agent Ursa in Pictor-E4709; agent Lupus in Pictor-E4709 stands somewhere before agent Columba in Pictor-E4709; agent Columba in Pictor-E4709 stands somewhere before agent Ursa in Pictor-E4709; agent Gemini in Pictor-E4709 stands somewhere before agent Ursa in Pictor-E4709; agent Delphinus in Pictor-E4709 stands somewhere before agent Gemini in Pictor-E4709; agent Gemini in Pictor-E4709 stands somewhere before agent Aquila in Pictor-E4709; agent Gemini in Pictor-E4709 stands somewhere before agent Columba in Pictor-E4709; agent Delphinus in Pictor-E4709 stands somewhere before agent Columba in Pictor-E4709; agent Columba in Pictor-E4709 stands somewhere before agent Aquila in Pictor-E4709; agent Delphinus in Pictor-E4709 stands somewhere before agent Aquila in Pictor-E4709; agent Lupus in Pictor-E4709 stands somewhere before agent Delphinus in Pictor-E4709; agent Lupus in Pictor-E4709 stands somewhere before agent Gemini in Pictor-E4709; agent Lupus in Pictor-E4709 stands somewhere before agent Aquila in Pictor-E4709; agent Ursa in Pictor-E4709 cannot stand at 1; agent Ursa in Pictor-E4709 cannot stand at 2; agent Ursa in Pictor-E4709 cannot stand at 4; agent Ursa in Pictor-E4709 cannot stand at 6. Which agent is forced into position 6?",
+    "options": [
+      "A. agent Ursa in Pictor-E4709",
+      "B. agent Columba in Pictor-E4709",
+      "C. agent Aquila in Pictor-E4709",
+      "D. agent Lupus in Pictor-E4709"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 6,
+      "constraints": 25,
+      "branching": 6,
+      "depth": 6,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.010",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 7 agents form positions 1 through 7, with one agent per position. agent Virgo in Aquila-E4710 cannot stand at 3 or 5; agent Crux in Aquila-E4710 cannot stand at 2 or 3; agent Musca in Aquila-E4710 cannot stand at 1 or 4; agent Bellatrix in Aquila-E4710 cannot stand at 4 or 6; agent Equuleus in Aquila-E4710 cannot stand at 1 or 4; agent Horologium in Aquila-E4710 cannot stand at 5 or 6; agent Norma in Aquila-E4710 cannot stand at 1 or 2; agent Bellatrix in Aquila-E4710 stands somewhere before agent Virgo in Aquila-E4710; agent Horologium in Aquila-E4710 stands somewhere before agent Virgo in Aquila-E4710; agent Crux in Aquila-E4710 stands next to agent Equuleus in Aquila-E4710; agent Horologium in Aquila-E4710 stands somewhere before agent Norma in Aquila-E4710; agent Bellatrix in Aquila-E4710 stands somewhere before agent Musca in Aquila-E4710; agent Musca in Aquila-E4710 stands somewhere before agent Virgo in Aquila-E4710; agent Bellatrix in Aquila-E4710 stands somewhere before agent Equuleus in Aquila-E4710; agent Bellatrix in Aquila-E4710 stands next to agent Horologium in Aquila-E4710; agent Horologium in Aquila-E4710 stands somewhere before agent Musca in Aquila-E4710; agent Musca in Aquila-E4710 stands somewhere before agent Norma in Aquila-E4710; agent Crux in Aquila-E4710 stands somewhere before agent Virgo in Aquila-E4710; agent Bellatrix in Aquila-E4710 stands somewhere before agent Norma in Aquila-E4710; agent Musca in Aquila-E4710 stands somewhere before agent Equuleus in Aquila-E4710; agent Bellatrix in Aquila-E4710 stands somewhere before agent Crux in Aquila-E4710; agent Equuleus in Aquila-E4710 stands somewhere before agent Virgo in Aquila-E4710; agent Horologium in Aquila-E4710 stands somewhere before agent Equuleus in Aquila-E4710; agent Equuleus in Aquila-E4710 stands somewhere before agent Norma in Aquila-E4710; agent Virgo in Aquila-E4710 stands somewhere before agent Norma in Aquila-E4710; agent Crux in Aquila-E4710 stands somewhere before agent Norma in Aquila-E4710; agent Musca in Aquila-E4710 stands somewhere before agent Crux in Aquila-E4710; agent Horologium in Aquila-E4710 stands somewhere before agent Crux in Aquila-E4710; agent Virgo in Aquila-E4710 cannot stand at 1; agent Virgo in Aquila-E4710 cannot stand at 2; agent Virgo in Aquila-E4710 cannot stand at 4; agent Virgo in Aquila-E4710 cannot stand at 7; agent Crux in Aquila-E4710 cannot stand at 1; agent Crux in Aquila-E4710 cannot stand at 5; agent Crux in Aquila-E4710 cannot stand at 6; agent Crux in Aquila-E4710 cannot stand at 7; agent Musca in Aquila-E4710 cannot stand at 2; agent Musca in Aquila-E4710 cannot stand at 5; agent Musca in Aquila-E4710 cannot stand at 6; agent Musca in Aquila-E4710 cannot stand at 7; agent Bellatrix in Aquila-E4710 cannot stand at 2. Which agent is forced into position 1?",
+    "options": [
+      "A. agent Crux in Aquila-E4710",
+      "B. agent Bellatrix in Aquila-E4710",
+      "C. agent Virgo in Aquila-E4710",
+      "D. agent Musca in Aquila-E4710"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 7,
+      "constraints": 41,
+      "branching": 7,
+      "depth": 7,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.011",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 8 agents form positions 1 through 8, with one agent per position. agent Carina in Bellatrix-E4711 cannot stand at 3 or 5; agent Lepus in Bellatrix-E4711 cannot stand at 4 or 7; agent Pictor in Bellatrix-E4711 cannot stand at 2 or 4; agent Caelum in Bellatrix-E4711 cannot stand at 4 or 5; agent Fornax in Bellatrix-E4711 cannot stand at 2 or 3; agent Lacerta in Bellatrix-E4711 cannot stand at 1 or 2; agent Octans in Bellatrix-E4711 cannot stand at 1 or 4; agent Scutum in Bellatrix-E4711 cannot stand at 5 or 7; agent Octans in Bellatrix-E4711 stands somewhere before agent Fornax in Bellatrix-E4711; agent Scutum in Bellatrix-E4711 stands somewhere before agent Lepus in Bellatrix-E4711; agent Lepus in Bellatrix-E4711 stands somewhere before agent Caelum in Bellatrix-E4711; agent Lacerta in Bellatrix-E4711 stands somewhere before agent Carina in Bellatrix-E4711; agent Fornax in Bellatrix-E4711 stands somewhere before agent Lacerta in Bellatrix-E4711; agent Lepus in Bellatrix-E4711 stands next to agent Lacerta in Bellatrix-E4711; agent Fornax in Bellatrix-E4711 stands somewhere before agent Carina in Bellatrix-E4711; agent Pictor in Bellatrix-E4711 stands somewhere before agent Scutum in Bellatrix-E4711; agent Octans in Bellatrix-E4711 stands somewhere before agent Caelum in Bellatrix-E4711; agent Scutum in Bellatrix-E4711 stands somewhere before agent Lacerta in Bellatrix-E4711; agent Octans in Bellatrix-E4711 stands next to agent Scutum in Bellatrix-E4711; agent Pictor in Bellatrix-E4711 stands somewhere before agent Carina in Bellatrix-E4711; agent Pictor in Bellatrix-E4711 stands somewhere before agent Lacerta in Bellatrix-E4711; agent Fornax in Bellatrix-E4711 stands somewhere before agent Caelum in Bellatrix-E4711; agent Fornax in Bellatrix-E4711 stands next to agent Lepus in Bellatrix-E4711; agent Pictor in Bellatrix-E4711 stands somewhere before agent Octans in Bellatrix-E4711; agent Octans in Bellatrix-E4711 stands somewhere before agent Lepus in Bellatrix-E4711; agent Caelum in Bellatrix-E4711 stands somewhere before agent Carina in Bellatrix-E4711; agent Scutum in Bellatrix-E4711 stands somewhere before agent Carina in Bellatrix-E4711; agent Pictor in Bellatrix-E4711 stands somewhere before agent Caelum in Bellatrix-E4711; agent Lepus in Bellatrix-E4711 stands somewhere before agent Carina in Bellatrix-E4711; agent Pictor in Bellatrix-E4711 stands somewhere before agent Lepus in Bellatrix-E4711; agent Pictor in Bellatrix-E4711 stands somewhere before agent Fornax in Bellatrix-E4711; agent Octans in Bellatrix-E4711 stands somewhere before agent Carina in Bellatrix-E4711; agent Scutum in Bellatrix-E4711 stands somewhere before agent Fornax in Bellatrix-E4711; agent Lacerta in Bellatrix-E4711 stands somewhere before agent Caelum in Bellatrix-E4711; agent Scutum in Bellatrix-E4711 stands somewhere before agent Caelum in Bellatrix-E4711; agent Octans in Bellatrix-E4711 stands somewhere before agent Lacerta in Bellatrix-E4711; agent Carina in Bellatrix-E4711 cannot stand at 1; agent Carina in Bellatrix-E4711 cannot stand at 2; agent Carina in Bellatrix-E4711 cannot stand at 4; agent Carina in Bellatrix-E4711 cannot stand at 6; agent Carina in Bellatrix-E4711 cannot stand at 7; agent Lepus in Bellatrix-E4711 cannot stand at 1; agent Lepus in Bellatrix-E4711 cannot stand at 2; agent Lepus in Bellatrix-E4711 cannot stand at 3; agent Lepus in Bellatrix-E4711 cannot stand at 6; agent Lepus in Bellatrix-E4711 cannot stand at 8; agent Pictor in Bellatrix-E4711 cannot stand at 3; agent Pictor in Bellatrix-E4711 cannot stand at 5; agent Pictor in Bellatrix-E4711 cannot stand at 6; agent Pictor in Bellatrix-E4711 cannot stand at 7; agent Pictor in Bellatrix-E4711 cannot stand at 8; agent Caelum in Bellatrix-E4711 cannot stand at 1; agent Caelum in Bellatrix-E4711 cannot stand at 2; agent Caelum in Bellatrix-E4711 cannot stand at 3; agent Caelum in Bellatrix-E4711 cannot stand at 6; agent Caelum in Bellatrix-E4711 cannot stand at 8; agent Fornax in Bellatrix-E4711 cannot stand at 1; agent Fornax in Bellatrix-E4711 cannot stand at 5; agent Fornax in Bellatrix-E4711 cannot stand at 6; agent Fornax in Bellatrix-E4711 cannot stand at 7; agent Fornax in Bellatrix-E4711 cannot stand at 8; agent Lacerta in Bellatrix-E4711 cannot stand at 3; agent Lacerta in Bellatrix-E4711 cannot stand at 4; agent Lacerta in Bellatrix-E4711 cannot stand at 5; agent Lacerta in Bellatrix-E4711 cannot stand at 7; agent Lacerta in Bellatrix-E4711 cannot stand at 8; agent Octans in Bellatrix-E4711 cannot stand at 3. Which agent is forced into position 2?",
+    "options": [
+      "A. agent Pictor in Bellatrix-E4711",
+      "B. agent Carina in Bellatrix-E4711",
+      "C. agent Octans in Bellatrix-E4711",
+      "D. agent Lepus in Bellatrix-E4711"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 8,
+      "constraints": 67,
+      "branching": 8,
+      "depth": 8,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.012",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 6 agents form positions 1 through 6, with one agent per position. agent Columba in Caelum-E4712 cannot stand at 5; agent Lupus in Caelum-E4712 cannot stand at 1; agent Aquila in Caelum-E4712 cannot stand at 4; agent Delphinus in Caelum-E4712 cannot stand at 1; agent Gemini in Caelum-E4712 cannot stand at 6; agent Monoceros in Caelum-E4712 cannot stand at 1; agent Columba in Caelum-E4712 stands somewhere before agent Lupus in Caelum-E4712; agent Columba in Caelum-E4712 stands next to agent Aquila in Caelum-E4712; agent Gemini in Caelum-E4712 stands somewhere before agent Delphinus in Caelum-E4712; agent Monoceros in Caelum-E4712 stands somewhere before agent Delphinus in Caelum-E4712; agent Columba in Caelum-E4712 stands somewhere before agent Monoceros in Caelum-E4712; agent Gemini in Caelum-E4712 stands somewhere before agent Lupus in Caelum-E4712; agent Gemini in Caelum-E4712 stands somewhere before agent Columba in Caelum-E4712; agent Aquila in Caelum-E4712 stands somewhere before agent Delphinus in Caelum-E4712; agent Columba in Caelum-E4712 stands somewhere before agent Delphinus in Caelum-E4712; agent Gemini in Caelum-E4712 stands somewhere before agent Aquila in Caelum-E4712; agent Aquila in Caelum-E4712 stands somewhere before agent Lupus in Caelum-E4712; agent Aquila in Caelum-E4712 stands somewhere before agent Monoceros in Caelum-E4712; agent Gemini in Caelum-E4712 stands somewhere before agent Monoceros in Caelum-E4712; agent Lupus in Caelum-E4712 stands somewhere before agent Monoceros in Caelum-E4712; agent Lupus in Caelum-E4712 stands somewhere before agent Delphinus in Caelum-E4712; agent Columba in Caelum-E4712 cannot stand at 1; agent Columba in Caelum-E4712 cannot stand at 3. Which agent is forced into position 3?",
+    "options": [
+      "A. agent Delphinus in Caelum-E4712",
+      "B. agent Columba in Caelum-E4712",
+      "C. agent Lupus in Caelum-E4712",
+      "D. agent Aquila in Caelum-E4712"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 6,
+      "constraints": 23,
+      "branching": 6,
+      "depth": 6,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.013",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 7 agents form positions 1 through 7, with one agent per position. agent Crux in Delphinus-E4713 cannot stand at 2 or 6; agent Musca in Delphinus-E4713 cannot stand at 1 or 6; agent Bellatrix in Delphinus-E4713 cannot stand at 5 or 7; agent Equuleus in Delphinus-E4713 cannot stand at 1 or 3; agent Horologium in Delphinus-E4713 cannot stand at 5 or 6; agent Norma in Delphinus-E4713 cannot stand at 2 or 5; agent Reticulum in Delphinus-E4713 cannot stand at 3 or 7; agent Norma in Delphinus-E4713 stands next to agent Equuleus in Delphinus-E4713; agent Horologium in Delphinus-E4713 stands somewhere before agent Crux in Delphinus-E4713; agent Horologium in Delphinus-E4713 stands somewhere before agent Reticulum in Delphinus-E4713; agent Musca in Delphinus-E4713 stands somewhere before agent Reticulum in Delphinus-E4713; agent Horologium in Delphinus-E4713 stands somewhere before agent Equuleus in Delphinus-E4713; agent Musca in Delphinus-E4713 stands somewhere before agent Equuleus in Delphinus-E4713; agent Musca in Delphinus-E4713 stands somewhere before agent Crux in Delphinus-E4713; agent Bellatrix in Delphinus-E4713 stands somewhere before agent Crux in Delphinus-E4713; agent Equuleus in Delphinus-E4713 stands next to agent Reticulum in Delphinus-E4713; agent Musca in Delphinus-E4713 stands somewhere before agent Norma in Delphinus-E4713; agent Bellatrix in Delphinus-E4713 stands somewhere before agent Norma in Delphinus-E4713; agent Norma in Delphinus-E4713 stands somewhere before agent Reticulum in Delphinus-E4713; agent Bellatrix in Delphinus-E4713 stands somewhere before agent Equuleus in Delphinus-E4713; agent Horologium in Delphinus-E4713 stands somewhere before agent Norma in Delphinus-E4713; agent Bellatrix in Delphinus-E4713 stands somewhere before agent Horologium in Delphinus-E4713; agent Norma in Delphinus-E4713 stands somewhere before agent Crux in Delphinus-E4713; agent Bellatrix in Delphinus-E4713 stands somewhere before agent Reticulum in Delphinus-E4713; agent Bellatrix in Delphinus-E4713 stands somewhere before agent Musca in Delphinus-E4713; agent Reticulum in Delphinus-E4713 stands somewhere before agent Crux in Delphinus-E4713; agent Musca in Delphinus-E4713 stands somewhere before agent Horologium in Delphinus-E4713. Which agent is forced into position 4?",
+    "options": [
+      "A. agent Bellatrix in Delphinus-E4713",
+      "B. agent Norma in Delphinus-E4713",
+      "C. agent Musca in Delphinus-E4713",
+      "D. agent Crux in Delphinus-E4713"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 7,
+      "constraints": 27,
+      "branching": 7,
+      "depth": 7,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.014",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 8 agents form positions 1 through 8, with one agent per position. agent Lepus in Equuleus-E4714 cannot stand at 6 or 8; agent Pictor in Equuleus-E4714 cannot stand at 1 or 3; agent Caelum in Equuleus-E4714 cannot stand at 1 or 2; agent Fornax in Equuleus-E4714 cannot stand at 4 or 7; agent Lacerta in Equuleus-E4714 cannot stand at 1 or 8; agent Octans in Equuleus-E4714 cannot stand at 3 or 6; agent Scutum in Equuleus-E4714 cannot stand at 2 or 8; agent Virgo in Equuleus-E4714 cannot stand at 2 or 8; agent Octans in Equuleus-E4714 stands somewhere before agent Caelum in Equuleus-E4714; agent Pictor in Equuleus-E4714 stands somewhere before agent Lacerta in Equuleus-E4714; agent Fornax in Equuleus-E4714 stands somewhere before agent Scutum in Equuleus-E4714; agent Pictor in Equuleus-E4714 stands somewhere before agent Scutum in Equuleus-E4714; agent Lacerta in Equuleus-E4714 stands somewhere before agent Caelum in Equuleus-E4714; agent Virgo in Equuleus-E4714 stands next to agent Pictor in Equuleus-E4714; agent Fornax in Equuleus-E4714 stands somewhere before agent Lacerta in Equuleus-E4714; agent Octans in Equuleus-E4714 stands next to agent Lacerta in Equuleus-E4714; agent Lepus in Equuleus-E4714 stands somewhere before agent Pictor in Equuleus-E4714; agent Fornax in Equuleus-E4714 stands somewhere before agent Caelum in Equuleus-E4714; agent Pictor in Equuleus-E4714 stands next to agent Octans in Equuleus-E4714; agent Virgo in Equuleus-E4714 stands somewhere before agent Lacerta in Equuleus-E4714; agent Lepus in Equuleus-E4714 stands somewhere before agent Virgo in Equuleus-E4714; agent Pictor in Equuleus-E4714 stands somewhere before agent Caelum in Equuleus-E4714; agent Lepus in Equuleus-E4714 stands somewhere before agent Scutum in Equuleus-E4714; agent Lepus in Equuleus-E4714 stands somewhere before agent Lacerta in Equuleus-E4714; agent Virgo in Equuleus-E4714 stands somewhere before agent Scutum in Equuleus-E4714; agent Scutum in Equuleus-E4714 stands somewhere before agent Caelum in Equuleus-E4714; agent Lepus in Equuleus-E4714 stands somewhere before agent Caelum in Equuleus-E4714; agent Fornax in Equuleus-E4714 stands somewhere before agent Virgo in Equuleus-E4714; agent Virgo in Equuleus-E4714 stands somewhere before agent Octans in Equuleus-E4714; agent Lacerta in Equuleus-E4714 stands somewhere before agent Scutum in Equuleus-E4714; agent Fornax in Equuleus-E4714 stands somewhere before agent Octans in Equuleus-E4714; agent Fornax in Equuleus-E4714 stands somewhere before agent Pictor in Equuleus-E4714; agent Virgo in Equuleus-E4714 stands somewhere before agent Caelum in Equuleus-E4714; agent Octans in Equuleus-E4714 stands somewhere before agent Scutum in Equuleus-E4714; agent Lepus in Equuleus-E4714 stands somewhere before agent Octans in Equuleus-E4714; agent Lepus in Equuleus-E4714 stands somewhere before agent Fornax in Equuleus-E4714. Which agent is forced into position 5?",
+    "options": [
+      "A. agent Caelum in Equuleus-E4714",
+      "B. agent Pictor in Equuleus-E4714",
+      "C. agent Octans in Equuleus-E4714",
+      "D. agent Lepus in Equuleus-E4714"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 8,
+      "constraints": 36,
+      "branching": 8,
+      "depth": 8,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.015",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 6 agents form positions 1 through 6, with one agent per position. agent Lupus in Fornax-E4715 cannot stand at 5; agent Aquila in Fornax-E4715 cannot stand at 3; agent Delphinus in Fornax-E4715 cannot stand at 3; agent Gemini in Fornax-E4715 cannot stand at 6; agent Monoceros in Fornax-E4715 cannot stand at 3; agent Perseus in Fornax-E4715 cannot stand at 3; agent Aquila in Fornax-E4715 stands next to agent Lupus in Fornax-E4715; agent Gemini in Fornax-E4715 stands somewhere before agent Aquila in Fornax-E4715; agent Gemini in Fornax-E4715 stands somewhere before agent Delphinus in Fornax-E4715; agent Aquila in Fornax-E4715 stands somewhere before agent Delphinus in Fornax-E4715; agent Lupus in Fornax-E4715 stands somewhere before agent Perseus in Fornax-E4715; agent Delphinus in Fornax-E4715 stands somewhere before agent Monoceros in Fornax-E4715; agent Gemini in Fornax-E4715 stands somewhere before agent Perseus in Fornax-E4715; agent Monoceros in Fornax-E4715 stands somewhere before agent Perseus in Fornax-E4715. Which agent is forced into position 6?",
+    "options": [
+      "A. agent Aquila in Fornax-E4715",
+      "B. agent Lupus in Fornax-E4715",
+      "C. agent Delphinus in Fornax-E4715",
+      "D. agent Perseus in Fornax-E4715"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 6,
+      "constraints": 14,
+      "branching": 6,
+      "depth": 6,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.016",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 7 agents form positions 1 through 7, with one agent per position. agent Musca in Gemini-E4716 cannot stand at 2 or 6; agent Bellatrix in Gemini-E4716 cannot stand at 5 or 6; agent Equuleus in Gemini-E4716 cannot stand at 2 or 5; agent Horologium in Gemini-E4716 cannot stand at 1 or 4; agent Norma in Gemini-E4716 cannot stand at 4 or 6; agent Reticulum in Gemini-E4716 cannot stand at 3 or 7; agent Ursa in Gemini-E4716 cannot stand at 2 or 3; agent Equuleus in Gemini-E4716 stands somewhere before agent Horologium in Gemini-E4716; agent Norma in Gemini-E4716 stands somewhere before agent Horologium in Gemini-E4716; agent Bellatrix in Gemini-E4716 stands next to agent Equuleus in Gemini-E4716; agent Equuleus in Gemini-E4716 stands next to agent Reticulum in Gemini-E4716; agent Reticulum in Gemini-E4716 stands somewhere before agent Horologium in Gemini-E4716; agent Horologium in Gemini-E4716 stands somewhere before agent Musca in Gemini-E4716; agent Norma in Gemini-E4716 stands somewhere before agent Bellatrix in Gemini-E4716; agent Norma in Gemini-E4716 stands somewhere before agent Reticulum in Gemini-E4716; agent Norma in Gemini-E4716 stands somewhere before agent Equuleus in Gemini-E4716; agent Ursa in Gemini-E4716 stands somewhere before agent Horologium in Gemini-E4716; agent Bellatrix in Gemini-E4716 stands somewhere before agent Ursa in Gemini-E4716; agent Norma in Gemini-E4716 stands somewhere before agent Musca in Gemini-E4716; agent Reticulum in Gemini-E4716 stands somewhere before agent Ursa in Gemini-E4716; agent Ursa in Gemini-E4716 stands somewhere before agent Musca in Gemini-E4716; agent Equuleus in Gemini-E4716 stands somewhere before agent Musca in Gemini-E4716; agent Bellatrix in Gemini-E4716 stands somewhere before agent Musca in Gemini-E4716; agent Equuleus in Gemini-E4716 stands somewhere before agent Ursa in Gemini-E4716; agent Bellatrix in Gemini-E4716 stands somewhere before agent Reticulum in Gemini-E4716. Which agent is forced into position 7?",
+    "options": [
+      "A. agent Horologium in Gemini-E4716",
+      "B. agent Equuleus in Gemini-E4716",
+      "C. agent Bellatrix in Gemini-E4716",
+      "D. agent Musca in Gemini-E4716"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 7,
+      "constraints": 25,
+      "branching": 7,
+      "depth": 7,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.017",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 8 agents form positions 1 through 8, with one agent per position. agent Pictor in Horologium-E4717 cannot stand at 5 or 7; agent Caelum in Horologium-E4717 cannot stand at 5 or 6; agent Fornax in Horologium-E4717 cannot stand at 4 or 8; agent Lacerta in Horologium-E4717 cannot stand at 4 or 5; agent Octans in Horologium-E4717 cannot stand at 3 or 6; agent Scutum in Horologium-E4717 cannot stand at 3 or 5; agent Virgo in Horologium-E4717 cannot stand at 1 or 5; agent Crux in Horologium-E4717 cannot stand at 1 or 5; agent Virgo in Horologium-E4717 stands next to agent Lacerta in Horologium-E4717; agent Octans in Horologium-E4717 stands somewhere before agent Lacerta in Horologium-E4717; agent Caelum in Horologium-E4717 stands somewhere before agent Crux in Horologium-E4717; agent Caelum in Horologium-E4717 stands somewhere before agent Virgo in Horologium-E4717; agent Fornax in Horologium-E4717 stands somewhere before agent Virgo in Horologium-E4717; agent Lacerta in Horologium-E4717 stands next to agent Crux in Horologium-E4717; agent Scutum in Horologium-E4717 stands somewhere before agent Virgo in Horologium-E4717; agent Fornax in Horologium-E4717 stands somewhere before agent Pictor in Horologium-E4717; agent Pictor in Horologium-E4717 stands somewhere before agent Crux in Horologium-E4717; agent Caelum in Horologium-E4717 stands somewhere before agent Lacerta in Horologium-E4717; agent Fornax in Horologium-E4717 stands somewhere before agent Octans in Horologium-E4717; agent Scutum in Horologium-E4717 stands somewhere before agent Crux in Horologium-E4717; agent Virgo in Horologium-E4717 stands somewhere before agent Crux in Horologium-E4717; agent Caelum in Horologium-E4717 stands somewhere before agent Octans in Horologium-E4717; agent Pictor in Horologium-E4717 stands somewhere before agent Lacerta in Horologium-E4717; agent Scutum in Horologium-E4717 stands somewhere before agent Pictor in Horologium-E4717; agent Scutum in Horologium-E4717 stands somewhere before agent Octans in Horologium-E4717; agent Fornax in Horologium-E4717 stands somewhere before agent Caelum in Horologium-E4717; agent Scutum in Horologium-E4717 stands next to agent Caelum in Horologium-E4717. Which agent is forced into position 8?",
+    "options": [
+      "A. agent Caelum in Horologium-E4717",
+      "B. agent Pictor in Horologium-E4717",
+      "C. agent Crux in Horologium-E4717",
+      "D. agent Fornax in Horologium-E4717"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 8,
+      "constraints": 27,
+      "branching": 8,
+      "depth": 8,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.018",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 6 agents form positions 1 through 6, with one agent per position. agent Aquila in Lacerta-E4718 cannot stand at 3; agent Delphinus in Lacerta-E4718 cannot stand at 6; agent Gemini in Lacerta-E4718 cannot stand at 4; agent Monoceros in Lacerta-E4718 cannot stand at 4; agent Perseus in Lacerta-E4718 cannot stand at 3; agent Triangulum in Lacerta-E4718 cannot stand at 6; agent Triangulum in Lacerta-E4718 stands next to agent Monoceros in Lacerta-E4718; agent Delphinus in Lacerta-E4718 stands somewhere before agent Monoceros in Lacerta-E4718; agent Gemini in Lacerta-E4718 stands somewhere before agent Monoceros in Lacerta-E4718; agent Gemini in Lacerta-E4718 stands somewhere before agent Triangulum in Lacerta-E4718; agent Perseus in Lacerta-E4718 stands somewhere before agent Triangulum in Lacerta-E4718; agent Gemini in Lacerta-E4718 stands somewhere before agent Aquila in Lacerta-E4718; agent Aquila in Lacerta-E4718 stands somewhere before agent Triangulum in Lacerta-E4718; agent Aquila in Lacerta-E4718 stands somewhere before agent Monoceros in Lacerta-E4718; agent Perseus in Lacerta-E4718 stands somewhere before agent Monoceros in Lacerta-E4718; agent Perseus in Lacerta-E4718 stands somewhere before agent Gemini in Lacerta-E4718; agent Delphinus in Lacerta-E4718 stands somewhere before agent Triangulum in Lacerta-E4718; agent Delphinus in Lacerta-E4718 stands somewhere before agent Aquila in Lacerta-E4718; agent Perseus in Lacerta-E4718 stands somewhere before agent Delphinus in Lacerta-E4718; agent Gemini in Lacerta-E4718 stands somewhere before agent Delphinus in Lacerta-E4718. Which agent is forced into position 3?",
+    "options": [
+      "A. agent Gemini in Lacerta-E4718",
+      "B. agent Delphinus in Lacerta-E4718",
+      "C. agent Monoceros in Lacerta-E4718",
+      "D. agent Aquila in Lacerta-E4718"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 6,
+      "constraints": 20,
+      "branching": 6,
+      "depth": 6,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.assignment.E.calibration.019",
+    "split": "calibration",
+    "family": "assignment",
+    "question": "The 7 agents form positions 1 through 7, with one agent per position. agent Bellatrix in Monoceros-E4719 cannot stand at 4 or 7; agent Equuleus in Monoceros-E4719 cannot stand at 1 or 4; agent Horologium in Monoceros-E4719 cannot stand at 1 or 3; agent Norma in Monoceros-E4719 cannot stand at 1 or 7; agent Reticulum in Monoceros-E4719 cannot stand at 1 or 6; agent Ursa in Monoceros-E4719 cannot stand at 2 or 3; agent Columba in Monoceros-E4719 cannot stand at 1 or 2; agent Norma in Monoceros-E4719 stands somewhere before agent Horologium in Monoceros-E4719; agent Equuleus in Monoceros-E4719 stands somewhere before agent Horologium in Monoceros-E4719; agent Ursa in Monoceros-E4719 stands somewhere before agent Columba in Monoceros-E4719; agent Equuleus in Monoceros-E4719 stands next to agent Columba in Monoceros-E4719; agent Bellatrix in Monoceros-E4719 stands next to agent Horologium in Monoceros-E4719; agent Ursa in Monoceros-E4719 stands somewhere before agent Reticulum in Monoceros-E4719; agent Columba in Monoceros-E4719 stands somewhere before agent Bellatrix in Monoceros-E4719; agent Equuleus in Monoceros-E4719 stands somewhere before agent Bellatrix in Monoceros-E4719; agent Reticulum in Monoceros-E4719 stands somewhere before agent Horologium in Monoceros-E4719; agent Ursa in Monoceros-E4719 stands somewhere before agent Bellatrix in Monoceros-E4719; agent Equuleus in Monoceros-E4719 stands somewhere before agent Norma in Monoceros-E4719; agent Ursa in Monoceros-E4719 stands somewhere before agent Equuleus in Monoceros-E4719; agent Equuleus in Monoceros-E4719 stands somewhere before agent Reticulum in Monoceros-E4719; agent Reticulum in Monoceros-E4719 stands somewhere before agent Bellatrix in Monoceros-E4719; agent Columba in Monoceros-E4719 stands somewhere before agent Norma in Monoceros-E4719; agent Norma in Monoceros-E4719 stands somewhere before agent Bellatrix in Monoceros-E4719; agent Reticulum in Monoceros-E4719 stands somewhere before agent Norma in Monoceros-E4719. Which agent is forced into position 3?",
+    "options": [
+      "A. agent Equuleus in Monoceros-E4719",
+      "B. agent Columba in Monoceros-E4719",
+      "C. agent Bellatrix in Monoceros-E4719",
+      "D. agent Horologium in Monoceros-E4719"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 7,
+      "constraints": 24,
+      "branching": 7,
+      "depth": 7,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.000",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Crux-E4900 can accept any set of non-overlapping half-open observation windows: window 1 is [1,3) and earns 5; window 2 is [3,5) and earns 10; window 3 is [6,11) and earns 5; window 4 is [8,13) and earns 18; window 5 is [10,15) and earns 15; window 6 is [11,17) and earns 18; window 7 is [14,18) and earns 16; window 8 is [15,18) and earns 7; window 9 is [26,32) and earns 13; window 10 is [27,31) and earns 6; window 11 is [32,36) and earns 13. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 77",
+      "B. total value 72",
+      "C. total value 82",
+      "D. total value 75"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 11,
+      "constraints": 11,
+      "branching": 11,
+      "depth": 11,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.001",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Lepus-E4901 can accept any set of non-overlapping half-open observation windows: window 1 is [8,15) and earns 5; window 2 is [13,16) and earns 6; window 3 is [14,19) and earns 7; window 4 is [16,18) and earns 22; window 5 is [17,20) and earns 13; window 6 is [19,26) and earns 6; window 7 is [21,26) and earns 19; window 8 is [24,29) and earns 18; window 9 is [26,28) and earns 4; window 10 is [31,33) and earns 20; window 11 is [32,39) and earns 22; window 12 is [37,42) and earns 5; window 13 is [38,45) and earns 8. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 76",
+      "B. total value 79",
+      "C. total value 86",
+      "D. total value 81"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 13,
+      "constraints": 13,
+      "branching": 13,
+      "depth": 13,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.002",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Lupus-E4902 can accept any set of non-overlapping half-open observation windows: window 1 is [0,2) and earns 21; window 2 is [1,8) and earns 11; window 3 is [5,8) and earns 13; window 4 is [6,10) and earns 4; window 5 is [14,19) and earns 10; window 6 is [17,24) and earns 16; window 7 is [22,26) and earns 22; window 8 is [25,33) and earns 11; window 9 is [27,34) and earns 18; window 10 is [32,40) and earns 6; window 11 is [33,35) and earns 10; window 12 is [37,41) and earns 9; window 13 is [42,44) and earns 20; window 14 is [43,46) and earns 22; window 15 is [44,48) and earns 16. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 129",
+      "B. total value 136",
+      "C. total value 131",
+      "D. total value 126"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 15,
+      "constraints": 15,
+      "branching": 15,
+      "depth": 15,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.003",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Musca-E4903 can accept any set of non-overlapping half-open observation windows: window 1 is [0,4) and earns 7; window 2 is [3,9) and earns 15; window 3 is [5,7) and earns 9; window 4 is [9,12) and earns 4; window 5 is [10,12) and earns 18; window 6 is [11,15) and earns 8; window 7 is [13,18) and earns 18; window 8 is [22,28) and earns 13; window 9 is [23,28) and earns 5; window 10 is [25,29) and earns 15; window 11 is [29,34) and earns 9. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 78",
+      "B. total value 83",
+      "C. total value 76",
+      "D. total value 73"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 11,
+      "constraints": 11,
+      "branching": 11,
+      "depth": 11,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.004",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Pictor-E4904 can accept any set of non-overlapping half-open observation windows: window 1 is [0,2) and earns 18; window 2 is [3,6) and earns 20; window 3 is [7,13) and earns 21; window 4 is [8,12) and earns 15; window 5 is [11,16) and earns 18; window 6 is [14,21) and earns 8; window 7 is [16,23) and earns 15; window 8 is [19,21) and earns 20; window 9 is [21,23) and earns 7; window 10 is [22,25) and earns 13; window 11 is [25,29) and earns 6; window 12 is [28,32) and earns 6; window 13 is [32,36) and earns 10. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 115",
+      "B. total value 108",
+      "C. total value 105",
+      "D. total value 110"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 13,
+      "constraints": 13,
+      "branching": 13,
+      "depth": 13,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.005",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Aquila-E4905 can accept any set of non-overlapping half-open observation windows: window 1 is [7,14) and earns 16; window 2 is [8,14) and earns 19; window 3 is [10,14) and earns 14; window 4 is [14,20) and earns 7; window 5 is [17,25) and earns 18; window 6 is [20,27) and earns 18; window 7 is [26,32) and earns 11; window 8 is [30,33) and earns 19; window 9 is [32,35) and earns 13; window 10 is [34,41) and earns 12; window 11 is [35,40) and earns 11; window 12 is [37,41) and earns 17; window 13 is [38,41) and earns 9; window 14 is [40,47) and earns 12; window 15 is [41,47) and earns 15. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 95",
+      "B. total value 102",
+      "C. total value 97",
+      "D. total value 92"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 15,
+      "constraints": 15,
+      "branching": 15,
+      "depth": 15,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.006",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Bellatrix-E4906 can accept any set of non-overlapping half-open observation windows: window 1 is [1,5) and earns 4; window 2 is [2,6) and earns 9; window 3 is [4,6) and earns 10; window 4 is [5,8) and earns 16; window 5 is [8,10) and earns 20; window 6 is [9,13) and earns 5; window 7 is [10,13) and earns 10; window 8 is [14,17) and earns 11; window 9 is [16,19) and earns 17; window 10 is [22,25) and earns 12; window 11 is [28,31) and earns 7. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 86",
+      "B. total value 93",
+      "C. total value 83",
+      "D. total value 88"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 11,
+      "constraints": 11,
+      "branching": 11,
+      "depth": 11,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.007",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Caelum-E4907 can accept any set of non-overlapping half-open observation windows: window 1 is [2,5) and earns 22; window 2 is [3,6) and earns 19; window 3 is [6,9) and earns 14; window 4 is [10,12) and earns 12; window 5 is [13,18) and earns 7; window 6 is [14,20) and earns 4; window 7 is [15,21) and earns 21; window 8 is [16,18) and earns 9; window 9 is [17,21) and earns 20; window 10 is [21,28) and earns 20; window 11 is [27,32) and earns 18; window 12 is [34,39) and earns 17; window 13 is [35,39) and earns 15. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 103",
+      "B. total value 113",
+      "C. total value 106",
+      "D. total value 108"
+    ],
+    "gold": "C",
+    "features": {
+      "entities": 13,
+      "constraints": 13,
+      "branching": 13,
+      "depth": 13,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.008",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Delphinus-E4908 can accept any set of non-overlapping half-open observation windows: window 1 is [4,8) and earns 11; window 2 is [8,12) and earns 20; window 3 is [10,14) and earns 22; window 4 is [14,19) and earns 8; window 5 is [19,26) and earns 11; window 6 is [20,25) and earns 6; window 7 is [23,29) and earns 12; window 8 is [28,30) and earns 21; window 9 is [31,38) and earns 21; window 10 is [34,37) and earns 14; window 11 is [37,41) and earns 17; window 12 is [38,41) and earns 22; window 13 is [39,46) and earns 11; window 14 is [43,47) and earns 15; window 15 is [44,47) and earns 4. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 133",
+      "B. total value 138",
+      "C. total value 128",
+      "D. total value 131"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 15,
+      "constraints": 15,
+      "branching": 15,
+      "depth": 15,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.009",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Equuleus-E4909 can accept any set of non-overlapping half-open observation windows: window 1 is [0,2) and earns 9; window 2 is [2,4) and earns 20; window 3 is [12,15) and earns 16; window 4 is [13,19) and earns 18; window 5 is [14,18) and earns 12; window 6 is [18,24) and earns 12; window 7 is [20,23) and earns 16; window 8 is [24,28) and earns 12; window 9 is [28,32) and earns 5; window 10 is [31,37) and earns 17; window 11 is [32,35) and earns 18. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 98",
+      "B. total value 100",
+      "C. total value 105",
+      "D. total value 95"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 11,
+      "constraints": 11,
+      "branching": 11,
+      "depth": 11,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.010",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Fornax-E4910 can accept any set of non-overlapping half-open observation windows: window 1 is [2,6) and earns 9; window 2 is [3,10) and earns 18; window 3 is [4,10) and earns 10; window 4 is [5,8) and earns 15; window 5 is [6,12) and earns 21; window 6 is [8,10) and earns 13; window 7 is [9,15) and earns 18; window 8 is [21,23) and earns 9; window 9 is [23,26) and earns 22; window 10 is [26,33) and earns 8; window 11 is [31,36) and earns 6; window 12 is [34,40) and earns 18; window 13 is [37,43) and earns 18. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 87",
+      "B. total value 90",
+      "C. total value 97",
+      "D. total value 92"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 13,
+      "constraints": 13,
+      "branching": 13,
+      "depth": 13,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.011",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Gemini-E4911 can accept any set of non-overlapping half-open observation windows: window 1 is [0,3) and earns 10; window 2 is [2,9) and earns 23; window 3 is [5,12) and earns 22; window 4 is [16,20) and earns 13; window 5 is [18,23) and earns 9; window 6 is [19,23) and earns 19; window 7 is [23,28) and earns 23; window 8 is [25,30) and earns 10; window 9 is [29,32) and earns 9; window 10 is [33,40) and earns 10; window 11 is [34,39) and earns 5; window 12 is [35,40) and earns 22; window 13 is [39,43) and earns 17; window 14 is [42,45) and earns 22; window 15 is [43,49) and earns 7. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 129",
+      "B. total value 127",
+      "C. total value 134",
+      "D. total value 124"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 15,
+      "constraints": 15,
+      "branching": 15,
+      "depth": 15,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.012",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Horologium-E4912 can accept any set of non-overlapping half-open observation windows: window 1 is [6,8) and earns 16; window 2 is [7,9) and earns 18; window 3 is [8,14) and earns 16; window 4 is [14,20) and earns 5; window 5 is [16,19) and earns 10; window 6 is [19,24) and earns 17; window 7 is [21,24) and earns 10; window 8 is [26,29) and earns 11; window 9 is [29,31) and earns 12; window 10 is [30,33) and earns 17; window 11 is [32,34) and earns 7. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 86",
+      "B. total value 89",
+      "C. total value 91",
+      "D. total value 96"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 11,
+      "constraints": 11,
+      "branching": 11,
+      "depth": 11,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.013",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Lacerta-E4913 can accept any set of non-overlapping half-open observation windows: window 1 is [4,8) and earns 11; window 2 is [5,9) and earns 18; window 3 is [6,11) and earns 21; window 4 is [9,16) and earns 5; window 5 is [18,22) and earns 9; window 6 is [19,26) and earns 18; window 7 is [20,26) and earns 9; window 8 is [21,24) and earns 18; window 9 is [23,27) and earns 4; window 10 is [26,31) and earns 5; window 11 is [29,35) and earns 11; window 12 is [33,35) and earns 16; window 13 is [35,40) and earns 10. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 72",
+      "B. total value 74",
+      "C. total value 79",
+      "D. total value 69"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 13,
+      "constraints": 13,
+      "branching": 13,
+      "depth": 13,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.014",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Monoceros-E4914 can accept any set of non-overlapping half-open observation windows: window 1 is [0,8) and earns 15; window 2 is [4,10) and earns 10; window 3 is [5,9) and earns 12; window 4 is [6,12) and earns 14; window 5 is [8,11) and earns 19; window 6 is [10,16) and earns 20; window 7 is [17,19) and earns 20; window 8 is [19,23) and earns 21; window 9 is [20,27) and earns 11; window 10 is [22,26) and earns 21; window 11 is [26,32) and earns 21; window 12 is [27,33) and earns 14; window 13 is [28,31) and earns 13; window 14 is [36,38) and earns 15; window 15 is [41,47) and earns 16. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 125",
+      "B. total value 130",
+      "C. total value 135",
+      "D. total value 128"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 15,
+      "constraints": 15,
+      "branching": 15,
+      "depth": 15,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.015",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Norma-E4915 can accept any set of non-overlapping half-open observation windows: window 1 is [0,3) and earns 12; window 2 is [4,8) and earns 5; window 3 is [6,8) and earns 5; window 4 is [9,13) and earns 10; window 5 is [11,17) and earns 17; window 6 is [14,19) and earns 8; window 7 is [18,24) and earns 5; window 8 is [21,27) and earns 7; window 9 is [28,30) and earns 18; window 10 is [29,33) and earns 15; window 11 is [31,35) and earns 17. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 77",
+      "B. total value 84",
+      "C. total value 74",
+      "D. total value 79"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 11,
+      "constraints": 11,
+      "branching": 11,
+      "depth": 11,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.016",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Octans-E4916 can accept any set of non-overlapping half-open observation windows: window 1 is [6,10) and earns 5; window 2 is [7,9) and earns 9; window 3 is [11,15) and earns 10; window 4 is [13,16) and earns 12; window 5 is [15,20) and earns 16; window 6 is [17,23) and earns 17; window 7 is [20,26) and earns 17; window 8 is [23,27) and earns 16; window 9 is [24,30) and earns 20; window 10 is [27,32) and earns 21; window 11 is [28,30) and earns 11; window 12 is [29,32) and earns 11; window 13 is [31,35) and earns 17. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 89",
+      "B. total value 82",
+      "C. total value 79",
+      "D. total value 84"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 13,
+      "constraints": 13,
+      "branching": 13,
+      "depth": 13,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.017",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Perseus-E4917 can accept any set of non-overlapping half-open observation windows: window 1 is [0,5) and earns 23; window 2 is [2,5) and earns 11; window 3 is [4,12) and earns 24; window 4 is [8,11) and earns 18; window 5 is [16,23) and earns 15; window 6 is [17,19) and earns 13; window 7 is [23,30) and earns 23; window 8 is [24,26) and earns 16; window 9 is [26,33) and earns 5; window 10 is [29,34) and earns 10; window 11 is [31,37) and earns 12; window 12 is [36,42) and earns 20; window 13 is [38,44) and earns 15; window 14 is [41,45) and earns 4; window 15 is [43,46) and earns 9. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 108",
+      "B. total value 118",
+      "C. total value 113",
+      "D. total value 111"
+    ],
+    "gold": "D",
+    "features": {
+      "entities": 15,
+      "constraints": 15,
+      "branching": 15,
+      "depth": 15,
+      "precision": 0,
+      "tier": 3
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.018",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Reticulum-E4918 can accept any set of non-overlapping half-open observation windows: window 1 is [0,4) and earns 14; window 2 is [2,6) and earns 18; window 3 is [4,9) and earns 9; window 4 is [8,14) and earns 19; window 5 is [13,17) and earns 11; window 6 is [14,20) and earns 4; window 7 is [17,19) and earns 5; window 8 is [20,24) and earns 5; window 9 is [23,26) and earns 9; window 10 is [26,28) and earns 18; window 11 is [29,31) and earns 6. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 75",
+      "B. total value 82",
+      "C. total value 72",
+      "D. total value 77"
+    ],
+    "gold": "A",
+    "features": {
+      "entities": 11,
+      "constraints": 11,
+      "branching": 11,
+      "depth": 11,
+      "precision": 0,
+      "tier": 1
+    },
+    "generator_partition": "E"
+  },
+  {
+    "id": "audit.optimization.E.calibration.019",
+    "split": "calibration",
+    "family": "optimization",
+    "question": "A single sensor in schedule Scutum-E4919 can accept any set of non-overlapping half-open observation windows: window 1 is [5,12) and earns 10; window 2 is [7,12) and earns 21; window 3 is [9,16) and earns 14; window 4 is [12,14) and earns 11; window 5 is [15,19) and earns 8; window 6 is [16,22) and earns 18; window 7 is [19,21) and earns 13; window 8 is [21,28) and earns 21; window 9 is [22,26) and earns 22; window 10 is [25,27) and earns 21; window 11 is [29,34) and earns 19; window 12 is [32,39) and earns 9; window 13 is [35,38) and earns 22. What is the largest total value obtainable?",
+    "options": [
+      "A. total value 118",
+      "B. total value 116",
+      "C. total value 113",
+      "D. total value 123"
+    ],
+    "gold": "B",
+    "features": {
+      "entities": 13,
+      "constraints": 13,
+      "branching": 13,
+      "depth": 13,
+      "precision": 0,
+      "tier": 2
+    },
+    "generator_partition": "E"
+  }
+]

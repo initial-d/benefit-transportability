@@ -1,0 +1,946 @@
+{
+  "campaign": "qwen35b_122b_397b_thinking_on8192_verify_all_full",
+  "tiers": [
+    "small",
+    "mid",
+    "large"
+  ],
+  "complete_items": 1900,
+  "envs": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E_audit",
+    "E_test"
+  ],
+  "families": [
+    "assignment",
+    "optimization",
+    "probability",
+    "routing",
+    "temporal"
+  ],
+  "by_env": {
+    "A": {
+      "small": {
+        "n": 200,
+        "accuracy": 0.87,
+        "parse_fail": 5,
+        "mean_total_tokens": 11493.34,
+        "mean_reasoning_tokens": 7618.775
+      },
+      "mid": {
+        "n": 200,
+        "accuracy": 0.845,
+        "parse_fail": 5,
+        "mean_total_tokens": 10649.005,
+        "mean_reasoning_tokens": 7657.22
+      },
+      "large": {
+        "n": 200,
+        "accuracy": 0.915,
+        "parse_fail": 1,
+        "mean_total_tokens": 10196.78,
+        "mean_reasoning_tokens": 7105.935
+      }
+    },
+    "B": {
+      "small": {
+        "n": 300,
+        "accuracy": 0.9733333333333334,
+        "parse_fail": 3,
+        "mean_total_tokens": 11214.986666666666,
+        "mean_reasoning_tokens": 7390.21
+      },
+      "mid": {
+        "n": 300,
+        "accuracy": 0.8266666666666667,
+        "parse_fail": 20,
+        "mean_total_tokens": 10791.693333333333,
+        "mean_reasoning_tokens": 7480.713333333333
+      },
+      "large": {
+        "n": 300,
+        "accuracy": 0.99,
+        "parse_fail": 2,
+        "mean_total_tokens": 9727.826666666666,
+        "mean_reasoning_tokens": 6775.22
+      }
+    },
+    "C": {
+      "small": {
+        "n": 300,
+        "accuracy": 0.9,
+        "parse_fail": 3,
+        "mean_total_tokens": 12242.483333333334,
+        "mean_reasoning_tokens": 7863.006666666667
+      },
+      "mid": {
+        "n": 300,
+        "accuracy": 0.8666666666666667,
+        "parse_fail": 6,
+        "mean_total_tokens": 11280.713333333333,
+        "mean_reasoning_tokens": 7839.333333333333
+      },
+      "large": {
+        "n": 300,
+        "accuracy": 0.9666666666666667,
+        "parse_fail": 3,
+        "mean_total_tokens": 10231.073333333334,
+        "mean_reasoning_tokens": 7306.6866666666665
+      }
+    },
+    "D": {
+      "small": {
+        "n": 500,
+        "accuracy": 0.94,
+        "parse_fail": 5,
+        "mean_total_tokens": 11945.508,
+        "mean_reasoning_tokens": 7867.688
+      },
+      "mid": {
+        "n": 500,
+        "accuracy": 0.96,
+        "parse_fail": 2,
+        "mean_total_tokens": 10343.662,
+        "mean_reasoning_tokens": 7920.684
+      },
+      "large": {
+        "n": 500,
+        "accuracy": 0.97,
+        "parse_fail": 6,
+        "mean_total_tokens": 9362.57,
+        "mean_reasoning_tokens": 6941.456
+      }
+    },
+    "E_audit": {
+      "small": {
+        "n": 100,
+        "accuracy": 0.86,
+        "parse_fail": 5,
+        "mean_total_tokens": 12848.51,
+        "mean_reasoning_tokens": 7885.86
+      },
+      "mid": {
+        "n": 100,
+        "accuracy": 0.85,
+        "parse_fail": 6,
+        "mean_total_tokens": 11805.03,
+        "mean_reasoning_tokens": 7870.58
+      },
+      "large": {
+        "n": 100,
+        "accuracy": 0.92,
+        "parse_fail": 5,
+        "mean_total_tokens": 10789.07,
+        "mean_reasoning_tokens": 7045.65
+      }
+    },
+    "E_test": {
+      "small": {
+        "n": 500,
+        "accuracy": 0.886,
+        "parse_fail": 28,
+        "mean_total_tokens": 12823.508,
+        "mean_reasoning_tokens": 7927.666
+      },
+      "mid": {
+        "n": 500,
+        "accuracy": 0.856,
+        "parse_fail": 40,
+        "mean_total_tokens": 11762.294,
+        "mean_reasoning_tokens": 7947.072
+      },
+      "large": {
+        "n": 500,
+        "accuracy": 0.948,
+        "parse_fail": 16,
+        "mean_total_tokens": 10760.89,
+        "mean_reasoning_tokens": 7099.33
+      }
+    }
+  },
+  "pair_by_env_family": {
+    "A|assignment|small->mid": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|assignment|small->large": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|assignment|mid->large": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|optimization|small->mid": {
+      "n": 40,
+      "lower_accuracy": 0.775,
+      "upper_accuracy": 0.625,
+      "benefit": -0.15,
+      "upper_rescues": 5,
+      "lower_rescues": 11
+    },
+    "A|optimization|small->large": {
+      "n": 40,
+      "lower_accuracy": 0.775,
+      "upper_accuracy": 0.875,
+      "benefit": 0.1,
+      "upper_rescues": 7,
+      "lower_rescues": 3
+    },
+    "A|optimization|mid->large": {
+      "n": 40,
+      "lower_accuracy": 0.625,
+      "upper_accuracy": 0.875,
+      "benefit": 0.25,
+      "upper_rescues": 12,
+      "lower_rescues": 2
+    },
+    "A|probability|small->mid": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|probability|small->large": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|probability|mid->large": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|routing|small->mid": {
+      "n": 40,
+      "lower_accuracy": 0.575,
+      "upper_accuracy": 0.6,
+      "benefit": 0.025,
+      "upper_rescues": 6,
+      "lower_rescues": 5
+    },
+    "A|routing|small->large": {
+      "n": 40,
+      "lower_accuracy": 0.575,
+      "upper_accuracy": 0.7,
+      "benefit": 0.125,
+      "upper_rescues": 6,
+      "lower_rescues": 1
+    },
+    "A|routing|mid->large": {
+      "n": 40,
+      "lower_accuracy": 0.6,
+      "upper_accuracy": 0.7,
+      "benefit": 0.1,
+      "upper_rescues": 7,
+      "lower_rescues": 3
+    },
+    "A|temporal|small->mid": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|temporal|small->large": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "A|temporal|mid->large": {
+      "n": 40,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "B|assignment|small->mid": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "B|assignment|small->large": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "B|assignment|mid->large": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "B|optimization|small->mid": {
+      "n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.7,
+      "benefit": -0.23333333333333334,
+      "upper_rescues": 2,
+      "lower_rescues": 16
+    },
+    "B|optimization|small->large": {
+      "n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 1.0,
+      "benefit": 0.06666666666666667,
+      "upper_rescues": 4,
+      "lower_rescues": 0
+    },
+    "B|optimization|mid->large": {
+      "n": 60,
+      "lower_accuracy": 0.7,
+      "upper_accuracy": 1.0,
+      "benefit": 0.3,
+      "upper_rescues": 18,
+      "lower_rescues": 0
+    },
+    "B|probability|small->mid": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "B|probability|small->large": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "B|probability|mid->large": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "B|routing|small->mid": {
+      "n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 0.5333333333333333,
+      "benefit": -0.43333333333333335,
+      "upper_rescues": 1,
+      "lower_rescues": 27
+    },
+    "B|routing|small->large": {
+      "n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 0.95,
+      "benefit": -0.016666666666666666,
+      "upper_rescues": 2,
+      "lower_rescues": 3
+    },
+    "B|routing|mid->large": {
+      "n": 60,
+      "lower_accuracy": 0.5333333333333333,
+      "upper_accuracy": 0.95,
+      "benefit": 0.4166666666666667,
+      "upper_rescues": 26,
+      "lower_rescues": 1
+    },
+    "B|temporal|small->mid": {
+      "n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 0.9,
+      "benefit": -0.06666666666666667,
+      "upper_rescues": 1,
+      "lower_rescues": 5
+    },
+    "B|temporal|small->large": {
+      "n": 60,
+      "lower_accuracy": 0.9666666666666667,
+      "upper_accuracy": 1.0,
+      "benefit": 0.03333333333333333,
+      "upper_rescues": 2,
+      "lower_rescues": 0
+    },
+    "B|temporal|mid->large": {
+      "n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 1.0,
+      "benefit": 0.1,
+      "upper_rescues": 6,
+      "lower_rescues": 0
+    },
+    "C|assignment|small->mid": {
+      "n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.9333333333333333,
+      "benefit": 0.0,
+      "upper_rescues": 2,
+      "lower_rescues": 2
+    },
+    "C|assignment|small->large": {
+      "n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.9833333333333333,
+      "benefit": 0.05,
+      "upper_rescues": 4,
+      "lower_rescues": 1
+    },
+    "C|assignment|mid->large": {
+      "n": 60,
+      "lower_accuracy": 0.9333333333333333,
+      "upper_accuracy": 0.9833333333333333,
+      "benefit": 0.05,
+      "upper_rescues": 3,
+      "lower_rescues": 0
+    },
+    "C|optimization|small->mid": {
+      "n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 0.8833333333333333,
+      "benefit": -0.016666666666666666,
+      "upper_rescues": 4,
+      "lower_rescues": 5
+    },
+    "C|optimization|small->large": {
+      "n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 0.9833333333333333,
+      "benefit": 0.08333333333333333,
+      "upper_rescues": 6,
+      "lower_rescues": 1
+    },
+    "C|optimization|mid->large": {
+      "n": 60,
+      "lower_accuracy": 0.8833333333333333,
+      "upper_accuracy": 0.9833333333333333,
+      "benefit": 0.1,
+      "upper_rescues": 7,
+      "lower_rescues": 1
+    },
+    "C|probability|small->mid": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "C|probability|small->large": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "C|probability|mid->large": {
+      "n": 60,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "C|routing|small->mid": {
+      "n": 60,
+      "lower_accuracy": 0.85,
+      "upper_accuracy": 0.6166666666666667,
+      "benefit": -0.23333333333333334,
+      "upper_rescues": 3,
+      "lower_rescues": 17
+    },
+    "C|routing|small->large": {
+      "n": 60,
+      "lower_accuracy": 0.85,
+      "upper_accuracy": 0.8666666666666667,
+      "benefit": 0.016666666666666666,
+      "upper_rescues": 4,
+      "lower_rescues": 3
+    },
+    "C|routing|mid->large": {
+      "n": 60,
+      "lower_accuracy": 0.6166666666666667,
+      "upper_accuracy": 0.8666666666666667,
+      "benefit": 0.25,
+      "upper_rescues": 17,
+      "lower_rescues": 2
+    },
+    "C|temporal|small->mid": {
+      "n": 60,
+      "lower_accuracy": 0.8166666666666667,
+      "upper_accuracy": 0.9,
+      "benefit": 0.08333333333333333,
+      "upper_rescues": 9,
+      "lower_rescues": 4
+    },
+    "C|temporal|small->large": {
+      "n": 60,
+      "lower_accuracy": 0.8166666666666667,
+      "upper_accuracy": 1.0,
+      "benefit": 0.18333333333333332,
+      "upper_rescues": 11,
+      "lower_rescues": 0
+    },
+    "C|temporal|mid->large": {
+      "n": 60,
+      "lower_accuracy": 0.9,
+      "upper_accuracy": 1.0,
+      "benefit": 0.1,
+      "upper_rescues": 6,
+      "lower_rescues": 0
+    },
+    "D|assignment|small->mid": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "D|assignment|small->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "D|assignment|mid->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "D|optimization|small->mid": {
+      "n": 100,
+      "lower_accuracy": 0.86,
+      "upper_accuracy": 0.81,
+      "benefit": -0.05,
+      "upper_rescues": 9,
+      "lower_rescues": 14
+    },
+    "D|optimization|small->large": {
+      "n": 100,
+      "lower_accuracy": 0.86,
+      "upper_accuracy": 0.89,
+      "benefit": 0.03,
+      "upper_rescues": 12,
+      "lower_rescues": 9
+    },
+    "D|optimization|mid->large": {
+      "n": 100,
+      "lower_accuracy": 0.81,
+      "upper_accuracy": 0.89,
+      "benefit": 0.08,
+      "upper_rescues": 14,
+      "lower_rescues": 6
+    },
+    "D|probability|small->mid": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "D|probability|small->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "D|probability|mid->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "D|routing|small->mid": {
+      "n": 100,
+      "lower_accuracy": 0.97,
+      "upper_accuracy": 0.99,
+      "benefit": 0.02,
+      "upper_rescues": 2,
+      "lower_rescues": 0
+    },
+    "D|routing|small->large": {
+      "n": 100,
+      "lower_accuracy": 0.97,
+      "upper_accuracy": 1.0,
+      "benefit": 0.03,
+      "upper_rescues": 3,
+      "lower_rescues": 0
+    },
+    "D|routing|mid->large": {
+      "n": 100,
+      "lower_accuracy": 0.99,
+      "upper_accuracy": 1.0,
+      "benefit": 0.01,
+      "upper_rescues": 1,
+      "lower_rescues": 0
+    },
+    "D|temporal|small->mid": {
+      "n": 100,
+      "lower_accuracy": 0.87,
+      "upper_accuracy": 1.0,
+      "benefit": 0.13,
+      "upper_rescues": 13,
+      "lower_rescues": 0
+    },
+    "D|temporal|small->large": {
+      "n": 100,
+      "lower_accuracy": 0.87,
+      "upper_accuracy": 0.96,
+      "benefit": 0.09,
+      "upper_rescues": 13,
+      "lower_rescues": 4
+    },
+    "D|temporal|mid->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 0.96,
+      "benefit": -0.04,
+      "upper_rescues": 0,
+      "lower_rescues": 4
+    },
+    "E_audit|assignment|small->mid": {
+      "n": 20,
+      "lower_accuracy": 0.95,
+      "upper_accuracy": 1.0,
+      "benefit": 0.05,
+      "upper_rescues": 1,
+      "lower_rescues": 0
+    },
+    "E_audit|assignment|small->large": {
+      "n": 20,
+      "lower_accuracy": 0.95,
+      "upper_accuracy": 1.0,
+      "benefit": 0.05,
+      "upper_rescues": 1,
+      "lower_rescues": 0
+    },
+    "E_audit|assignment|mid->large": {
+      "n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_audit|optimization|small->mid": {
+      "n": 20,
+      "lower_accuracy": 0.8,
+      "upper_accuracy": 0.7,
+      "benefit": -0.1,
+      "upper_rescues": 3,
+      "lower_rescues": 5
+    },
+    "E_audit|optimization|small->large": {
+      "n": 20,
+      "lower_accuracy": 0.8,
+      "upper_accuracy": 0.85,
+      "benefit": 0.05,
+      "upper_rescues": 2,
+      "lower_rescues": 1
+    },
+    "E_audit|optimization|mid->large": {
+      "n": 20,
+      "lower_accuracy": 0.7,
+      "upper_accuracy": 0.85,
+      "benefit": 0.15,
+      "upper_rescues": 5,
+      "lower_rescues": 2
+    },
+    "E_audit|probability|small->mid": {
+      "n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_audit|probability|small->large": {
+      "n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_audit|probability|mid->large": {
+      "n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_audit|routing|small->mid": {
+      "n": 20,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.55,
+      "benefit": 0.0,
+      "upper_rescues": 5,
+      "lower_rescues": 5
+    },
+    "E_audit|routing|small->large": {
+      "n": 20,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.75,
+      "benefit": 0.2,
+      "upper_rescues": 5,
+      "lower_rescues": 1
+    },
+    "E_audit|routing|mid->large": {
+      "n": 20,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.75,
+      "benefit": 0.2,
+      "upper_rescues": 5,
+      "lower_rescues": 1
+    },
+    "E_audit|temporal|small->mid": {
+      "n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_audit|temporal|small->large": {
+      "n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_audit|temporal|mid->large": {
+      "n": 20,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_test|assignment|small->mid": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 0.97,
+      "benefit": -0.03,
+      "upper_rescues": 0,
+      "lower_rescues": 3
+    },
+    "E_test|assignment|small->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 0.97,
+      "benefit": -0.03,
+      "upper_rescues": 0,
+      "lower_rescues": 3
+    },
+    "E_test|assignment|mid->large": {
+      "n": 100,
+      "lower_accuracy": 0.97,
+      "upper_accuracy": 0.97,
+      "benefit": 0.0,
+      "upper_rescues": 2,
+      "lower_rescues": 2
+    },
+    "E_test|optimization|small->mid": {
+      "n": 100,
+      "lower_accuracy": 0.73,
+      "upper_accuracy": 0.76,
+      "benefit": 0.03,
+      "upper_rescues": 20,
+      "lower_rescues": 17
+    },
+    "E_test|optimization|small->large": {
+      "n": 100,
+      "lower_accuracy": 0.73,
+      "upper_accuracy": 0.95,
+      "benefit": 0.22,
+      "upper_rescues": 23,
+      "lower_rescues": 1
+    },
+    "E_test|optimization|mid->large": {
+      "n": 100,
+      "lower_accuracy": 0.76,
+      "upper_accuracy": 0.95,
+      "benefit": 0.19,
+      "upper_rescues": 22,
+      "lower_rescues": 3
+    },
+    "E_test|probability|small->mid": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_test|probability|small->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_test|probability|mid->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_test|routing|small->mid": {
+      "n": 100,
+      "lower_accuracy": 0.7,
+      "upper_accuracy": 0.55,
+      "benefit": -0.15,
+      "upper_rescues": 12,
+      "lower_rescues": 27
+    },
+    "E_test|routing|small->large": {
+      "n": 100,
+      "lower_accuracy": 0.7,
+      "upper_accuracy": 0.82,
+      "benefit": 0.12,
+      "upper_rescues": 21,
+      "lower_rescues": 9
+    },
+    "E_test|routing|mid->large": {
+      "n": 100,
+      "lower_accuracy": 0.55,
+      "upper_accuracy": 0.82,
+      "benefit": 0.27,
+      "upper_rescues": 37,
+      "lower_rescues": 10
+    },
+    "E_test|temporal|small->mid": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_test|temporal|small->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    },
+    "E_test|temporal|mid->large": {
+      "n": 100,
+      "lower_accuracy": 1.0,
+      "upper_accuracy": 1.0,
+      "benefit": 0.0,
+      "upper_rescues": 0,
+      "lower_rescues": 0
+    }
+  },
+  "historical_policy": {
+    "assignment": "large",
+    "optimization": "large",
+    "probability": "small",
+    "routing": "large",
+    "temporal": "large"
+  },
+  "target_audit_policy": {
+    "assignment": "mid",
+    "optimization": "large",
+    "probability": "small",
+    "routing": "large",
+    "temporal": "small"
+  },
+  "policy_on_test": {
+    "uniform_lowest": {
+      "n": 500,
+      "accuracy": 0.886,
+      "mean_total_tokens": 12823.508,
+      "mean_reasoning_tokens": 7927.666,
+      "oracle_accuracy": 0.988,
+      "tier_counts": {
+        "small": 500
+      }
+    },
+    "uniform_highest": {
+      "n": 500,
+      "accuracy": 0.948,
+      "mean_total_tokens": 10760.89,
+      "mean_reasoning_tokens": 7099.33,
+      "oracle_accuracy": 0.988,
+      "tier_counts": {
+        "large": 500,
+        "small": 0
+      }
+    },
+    "historical": {
+      "n": 500,
+      "accuracy": 0.948,
+      "mean_total_tokens": 11092.642,
+      "mean_reasoning_tokens": 7297.416,
+      "oracle_accuracy": 0.988,
+      "tier_counts": {
+        "large": 400,
+        "small": 100
+      }
+    },
+    "target_audit": {
+      "n": 500,
+      "accuracy": 0.948,
+      "mean_total_tokens": 12072.008,
+      "mean_reasoning_tokens": 7925.248,
+      "oracle_accuracy": 0.988,
+      "tier_counts": {
+        "large": 200,
+        "mid": 100,
+        "small": 200
+      }
+    }
+  }
+}

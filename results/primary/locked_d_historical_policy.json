@@ -1,0 +1,283 @@
+{
+  "method": "Hierarchical transport-robust router",
+  "version": 1,
+  "development_environments": [
+    "A",
+    "B",
+    "C"
+  ],
+  "locked_confirmation_environment": "D",
+  "locked_test_sha256": "350e23e462f12a09692a01c38af7919afb1b3880c73dbf439f4a7f49aad21c37",
+  "slow_fraction": 0.8,
+  "candidate_granularities": {
+    "family": {
+      "leave_one_environment_out": [
+        {
+          "heldout": "A",
+          "slow_groups": [
+            "assignment",
+            "temporal",
+            "probability",
+            "optimization"
+          ],
+          "n": 200,
+          "accuracy": 0.92,
+          "mean_tokens": 8831.125,
+          "slow_rate": 0.8
+        },
+        {
+          "heldout": "B",
+          "slow_groups": [
+            "assignment",
+            "probability",
+            "temporal",
+            "optimization"
+          ],
+          "n": 300,
+          "accuracy": 0.9833333333333333,
+          "mean_tokens": 6720.87,
+          "slow_rate": 0.8
+        },
+        {
+          "heldout": "C",
+          "slow_groups": [
+            "assignment",
+            "temporal",
+            "probability",
+            "optimization"
+          ],
+          "n": 300,
+          "accuracy": 0.9633333333333334,
+          "mean_tokens": 7716.136666666666,
+          "slow_rate": 0.8
+        }
+      ],
+      "mean_accuracy": 0.9555555555555556,
+      "mean_tokens": 7756.043888888888,
+      "n_groups": 5
+    },
+    "family_tier": {
+      "leave_one_environment_out": [
+        {
+          "heldout": "A",
+          "slow_groups": [
+            "assignment|2",
+            "assignment|1",
+            "probability|1",
+            "assignment|3",
+            "temporal|1",
+            "temporal|3",
+            "probability|2",
+            "temporal|2",
+            "optimization|2",
+            "probability|3",
+            "optimization|3",
+            "optimization|1"
+          ],
+          "n": 200,
+          "accuracy": 0.92,
+          "mean_tokens": 8831.125,
+          "slow_rate": 0.8
+        },
+        {
+          "heldout": "B",
+          "slow_groups": [
+            "assignment|1",
+            "assignment|3",
+            "assignment|2",
+            "temporal|2",
+            "probability|2",
+            "probability|1",
+            "optimization|2",
+            "probability|3",
+            "temporal|3",
+            "optimization|3",
+            "routing|3",
+            "routing|1"
+          ],
+          "n": 300,
+          "accuracy": 0.9633333333333334,
+          "mean_tokens": 8036.78,
+          "slow_rate": 0.8
+        },
+        {
+          "heldout": "C",
+          "slow_groups": [
+            "assignment|1",
+            "temporal|1",
+            "assignment|2",
+            "temporal|3",
+            "assignment|3",
+            "temporal|2",
+            "probability|1",
+            "optimization|3",
+            "probability|3",
+            "optimization|1",
+            "routing|3",
+            "optimization|2"
+          ],
+          "n": 300,
+          "accuracy": 0.9566666666666667,
+          "mean_tokens": 8451.223333333333,
+          "slow_rate": 0.8
+        }
+      ],
+      "mean_accuracy": 0.9466666666666667,
+      "mean_tokens": 8439.709444444445,
+      "n_groups": 15
+    }
+  },
+  "selection_rule": {
+    "criterion": "leave-one-environment-out mean accuracy",
+    "coarsening_tolerance": 0.01,
+    "tie_break": "fewest groups, then lowest mean tokens"
+  },
+  "selected_granularity": "family",
+  "priority_rule": "max_environment(max(0, mean(slow_correct-fast_correct))) / mean_environment(incremental_tokens)",
+  "ranked_groups": [
+    "assignment",
+    "temporal",
+    "probability",
+    "optimization",
+    "routing"
+  ],
+  "selected_slow_groups": [
+    "assignment",
+    "temporal",
+    "probability",
+    "optimization"
+  ],
+  "selected_fast_groups": [
+    "routing"
+  ],
+  "group_statistics": {
+    "assignment": {
+      "environments": [
+        {
+          "environment": "A",
+          "n": 40,
+          "paired_net_gain": 0.4,
+          "mean_incremental_tokens": 6115.225
+        },
+        {
+          "environment": "B",
+          "n": 60,
+          "paired_net_gain": 0.4166666666666667,
+          "mean_incremental_tokens": 5930.716666666666
+        },
+        {
+          "environment": "C",
+          "n": 60,
+          "paired_net_gain": 0.16666666666666666,
+          "mean_incremental_tokens": 6171.416666666667
+        }
+      ],
+      "worst_environment_fast_regret": 0.4166666666666667,
+      "mean_incremental_tokens": 6072.452777777778,
+      "priority": 6.861587597543186e-05
+    },
+    "optimization": {
+      "environments": [
+        {
+          "environment": "A",
+          "n": 40,
+          "paired_net_gain": 0.075,
+          "mean_incremental_tokens": 19862.525
+        },
+        {
+          "environment": "B",
+          "n": 60,
+          "paired_net_gain": 0.2,
+          "mean_incremental_tokens": 11935.433333333332
+        },
+        {
+          "environment": "C",
+          "n": 60,
+          "paired_net_gain": 0.21666666666666667,
+          "mean_incremental_tokens": 12168.6
+        }
+      ],
+      "worst_environment_fast_regret": 0.21666666666666667,
+      "mean_incremental_tokens": 14655.519444444444,
+      "priority": 1.4783963645096169e-05
+    },
+    "probability": {
+      "environments": [
+        {
+          "environment": "A",
+          "n": 40,
+          "paired_net_gain": 0.05,
+          "mean_incremental_tokens": 7351.1
+        },
+        {
+          "environment": "B",
+          "n": 60,
+          "paired_net_gain": 0.11666666666666667,
+          "mean_incremental_tokens": 3857.3166666666666
+        },
+        {
+          "environment": "C",
+          "n": 60,
+          "paired_net_gain": 0.16666666666666666,
+          "mean_incremental_tokens": 5349.85
+        }
+      ],
+      "worst_environment_fast_regret": 0.16666666666666666,
+      "mean_incremental_tokens": 5519.422222222222,
+      "priority": 3.019639736848462e-05
+    },
+    "routing": {
+      "environments": [
+        {
+          "environment": "A",
+          "n": 40,
+          "paired_net_gain": 0.1,
+          "mean_incremental_tokens": 18395.475
+        },
+        {
+          "environment": "B",
+          "n": 60,
+          "paired_net_gain": 0.08333333333333333,
+          "mean_incremental_tokens": 16263.566666666668
+        },
+        {
+          "environment": "C",
+          "n": 60,
+          "paired_net_gain": 0.05,
+          "mean_incremental_tokens": 14350.2
+        }
+      ],
+      "worst_environment_fast_regret": 0.1,
+      "mean_incremental_tokens": 16336.413888888888,
+      "priority": 6.121294470141602e-06
+    },
+    "temporal": {
+      "environments": [
+        {
+          "environment": "A",
+          "n": 40,
+          "paired_net_gain": 0.1,
+          "mean_incremental_tokens": 4438.875
+        },
+        {
+          "environment": "B",
+          "n": 60,
+          "paired_net_gain": 0.2833333333333333,
+          "mean_incremental_tokens": 5490.5
+        },
+        {
+          "environment": "C",
+          "n": 60,
+          "paired_net_gain": 0.08333333333333333,
+          "mean_incremental_tokens": 7581.35
+        }
+      ],
+      "worst_environment_fast_regret": 0.2833333333333333,
+      "mean_incremental_tokens": 5836.908333333334,
+      "priority": 4.85416794564474e-05
+    }
+  },
+  "unknown_group_fallback": "slow",
+  "test_outcomes_accessed": false,
+  "policy_sha256": "eeeddd60505a46604b7a14e0a7dd856ffe46a895fe6d8654833fa8272070d21f"
+}

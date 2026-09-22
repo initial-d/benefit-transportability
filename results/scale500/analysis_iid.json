@@ -1,0 +1,449 @@
+{
+  "design": {
+    "n_per_condition": 500,
+    "calibration": 200,
+    "test": 300,
+    "split_view": "IID stratified by observable structural class"
+  },
+  "quality": {
+    "complete_pairs": 500,
+    "fast_reasoning_tokens_mean": 0,
+    "slow_reasoning_tokens_mean": 2191.33,
+    "api_errors": 0
+  },
+  "calibration": {
+    "selected": {
+      "entity_threshold": 3,
+      "accuracy": 0.96,
+      "mean_tokens": 1817.82
+    },
+    "candidates": [
+      {
+        "entity_threshold": 3,
+        "accuracy": 0.96,
+        "mean_tokens": 1817.82
+      },
+      {
+        "entity_threshold": 4,
+        "accuracy": 0.96,
+        "mean_tokens": 1817.82
+      },
+      {
+        "entity_threshold": 5,
+        "accuracy": 0.96,
+        "mean_tokens": 1817.82
+      },
+      {
+        "entity_threshold": 6,
+        "accuracy": 0.935,
+        "mean_tokens": 1627.465
+      },
+      {
+        "entity_threshold": 7,
+        "accuracy": 0.91,
+        "mean_tokens": 1413.83
+      },
+      {
+        "entity_threshold": 8,
+        "accuracy": 0.865,
+        "mean_tokens": 1079.155
+      },
+      {
+        "entity_threshold": 9,
+        "accuracy": 0.835,
+        "mean_tokens": 750.89
+      }
+    ],
+    "structural_policy": {
+      "simple|logic|l2": {
+        "n": 8,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|probability|p2": {
+        "n": 8,
+        "fast_accuracy": 0.625,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "constraint|9": {
+        "n": 20,
+        "fast_accuracy": 0.8,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "constraint|5": {
+        "n": 20,
+        "fast_accuracy": 0.75,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "simple|cross_domain|x3": {
+        "n": 4,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "constraint|7": {
+        "n": 20,
+        "fast_accuracy": 0.55,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "constraint|6": {
+        "n": 20,
+        "fast_accuracy": 0.75,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "simple|logic|l3": {
+        "n": 4,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|probability|p3": {
+        "n": 4,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|adversarial|a1": {
+        "n": 8,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|cross_domain|x2": {
+        "n": 8,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|adversarial|a3": {
+        "n": 4,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "constraint|8": {
+        "n": 20,
+        "fast_accuracy": 0.7,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "simple|adversarial|a2": {
+        "n": 8,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|probability|p1": {
+        "n": 8,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|cross_domain|x1": {
+        "n": 8,
+        "fast_accuracy": 0.875,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "simple|logic|l1": {
+        "n": 8,
+        "fast_accuracy": 0.625,
+        "slow_accuracy": 1,
+        "route": "slow"
+      },
+      "simple|quantitative|q3": {
+        "n": 4,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|quantitative|q1": {
+        "n": 8,
+        "fast_accuracy": 1,
+        "slow_accuracy": 1,
+        "route": "fast"
+      },
+      "simple|quantitative|q2": {
+        "n": 8,
+        "fast_accuracy": 0.875,
+        "slow_accuracy": 1,
+        "route": "slow"
+      }
+    },
+    "pareto_selected": {
+      "min_gain": 0.15,
+      "calibration_accuracy": 0.99,
+      "calibration_tokens": 2000.32
+    },
+    "pareto_curve": [
+      {
+        "min_gain": 0,
+        "calibration_accuracy": 1,
+        "calibration_tokens": 2186.125
+      },
+      {
+        "min_gain": 0.025,
+        "calibration_accuracy": 1,
+        "calibration_tokens": 2186.125
+      },
+      {
+        "min_gain": 0.05,
+        "calibration_accuracy": 1,
+        "calibration_tokens": 2186.125
+      },
+      {
+        "min_gain": 0.075,
+        "calibration_accuracy": 1,
+        "calibration_tokens": 2186.125
+      },
+      {
+        "min_gain": 0.1,
+        "calibration_accuracy": 1,
+        "calibration_tokens": 2186.125
+      },
+      {
+        "min_gain": 0.15,
+        "calibration_accuracy": 0.99,
+        "calibration_tokens": 2000.32
+      },
+      {
+        "min_gain": 0.2,
+        "calibration_accuracy": 0.97,
+        "calibration_tokens": 1523.05
+      },
+      {
+        "min_gain": 0.25,
+        "calibration_accuracy": 0.92,
+        "calibration_tokens": 1119.06
+      },
+      {
+        "min_gain": 0.3,
+        "calibration_accuracy": 0.92,
+        "calibration_tokens": 1119.06
+      },
+      {
+        "min_gain": 0.4,
+        "calibration_accuracy": 0.86,
+        "calibration_tokens": 608.295
+      }
+    ]
+  },
+  "test": {
+    "uniform_fast": {
+      "n": 300,
+      "accuracy": 0.8266666666666667,
+      "mean_tokens": 273.5833333333333,
+      "mean_reasoning_tokens": 0,
+      "mean_latency_s": 8.020940264999954,
+      "failure_rate": 0,
+      "accuracy_ci95": [
+        0.7833333333333333,
+        0.8666666666666667
+      ],
+      "token_reduction_vs_slow": 0.9058567807205699
+    },
+    "uniform_slow": {
+      "n": 300,
+      "accuracy": 1,
+      "mean_tokens": 2906.0333333333333,
+      "mean_reasoning_tokens": 2169.0266666666666,
+      "mean_latency_s": 25.77480289566661,
+      "failure_rate": 0,
+      "accuracy_ci95": [
+        1,
+        1
+      ],
+      "token_reduction_vs_slow": 0.0
+    },
+    "cdr": {
+      "n": 300,
+      "accuracy": 0.96,
+      "mean_tokens": 1710.28,
+      "mean_reasoning_tokens": 1230.5366666666666,
+      "mean_latency_s": 16.846769917666656,
+      "failure_rate": 0,
+      "accuracy_ci95": [
+        0.9366666666666666,
+        0.98
+      ],
+      "token_reduction_vs_slow": 0.41147268326814335,
+      "vs_fast_mcnemar": {
+        "cdr_only_correct": 40,
+        "baseline_only_correct": 0,
+        "exact_p_two_sided": 1.8189894035458565e-12
+      },
+      "vs_slow_mcnemar": {
+        "cdr_only_correct": 0,
+        "baseline_only_correct": 12,
+        "exact_p_two_sided": 0.00048828125
+      }
+    },
+    "cdr_structural": {
+      "n": 300,
+      "accuracy": 0.9933333333333333,
+      "mean_tokens": 2102.463333333333,
+      "mean_reasoning_tokens": 1536.9566666666667,
+      "mean_latency_s": 19.789717654999954,
+      "failure_rate": 0,
+      "accuracy_ci95": [
+        0.9833333333333333,
+        1
+      ],
+      "token_reduction_vs_slow": 0.27651781924960717,
+      "vs_fast_mcnemar": {
+        "cdr_only_correct": 50,
+        "baseline_only_correct": 0,
+        "exact_p_two_sided": 1.7763568394002505e-15
+      },
+      "vs_slow_mcnemar": {
+        "cdr_only_correct": 0,
+        "baseline_only_correct": 2,
+        "exact_p_two_sided": 0.5
+      }
+    },
+    "cdr_pareto": {
+      "n": 300,
+      "accuracy": 0.9866666666666667,
+      "mean_tokens": 1889.2866666666666,
+      "mean_reasoning_tokens": 1362.7966666666666,
+      "mean_latency_s": 18.3297838643333,
+      "failure_rate": 0,
+      "accuracy_ci95": [
+        0.9733333333333334,
+        0.9966666666666667
+      ],
+      "token_reduction_vs_slow": 0.34987439923836616,
+      "vs_fast_mcnemar": {
+        "cdr_only_correct": 48,
+        "baseline_only_correct": 0,
+        "exact_p_two_sided": 7.105427357601002e-15
+      },
+      "vs_slow_mcnemar": {
+        "cdr_only_correct": 0,
+        "baseline_only_correct": 4,
+        "exact_p_two_sided": 0.125
+      }
+    },
+    "oracle": {
+      "n": 300,
+      "accuracy": 1,
+      "mean_tokens": 764.7066666666667,
+      "mean_reasoning_tokens": 382.93,
+      "mean_latency_s": 12.084089398666613,
+      "failure_rate": 0,
+      "accuracy_ci95": [
+        1,
+        1
+      ],
+      "token_reduction_vs_slow": 0.7368555075073697
+    }
+  },
+  "strata": {
+    "simple": {
+      "uniform_fast": {
+        "n": 150,
+        "accuracy": 0.92,
+        "mean_tokens": 170.19333333333333,
+        "mean_reasoning_tokens": 0,
+        "mean_latency_s": 5.204824124666653,
+        "failure_rate": 0
+      },
+      "uniform_slow": {
+        "n": 150,
+        "accuracy": 1,
+        "mean_tokens": 2561.7,
+        "mean_reasoning_tokens": 1876.98,
+        "mean_latency_s": 23.060890080666564,
+        "failure_rate": 0
+      },
+      "cdr": {
+        "n": 150,
+        "accuracy": 0.92,
+        "mean_tokens": 170.19333333333333,
+        "mean_reasoning_tokens": 0,
+        "mean_latency_s": 5.204824124666653,
+        "failure_rate": 0
+      },
+      "cdr_structural": {
+        "n": 150,
+        "accuracy": 0.9866666666666667,
+        "mean_tokens": 954.56,
+        "mean_reasoning_tokens": 612.84,
+        "mean_latency_s": 11.090719599333255,
+        "failure_rate": 0
+      },
+      "cdr_pareto": {
+        "n": 150,
+        "accuracy": 0.9733333333333334,
+        "mean_tokens": 528.2066666666667,
+        "mean_reasoning_tokens": 264.52,
+        "mean_latency_s": 8.170852017999945,
+        "failure_rate": 0
+      },
+      "oracle": {
+        "n": 150,
+        "accuracy": 1,
+        "mean_tokens": 367.28,
+        "mean_reasoning_tokens": 147.52666666666667,
+        "mean_latency_s": 6.853478071333302,
+        "failure_rate": 0
+      }
+    },
+    "constraint": {
+      "uniform_fast": {
+        "n": 150,
+        "accuracy": 0.7333333333333333,
+        "mean_tokens": 376.97333333333336,
+        "mean_reasoning_tokens": 0,
+        "mean_latency_s": 10.837056405333254,
+        "failure_rate": 0
+      },
+      "uniform_slow": {
+        "n": 150,
+        "accuracy": 1,
+        "mean_tokens": 3250.366666666667,
+        "mean_reasoning_tokens": 2461.0733333333333,
+        "mean_latency_s": 28.488715710666657,
+        "failure_rate": 0
+      },
+      "cdr": {
+        "n": 150,
+        "accuracy": 1,
+        "mean_tokens": 3250.366666666667,
+        "mean_reasoning_tokens": 2461.0733333333333,
+        "mean_latency_s": 28.488715710666657,
+        "failure_rate": 0
+      },
+      "cdr_structural": {
+        "n": 150,
+        "accuracy": 1,
+        "mean_tokens": 3250.366666666667,
+        "mean_reasoning_tokens": 2461.0733333333333,
+        "mean_latency_s": 28.488715710666657,
+        "failure_rate": 0
+      },
+      "cdr_pareto": {
+        "n": 150,
+        "accuracy": 1,
+        "mean_tokens": 3250.366666666667,
+        "mean_reasoning_tokens": 2461.0733333333333,
+        "mean_latency_s": 28.488715710666657,
+        "failure_rate": 0
+      },
+      "oracle": {
+        "n": 150,
+        "accuracy": 1,
+        "mean_tokens": 1162.1333333333334,
+        "mean_reasoning_tokens": 618.3333333333334,
+        "mean_latency_s": 17.314700725999923,
+        "failure_rate": 0
+      }
+    }
+  }
+}
