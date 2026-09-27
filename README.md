@@ -32,6 +32,22 @@ python scripts/reproduce_summary.py
 
 This checks the presence of the released datasets and prints the main numerical summaries reported in the study.
 
+Equivalent Make target:
+
+```bash
+make summary
+```
+
+To verify the file sizes and SHA-256 digests recorded in
+`RELEASE_MANIFEST.json`, run:
+
+```bash
+make check-manifest
+```
+
+The manifest check validates the released files listed in the manifest. It does
+not require network access and does not inspect excluded private materials.
+
 ## Data notes
 
 Forge and Scale-500 are original generated benchmarks. LiveBench is an independently maintained benchmark; this repository includes only the processed scores and task level summaries used for the external validation, not the upstream benchmark codebase.
