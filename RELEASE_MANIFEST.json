@@ -242,8 +242,8 @@
     },
     {
       "path": "scripts/check_release_manifest.py",
-      "bytes": 1299,
-      "sha256": "dbb2ca67b77dad11948976a8447219b4fee2842908b2169b14527af2bd1be53c"
+      "bytes": 1494,
+      "sha256": "6dc98701ff4ed71cf9de8e31a19dbc235b56abd83b4991ca9e2d8309f4fba926"
     },
     {
       "path": "scripts/reproduce_summary.py",

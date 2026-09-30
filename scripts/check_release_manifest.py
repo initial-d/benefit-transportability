@@ -20,9 +20,14 @@ def sha256(path: Path) -> str:
 def main() -> None:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     failures = []
+    seen_paths = set()
 
     for entry in manifest.get("files", []):
         relative_path = entry["path"]
+        if relative_path in seen_paths:
+            failures.append(f"duplicate manifest path: {relative_path}")
+            continue
+        seen_paths.add(relative_path)
         path = ROOT / relative_path
         if not path.is_file():
             failures.append(f"missing: {relative_path}")
