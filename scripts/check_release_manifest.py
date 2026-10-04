@@ -23,7 +23,18 @@ def main() -> None:
     seen_paths = set()
 
     for entry in manifest.get("files", []):
+        missing_keys = [key for key in ("path", "bytes", "sha256") if key not in entry]
+        if missing_keys:
+            failures.append(f"manifest entry missing {', '.join(missing_keys)}: {entry!r}")
+            continue
         relative_path = entry["path"]
+        if not isinstance(relative_path, str) or not relative_path:
+            failures.append(f"invalid manifest path: {relative_path!r}")
+            continue
+        if not isinstance(entry["bytes"], int) or entry["bytes"] < 0:
+            failures.append(f"invalid byte count: {relative_path}")
+        if not isinstance(entry["sha256"], str) or len(entry["sha256"]) != 64:
+            failures.append(f"invalid sha256: {relative_path}")
         if relative_path in seen_paths:
             failures.append(f"duplicate manifest path: {relative_path}")
             continue
