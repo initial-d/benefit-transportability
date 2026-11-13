@@ -25,5 +25,13 @@
   "learned routers of Table 17 fitted on the same audit"
  ],
  "primary_test": "accuracy of primary policy minus slow-rate-matched random accuracy on F test > 1.5 pp (same margin as E)",
- "reporting": "all results reported regardless of outcome"
+ "reporting": "all results reported regardless of outcome",
+ "amendment_1": {
+  "date": "2026-11-14",
+  "reason": "The original fast endpoint (DeepSeek-V3.2, thinking disabled) is no longer available on the serving gateway; its current replacement and all other no-thinking candidates answered the E audit at near-chance accuracy (32-35%).",
+  "new_fast_configuration": "google/gemini-3.8-flash, reasoning_effort=minimal, max_tokens=1024, temperature 0",
+  "selection_rule": "chosen among five low-budget candidates using only the 100 E-audit items (non-degenerate answer distribution, <5% truncation, cost <= 20% of slow, accuracy 70-90%); no F outcome was inspected",
+  "unchanged": "items, audit/test split, slow configuration, policies, primary test, reporting rule",
+  "note": "F slow-configuration calls made before the amendment are reused unchanged; F fast calls with the unavailable endpoint are retained in the archive but not analysed"
+ }
 }

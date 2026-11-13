@@ -1,6 +1,237 @@
 {
- "fast": {"model": "deepseek-v3.2", "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
-          "params": {"temperature": 0, "top_p": 1, "thinking": {"type": "disabled"}, "reasoning_effort": "none", "enable_thinking": false, "thinking_budget": 0}},
- "slow": {"model": "alibaba/qwen3.5-397b-a17b", "instruction": "Construct and verify the complete solution. End with FINAL: <letter>.",
-          "params": {"temperature": 0, "top_p": 1, "enable_thinking": true, "reasoning_effort": "high", "thinking_budget": 4096, "max_tokens": 4096}}
+ "fast": {
+  "model": "deepseek-v3.2",
+  "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "slow": {
+  "model": "alibaba/qwen3.5-397b-a17b",
+  "instruction": "Construct and verify the complete solution. End with FINAL: <letter>.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "enable_thinking": true,
+   "reasoning_effort": "high",
+   "thinking_budget": 4096,
+   "max_tokens": 4096
+  }
+ },
+ "fast_t07": {
+  "model": "deepseek-v3.2",
+  "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+  "params": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "slow_t07": {
+  "model": "alibaba/qwen3.5-397b-a17b",
+  "instruction": "Construct and verify the complete solution. End with FINAL: <letter>.",
+  "params": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "enable_thinking": true,
+   "reasoning_effort": "high",
+   "thinking_budget": 4096,
+   "max_tokens": 4096
+  }
+ },
+ "fast_tpl2": {
+  "model": "deepseek-v3.2",
+  "instruction": "Respond with only the letter (A, B, C, or D) of the correct option.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "slow_tpl2": {
+  "model": "alibaba/qwen3.5-397b-a17b",
+  "instruction": "Work through the problem carefully, check your result, and finish with a line of the form FINAL: <letter>.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "enable_thinking": true,
+   "reasoning_effort": "high",
+   "thinking_budget": 4096,
+   "max_tokens": 4096
+  }
+ },
+ "fast_chat": {
+  "model": "deepseek-chat",
+  "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "fast_v4pro": {
+  "model": "deepseek/deepseek-v4-pro",
+  "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "fast_q38flash": {
+  "model": "qwen/qwen3.8-flash",
+  "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "fast_gem38flash": {
+  "model": "google/gemini-3.8-flash",
+  "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "fast_v41flash": {
+  "model": "deepseek/deepseek-v4.1-flash",
+  "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "disabled"
+   },
+   "reasoning_effort": "none",
+   "enable_thinking": false,
+   "thinking_budget": 0
+  }
+ },
+ "lb_q38flash_low": {
+  "model": "qwen/qwen3.8-flash",
+  "instruction": "Answer with one option letter. Think only briefly if needed.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "enable_thinking": true,
+   "reasoning_effort": "low",
+   "thinking_budget": 512,
+   "max_tokens": 1024
+  }
+ },
+ "lb_v41flash_low": {
+  "model": "deepseek/deepseek-v4.1-flash",
+  "instruction": "Answer with one option letter. Think only briefly if needed.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "low",
+   "max_tokens": 1024
+  }
+ },
+ "lb_gem38flash_min": {
+  "model": "google/gemini-3.8-flash",
+  "instruction": "Answer with one option letter. Think only briefly if needed.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "reasoning_effort": "minimal",
+   "max_tokens": 1024
+  }
+ },
+ "lb_gem38flash_low": {
+  "model": "google/gemini-3.8-flash",
+  "instruction": "Answer with one option letter. Think only briefly if needed.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "reasoning_effort": "low",
+   "max_tokens": 1024
+  }
+ },
+ "lb_q35_35b_low": {
+  "model": "alibaba/qwen3.5-35b-a3b",
+  "instruction": "Answer with one option letter. Think only briefly if needed.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "enable_thinking": true,
+   "reasoning_effort": "low",
+   "thinking_budget": 512,
+   "max_tokens": 1024
+  }
+ },
+ "fast2": {
+  "model": "google/gemini-3.8-flash",
+  "instruction": "Answer with one option letter. Think only briefly if needed.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "reasoning_effort": "minimal",
+   "max_tokens": 1024
+  }
+ },
+ "fast2_t07": {
+  "model": "google/gemini-3.8-flash",
+  "instruction": "Answer with one option letter. Think only briefly if needed.",
+  "params": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "reasoning_effort": "minimal",
+   "max_tokens": 1024
+  }
+ },
+ "fast2_tpl2": {
+  "model": "google/gemini-3.8-flash",
+  "instruction": "Respond with only the letter (A, B, C, or D) of the correct option. Keep any reasoning very short.",
+  "params": {
+   "temperature": 0,
+   "top_p": 1,
+   "reasoning_effort": "minimal",
+   "max_tokens": 1024
+  }
+ }
 }
