@@ -1,0 +1,29 @@
+{
+ "environment": "F",
+ "created": "2026-11-14",
+ "status": "LOCKED before any F model call",
+ "items": {
+  "all": "27b5ab914f45b9878cce2823122dd785048d6ed060e37f503f0387f37e715188",
+  "audit_pool": "7886334a050b9b855f39a3e5b7b807083d5840a217027f83f68f4ff544b642bb",
+  "test": "862c5ebaca1ad4e19dc9f70ca44b1033fb99dea41ea71566fd9051c058672c4d"
+ },
+ "n": {
+  "audit_pool_per_family": 40,
+  "test_per_family": 100
+ },
+ "configuration_pair": {
+  "fast": "deepseek-v3.2, thinking disabled",
+  "slow": "alibaba/qwen3.5-397b-a17b, thinking high, 4096 budget"
+ },
+ "history": "Forge A-E (released paired outcomes)",
+ "primary_policy": "Algorithm 1 (target-audited router), gamma=0.15, alpha=0.8, fixed 20-per-family audit = first 20 items of each family in f_audit_items.json order",
+ "secondary_policy": "two-stage adaptive audit: 20 per family; families whose 90% CI for tau straddles gamma receive the next 20 audit-pool items; then Algorithm 1",
+ "baselines": [
+  "historical point estimate (A-E)",
+  "historical worst-observed",
+  "slow-rate-matched random",
+  "learned routers of Table 17 fitted on the same audit"
+ ],
+ "primary_test": "accuracy of primary policy minus slow-rate-matched random accuracy on F test > 1.5 pp (same margin as E)",
+ "reporting": "all results reported regardless of outcome"
+}

@@ -1,0 +1,6 @@
+{
+ "fast": {"model": "deepseek-v3.2", "instruction": "Answer immediately. Return exactly one option letter and nothing else.",
+          "params": {"temperature": 0, "top_p": 1, "thinking": {"type": "disabled"}, "reasoning_effort": "none", "enable_thinking": false, "thinking_budget": 0}},
+ "slow": {"model": "alibaba/qwen3.5-397b-a17b", "instruction": "Construct and verify the complete solution. End with FINAL: <letter>.",
+          "params": {"temperature": 0, "top_p": 1, "enable_thinking": true, "reasoning_effort": "high", "thinking_budget": 4096, "max_tokens": 4096}}
+}
