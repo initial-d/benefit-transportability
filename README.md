@@ -48,6 +48,19 @@ make check-manifest
 The manifest check validates the released files listed in the manifest. It does
 not require network access and does not inspect excluded private materials.
 
+
+## Revision R1 additions
+
+- `scripts/demo_target_audit.py` - standard-library demo: rebuilds the Environment-E target-audited router from the 100 audit items and evaluates it once on the locked test (99.40% accuracy, 27.02% saving, 3 false-fast).
+- `scripts/revision_analyses.py` - all re-analyses of released outcomes (shift tests, intervals, baselines, replications). `python scripts/revision_analyses.py . out/`
+- `preregistration/F_preregistration.json` - plan for Environment F, committed before any F model call (amendment 1 records the fast-configuration choice made on E-audit data only).
+- `data/forge_f/` - Environment F items, audit pool, and locked test; `scripts/forge_generate.py` generates them (every item passes two distinct exact solvers).
+- `results/forge_f/`, `results/drift_e/` - sanitized paired outcomes for Environment F and the temperature / prompt-template drift runs.
+- `scripts/analyze_new_runs.py`, `scripts/extra_new_runs.py` - pre-registered F analysis and drift analysis. `python scripts/analyze_new_runs.py . . out/new_runs.json`
+- `scripts/run_paired.py` - provider-neutral, resumable paired-call adapter for OpenAI-compatible endpoints; the API key is read from `--key-file` or `$BT_API_KEY` and is never written to disk. `scripts/configs.json` lists the request settings.
+
+Analyses need Python 3 with NumPy (`pip install numpy matplotlib`); the demo needs only the standard library.
+
 ## Data notes
 
 Forge and Scale-500 are original generated benchmarks. LiveBench is an independently maintained benchmark; this repository includes only the processed scores and task level summaries used for the external validation, not the upstream benchmark codebase.

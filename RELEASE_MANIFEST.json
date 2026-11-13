@@ -22,8 +22,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2534,
-      "sha256": "7c6af63368ba247aa7648fa425fbdea2caa9e9ea28e16cf77a0d5551ac37ff4c"
+      "bytes": 3955,
+      "sha256": "bd76cd1aa8a32cc74a205030949cbce863f9b9ac1cf58a73f95060094cbe00f2"
     },
     {
       "path": "data/forge/abc_items.json",
@@ -66,6 +66,21 @@
       "sha256": "3125b2c884dc6de06818967d5bf4ccbc975f81257a9ebcc9633421dcbac3bd09"
     },
     {
+      "path": "data/forge_f/f_audit_items.json",
+      "bytes": 304352,
+      "sha256": "7886334a050b9b855f39a3e5b7b807083d5840a217027f83f68f4ff544b642bb"
+    },
+    {
+      "path": "data/forge_f/f_items.json",
+      "bytes": 1057571,
+      "sha256": "27b5ab914f45b9878cce2823122dd785048d6ed060e37f503f0387f37e715188"
+    },
+    {
+      "path": "data/forge_f/f_test_items.json",
+      "bytes": 755521,
+      "sha256": "862c5ebaca1ad4e19dc9f70ca44b1033fb99dea41ea71566fd9051c058672c4d"
+    },
+    {
       "path": "data/scale500/items.json",
       "bytes": 296868,
       "sha256": "b1f29f6a5b11940e2e398ab23883fb17a30ec1b205a57b034a2344384dc8fe53"
@@ -81,9 +96,39 @@
       "sha256": "d365a2c908406b0e8a60bac1e1e86f97a55015c59bac97e0ef0ce3fb5920ed35"
     },
     {
+      "path": "preregistration/F_preregistration.json",
+      "bytes": 2194,
+      "sha256": "6b5744e36bce5f79ed1e3a05eef0f849bbc410e9d106cc15d61575e4edbb8687"
+    },
+    {
       "path": "requirements.txt",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/drift_e/E_rerun_t0.jsonl",
+      "bytes": 680647,
+      "sha256": "606771710422187be97b81a9ab2bbca81f520e5a15ea764125e4f1ab48b7ff2d"
+    },
+    {
+      "path": "results/drift_e/E_rerun_t07.jsonl",
+      "bytes": 691252,
+      "sha256": "2d5148932c21b9ae70b5f21bb548f2a9bf1ddc5bdf63693ca07ce3e214db9e6d"
+    },
+    {
+      "path": "results/drift_e/E_rerun_tpl2.jsonl",
+      "bytes": 694789,
+      "sha256": "0c4a9c5cb731b9599e41cbb1218c1cfd06ce0727440cce4b152b72fe6e6ec3c2"
+    },
+    {
+      "path": "results/forge_f/f_query_metrics.jsonl",
+      "bytes": 762535,
+      "sha256": "6add62cee9ea9fc1ab81209c5502199212b89910a70e51fb3b0dd7b7453a8415"
+    },
+    {
+      "path": "results/forge_f/fast_candidate_selection_e_audit.jsonl",
+      "bytes": 303046,
+      "sha256": "c6f92aff5904783cb0bb38336918d4e4864f4f70ede28502a9dee6dfd3ee3281"
     },
     {
       "path": "results/livebench/category_task_summary.csv",
@@ -241,14 +286,54 @@
       "sha256": "0499e6270a66fd25f0cf3730033100993292201495d4ba639ccd7c1304a6b4b0"
     },
     {
+      "path": "scripts/analyze_new_runs.py",
+      "bytes": 7350,
+      "sha256": "37071463e781e2c7a0c73aeb598433853bfcb78f73544da3e8d75c99942bcfc6"
+    },
+    {
       "path": "scripts/check_release_manifest.py",
       "bytes": 2163,
       "sha256": "f9e290f8bcde4b1d6f483bf924db4d46fccface32c02a7c292bcfaff84a56e40"
     },
     {
+      "path": "scripts/configs.json",
+      "bytes": 5817,
+      "sha256": "13e34569b8bbf846095d1d0b1cc3b2cf4dc589aa7957e666ef4afe98effa94ac"
+    },
+    {
+      "path": "scripts/demo_target_audit.py",
+      "bytes": 3238,
+      "sha256": "dc642d7f3d66621026f927f5ca7ace7eb7b254c301127fd9090ae1ef0f06b01b"
+    },
+    {
+      "path": "scripts/extra_new_runs.py",
+      "bytes": 4617,
+      "sha256": "6655a515019cfc1699cbb406ad6b4d0776ee67211af6b092f8b2cf69f8ac55d9"
+    },
+    {
+      "path": "scripts/forge_generate.py",
+      "bytes": 13590,
+      "sha256": "5527823f58de3027deab00d3c7c9f25aee9e2bd4ae9b17c298609fd1bd8ca15f"
+    },
+    {
+      "path": "scripts/make_benefit_ci_figure.py",
+      "bytes": 2315,
+      "sha256": "25ff967f4370ea7776d09b70d9793e67a1b198a42443a08a2d5ca3fb37c759e4"
+    },
+    {
       "path": "scripts/reproduce_summary.py",
       "bytes": 1455,
       "sha256": "76e08c6aa427fe4dda9b86130151780a8bd821488836be95afed7d7a797c375f"
+    },
+    {
+      "path": "scripts/revision_analyses.py",
+      "bytes": 47383,
+      "sha256": "db7dbe5a3c5f3ca3c2f3d4f00f8356fd7c125a023077e2044fb7a90366836116"
+    },
+    {
+      "path": "scripts/run_paired.py",
+      "bytes": 5926,
+      "sha256": "ac98c1f64b8597d264255c6bdd8993f5d9e82b4fc23ce9bcfad3cde6c75b95cd"
     }
   ]
 }
